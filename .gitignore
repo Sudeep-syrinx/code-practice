@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.class
+*.o
+*.exe
+*.out
+node_modules/
+dist/
+build/
+*.log
+.env
+.env.*
+.vscode/
