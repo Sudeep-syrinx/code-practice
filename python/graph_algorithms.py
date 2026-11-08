@@ -138,3 +138,67 @@ if __name__ == "__main__":
     }
     print("Task order :", topological_sort(tasks))
     print("Cycle check:", topological_sort({"a": ["b"], "b": ["a"]}))
+
+# ==============================================================================
+# EXTENDED GRAPH ALGORITHMS
+# ==============================================================================
+
+def bfs(graph, start):
+    visited = set()
+    queue = [start]
+    visited.add(start)
+    result = []
+    while queue:
+        node = queue.pop(0)
+        result.append(node)
+        for neighbor in graph.get(node, []):
+            if neighbor not in visited:
+                visited.add(neighbor)
+                queue.append(neighbor)
+    return result
+
+def dfs(graph, start, visited=None):
+    if visited is None:
+        visited = set()
+    visited.add(start)
+    result = [start]
+    for neighbor in graph.get(start, []):
+        if neighbor not in visited:
+            result.extend(dfs(graph, neighbor, visited))
+    return result
+
+def detect_cycle(graph):
+    visited = set()
+    rec_stack = set()
+    def dfs_cycle(node):
+        visited.add(node)
+        rec_stack.add(node)
+        for neighbor in graph.get(node, []):
+            if neighbor not in visited:
+                if dfs_cycle(neighbor):
+                    return True
+            elif neighbor in rec_stack:
+                return True
+        rec_stack.remove(node)
+        return False
+    for node in graph:
+        if node not in visited:
+            if dfs_cycle(node):
+                return True
+    return False
+
+def test_graph_extended():
+    graph = {
+        'A': ['B', 'C'],
+        'B': ['D', 'E'],
+        'C': ['F'],
+        'D': [],
+        'E': ['F'],
+        'F': []
+    }
+    print("BFS:", bfs(graph, 'A'))
+    print("DFS:", dfs(graph, 'A'))
+    print("Cycle detected:", detect_cycle(graph))
+
+if __name__ == "__main__":
+    test_graph_extended()

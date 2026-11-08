@@ -86,3 +86,108 @@ if __name__ == "__main__":
     ll.reverse()
     print(ll.to_list())     # expected [3, 1, 0]
     print(len(ll))          # expected 3
+
+# ==============================================================================
+# EXTENDED LINKED LIST OPERATIONS
+# ==============================================================================
+
+class DoublyNode:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        self.prev = None
+
+class DoublyLinkedList:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        self.size = 0
+
+    def append(self, data):
+        new_node = DoublyNode(data)
+        if not self.head:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.prev = self.tail
+            self.tail.next = new_node
+            self.tail = new_node
+        self.size += 1
+
+    def prepend(self, data):
+        new_node = DoublyNode(data)
+        if not self.head:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head.prev = new_node
+            self.head = new_node
+        self.size += 1
+
+    def insert_at(self, index, data):
+        if index < 0 or index > self.size:
+            raise IndexError("Index out of bounds")
+        if index == 0:
+            self.prepend(data)
+            return
+        if index == self.size:
+            self.append(data)
+            return
+        new_node = DoublyNode(data)
+        current = self.head
+        for _ in range(index - 1):
+            current = current.next
+        new_node.next = current.next
+        new_node.prev = current
+        current.next.prev = new_node
+        current.next = new_node
+        self.size += 1
+
+    def remove(self, data):
+        current = self.head
+        while current:
+            if current.data == data:
+                if current.prev:
+                    current.prev.next = current.next
+                else:
+                    self.head = current.next
+                if current.next:
+                    current.next.prev = current.prev
+                else:
+                    self.tail = current.prev
+                self.size -= 1
+                return True
+            current = current.next
+        return False
+
+    def display_forward(self):
+        elements = []
+        current = self.head
+        while current:
+            elements.append(current.data)
+            current = current.next
+        return elements
+
+    def display_backward(self):
+        elements = []
+        current = self.tail
+        while current:
+            elements.append(current.data)
+            current = current.prev
+        return elements
+
+def test_doubly_linked_list():
+    dll = DoublyLinkedList()
+    dll.append(1)
+    dll.append(2)
+    dll.append(3)
+    dll.prepend(0)
+    dll.insert_at(2, 1.5)
+    print("Forward:", dll.display_forward())
+    print("Backward:", dll.display_backward())
+    dll.remove(1.5)
+    print("After remove:", dll.display_forward())
+
+if __name__ == "__main__":
+    test_doubly_linked_list()

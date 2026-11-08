@@ -85,3 +85,82 @@ if __name__ == "__main__":
 
     print(evaluate_postfix("2 3 + 4 *"))   # expected 20.0
     print(evaluate_postfix("10 2 8 * + 3 -"))  # expected 23.0
+
+# ==============================================================================
+# EXTENDED STACK AND QUEUE OPERATIONS
+# ==============================================================================
+
+class Stack:
+    def __init__(self):
+        self.items = []
+
+    def push(self, item):
+        self.items.append(item)
+
+    def pop(self):
+        if not self.is_empty():
+            return self.items.pop()
+        return None
+
+    def peek(self):
+        if not self.is_empty():
+            return self.items[-1]
+        return None
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+    def size(self):
+        return len(self.items)
+
+class Queue:
+    def __init__(self):
+        self.items = []
+
+    def enqueue(self, item):
+        self.items.append(item)
+
+    def dequeue(self):
+        if not self.is_empty():
+            return self.items.pop(0)
+        return None
+
+    def peek(self):
+        if not self.is_empty():
+            return self.items[0]
+        return None
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+    def size(self):
+        return len(self.items)
+
+def balanced_parentheses(s):
+    stack = Stack()
+    mapping = {")": "(", "}": "{", "]": "["}
+    for char in s:
+        if char in mapping:
+            top = stack.pop()
+            if top != mapping[char]:
+                return False
+        else:
+            stack.push(char)
+    return stack.is_empty()
+
+def test_stack_queue():
+    s = Stack()
+    s.push(1)
+    s.push(2)
+    print("Stack pop:", s.pop())
+    
+    q = Queue()
+    q.enqueue(1)
+    q.enqueue(2)
+    print("Queue dequeue:", q.dequeue())
+    
+    print("Balanced '(){}[]':", balanced_parentheses("(){}[]"))
+    print("Balanced '([)]':", balanced_parentheses("([)]"))
+
+if __name__ == "__main__":
+    test_stack_queue()

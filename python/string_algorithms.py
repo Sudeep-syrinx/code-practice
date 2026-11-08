@@ -259,3 +259,63 @@ if __name__ == "__main__":
     print("Palindromic subs   :", count_palindromic_substrings("aaaba"))
     print("Minimum window     :", minimum_window("ADOBECODEBANC", "ABC"))
     print("Unique per window  :", sliding_window_unique_counts("abcabcbb", 3))
+
+# ==============================================================================
+# EXTENDED STRING ALGORITHMS
+# ==============================================================================
+
+def is_palindrome(s):
+    s = "".join(c.lower() for c in s if c.isalnum())
+    return s == s[::-1]
+
+def reverse_words(s):
+    return " ".join(s.split()[::-1])
+
+def anagram_check(s1, s2):
+    return sorted(s1) == sorted(s2)
+
+def first_non_repeating_char(s):
+    counts = {}
+    for char in s:
+        counts[char] = counts.get(char, 0) + 1
+    for char in s:
+        if counts[char] == 1:
+            return char
+    return None
+
+def string_compression(s):
+    if not s:
+        return ""
+    result = []
+    count = 1
+    for i in range(1, len(s)):
+        if s[i] == s[i-1]:
+            count += 1
+        else:
+            result.append(s[i-1] + str(count))
+            count = 1
+    result.append(s[-1] + str(count))
+    compressed = "".join(result)
+    return compressed if len(compressed) < len(s) else s
+
+def longest_common_prefix(strs):
+    if not strs:
+        return ""
+    prefix = strs[0]
+    for s in strs[1:]:
+        while not s.startswith(prefix):
+            prefix = prefix[:-1]
+            if not prefix:
+                return ""
+    return prefix
+
+def test_string_algorithms():
+    print("Palindrome 'A man a plan a canal Panama':", is_palindrome("A man a plan a canal Panama"))
+    print("Reverse words 'hello world':", reverse_words("hello world"))
+    print("Anagram 'listen', 'silent':", anagram_check("listen", "silent"))
+    print("First non-repeating 'swiss':", first_non_repeating_char("swiss"))
+    print("Compression 'aabcccccaaa':", string_compression("aabcccccaaa"))
+    print("Longest common prefix ['flower', 'flow', 'flight']:", longest_common_prefix(["flower", "flow", "flight"]))
+
+if __name__ == "__main__":
+    test_string_algorithms()

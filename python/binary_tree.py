@@ -166,3 +166,52 @@ if __name__ == "__main__":
     print("Inorder    :", tree.inorder())
     print("Level order:", tree.level_order())
     print("Size       :", len(tree))
+
+# ==============================================================================
+# EXTENDED BINARY TREE OPERATIONS
+# ==============================================================================
+
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
+
+def max_depth(root):
+    if not root:
+        return 0
+    return 1 + max(max_depth(root.left), max_depth(root.right))
+
+def is_balanced(root):
+    def check(node):
+        if not node:
+            return 0
+        left = check(node.left)
+        if left == -1:
+            return -1
+        right = check(node.right)
+        if right == -1:
+            return -1
+        if abs(left - right) > 1:
+            return -1
+        return 1 + max(left, right)
+    return check(root) != -1
+
+def invert_tree(root):
+    if root:
+        root.left, root.right = invert_tree(root.right), invert_tree(root.left)
+    return root
+
+def test_binary_tree_extended():
+    root = TreeNode(1)
+    root.left = TreeNode(2)
+    root.right = TreeNode(3)
+    root.left.left = TreeNode(4)
+    root.left.right = TreeNode(5)
+    print("Max depth:", max_depth(root))
+    print("Is balanced:", is_balanced(root))
+    invert_tree(root)
+    print("Inverted tree left child:", root.left.val)
+
+if __name__ == "__main__":
+    test_binary_tree_extended()
