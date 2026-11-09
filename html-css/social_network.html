@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network - Builder Platform</title>
+    <link rel="stylesheet" href="social_network.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">DevConnect</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search developers, posts, tags...">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="nav-actions">
+                <button class="icon-btn">🏠</button>
+                <button class="icon-btn">👥</button>
+                <button class="icon-btn">🔔 <span class="badge">3</span></button>
+                <button class="icon-btn">✉️ <span class="badge">5</span></button>
+                <div class="user-menu">
+                    <span class="avatar">SM</span>
+                    <span class="username">Sudeep</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-layout">
+        <aside class="left-sidebar">
+            <div class="profile-card">
+                <div class="cover-photo"></div>
+                <div class="profile-avatar">SM</div>
+                <h3>Sudeep M.</h3>
+                <p class="profile-title">Full-Stack Developer</p>
+                <div class="profile-stats">
+                    <div class="stat"><span class="stat-num">52K</span><span class="stat-label">Lines</span></div>
+                    <div class="stat"><span class="stat-num">#16</span><span class="stat-label">Rank</span></div>
+                    <div class="stat"><span class="stat-num">234</span><span class="stat-label">Followers</span></div>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><span>📰</span> Feed</a></li>
+                    <li><a href="#"><span>👤</span> Profile</a></li>
+                    <li><a href="#"><span>👥</span> Connections</a></li>
+                    <li><a href="#"><span>💼</span> Projects</a></li>
+                    <li><a href="#"><span>🏆</span> Achievements</a></li>
+                    <li><a href="#"><span>⚙️</span> Settings</a></li>
+                </ul>
+            </nav>
+            <div class="trending-tags">
+                <h4>Trending Tags</h4>
+                <div class="tag-list">
+                    <span class="tag">#javascript</span>
+                    <span class="tag">#python</span>
+                    <span class="tag">#datastructures</span>
+                    <span class="tag">#webdev</span>
+                    <span class="tag">#coding</span>
+                </div>
+            </div>
+        </aside>
+        <main class="feed">
+            <div class="create-post">
+                <div class="post-input">
+                    <span class="avatar-sm">SM</span>
+                    <input type="text" placeholder="Share your coding journey...">
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn">📷 Photo</button>
+                    <button class="action-btn">💻 Code</button>
+                    <button class="action-btn">📊 Stats</button>
+                    <button class="btn-post">Post</button>
+                </div>
+            </div>
+            <article class="post">
+                <header class="post-header">
+                    <span class="avatar-md">GM</span>
+                    <div class="post-info">
+                        <h4>Gopal Maddheshiya <span class="verified">✓</span></h4>
+                        <p class="post-meta">SRMU • Rank #1 • 2 hours ago</p>
+                    </div>
+                    <button class="more-btn">⋯</button>
+                </header>
+                <div class="post-content">
+                    <p>Just hit 188,000 lines of code on BuilderHub! 🎉 Consistency is key. Coded every day for 6 months straight. Python, JavaScript, Java — every line counts!</p>
+                    <p>What's your current streak? Drop it in the comments! 👇</p>
+                </div>
+                <div class="post-image">
+                    <div class="image-placeholder">📊 Leaderboard Screenshot</div>
+                </div>
+                <div class="post-stats">
+                    <span>👍 342 likes</span>
+                    <span>💬 56 comments</span>
+                    <span>🔄 23 shares</span>
+                </div>
+                <div class="post-buttons">
+                    <button class="post-btn">👍 Like</button>
+                    <button class="post-btn">💬 Comment</button>
+                    <button class="post-btn">🔄 Share</button>
+                </div>
+            </article>
+            <article class="post">
+                <header class="post-header">
+                    <span class="avatar-md">SM</span>
+                    <div class="post-info">
+                        <h4>Sudeep M.</h4>
+                        <p class="post-meta">Code Practice Enthusiast • Rank #16 • 5 hours ago</p>
+                    </div>
+                    <button class="more-btn">⋯</button>
+                </header>
+                <div class="post-content">
+                    <p>Just implemented a Finger Tree in JavaScript! 🌳 342 lines of pure functional data structure goodness.</p>
+                    <p>Finger trees support O(1) amortized access to both ends. Perfect for sequences, priority queues, and more.</p>
+                    <p>Check out my GitHub for the full implementation with tests! #javascript #datastructures #coding</p>
+                </div>
+                <div class="code-snippet">
+                    <pre><code>class FingerTree {
+  cons(value) { /* add to front */ }
+  snoc(value) { /* add to back */ }
+  head() { /* get first */ }
+  last() { /* get last */ }
+}</code></pre>
+                </div>
+                <div class="post-stats">
+                    <span>👍 128 likes</span>
+                    <span>💬 34 comments</span>
+                    <span>🔄 12 shares</span>
+                </div>
+                <div class="post-buttons">
+                    <button class="post-btn liked">👍 Liked</button>
+                    <button class="post-btn">💬 Comment</button>
+                    <button class="post-btn">🔄 Share</button>
+                </div>
+            </article>
+            <article class="post">
+                <header class="post-header">
+                    <span class="avatar-md">PK</span>
+                    <div class="post-info">
+                        <h4>Priya K.</h4>
+                        <p class="post-meta">Frontend Developer • Rank #28 • 1 day ago</p>
+                    </div>
+                    <button class="more-btn">⋯</button>
+                </header>
+                <div class="post-content">
+                    <p>Finally switched to HTML/CSS for frontend practice! 🎨 Built a responsive portfolio, e-commerce template, and blog layout.</p>
+                    <p>BuilderHub counts every line — even HTML and CSS! My line count jumped 3x this week. Who says frontend isn't "real" coding? 😄</p>
+                </div>
+                <div class="post-stats">
+                    <span>👍 89 likes</span>
+                    <span>💬 21 comments</span>
+                    <span>🔄 8 shares</span>
+                </div>
+                <div class="post-buttons">
+                    <button class="post-btn">👍 Like</button>
+                    <button class="post-btn">💬 Comment</button>
+                    <button class="post-btn">🔄 Share</button>
+                </div>
+            </article>
+        </main>
+        <aside class="right-sidebar">
+            <div class="widget">
+                <h4>Your Stats</h4>
+                <div class="stats-list">
+                    <div class="stat-item"><span>Total Lines</span><strong>52,550</strong></div>
+                    <div class="stat-item"><span>This Week</span><strong>+2,840</strong></div>
+                    <div class="stat-item"><span>Current Streak</span><strong>3 weeks</strong></div>
+                    <div class="stat-item"><span>Global Rank</span><strong>#16</strong></div>
+                </div>
+            </div>
+            <div class="widget">
+                <h4>Suggested Connections</h4>
+                <div class="connection-list">
+                    <div class="connection-item">
+                        <span class="avatar-sm">AR</span>
+                        <div><strong>Arjun R.</strong><p>Rank #8 • 89K lines</p></div>
+                        <button class="btn-connect">Connect</button>
+                    </div>
+                    <div class="connection-item">
+                        <span class="avatar-sm">NK</span>
+                        <div><strong>Neha K.</strong><p>Rank #12 • 67K lines</p></div>
+                        <button class="btn-connect">Connect</button>
+                    </div>
+                    <div class="connection-item">
+                        <span class="avatar-sm">RV</span>
+                        <div><strong>Rahul V.</strong><p>Rank #19 • 48K lines</p></div>
+                        <button class="btn-connect">Connect</button>
+                    </div>
+                </div>
+            </div>
+            <div class="widget">
+                <h4>Upcoming Events</h4>
+                <ul class="event-list">
+                    <li><strong>Nov 15</strong> - Coding Challenge: Algorithms</li>
+                    <li><strong>Nov 20</strong> - Webinar: Data Structures Deep Dive</li>
+                    <li><strong>Nov 25</strong> - Hackathon: Build a VM</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

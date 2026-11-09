@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Builder Platform</title>
+    <link rel="stylesheet" href="documentation.css">
+</head>
+<body>
+    <div class="docs-layout">
+        <aside class="docs-sidebar">
+            <div class="sidebar-header">
+                <h2>BuilderHub Docs</h2>
+                <p>v2.0</p>
+            </div>
+            <nav class="docs-nav">
+                <div class="nav-section">
+                    <h3>Getting Started</h3>
+                    <ul>
+                        <li><a href="#" class="active">Introduction</a></li>
+                        <li><a href="#">Installation</a></li>
+                        <li><a href="#">Quick Start</a></li>
+                        <li><a href="#">Configuration</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3>Core Concepts</h3>
+                    <ul>
+                        <li><a href="#">Line Counting</a></li>
+                        <li><a href="#">Supported Languages</a></li>
+                        <li><a href="#">Badges System</a></li>
+                        <li><a href="#">Leaderboards</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3>API Reference</h3>
+                    <ul>
+                        <li><a href="#">Authentication</a></li>
+                        <li><a href="#">Endpoints</a></li>
+                        <li><a href="#">Rate Limits</a></li>
+                        <li><a href="#">Webhooks</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3>Guides</h3>
+                    <ul>
+                        <li><a href="#">Python Setup</a></li>
+                        <li><a href="#">JavaScript Setup</a></li>
+                        <li><a href="#">HTML/CSS Setup</a></li>
+                        <li><a href="#">Troubleshooting</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        <main class="docs-content">
+            <article class="doc-article">
+                <h1>Introduction to BuilderHub</h1>
+                <p class="lead">BuilderHub is a platform that tracks your coding progress across multiple programming languages. Every line of code you write counts toward your global ranking.</p>
+                <h2>What is BuilderHub?</h2>
+                <p>BuilderHub monitors your GitHub repositories and counts the lines of code you add to your main branch each week. It supports Python, JavaScript, Java, C++, HTML, CSS, and more.</p>
+                <p>The platform is designed for students and developers who want to build consistent coding habits and compete on leaderboards.</p>
+                <h2>Key Features</h2>
+                <ul class="feature-list">
+                    <li><strong>Multi-Language Support:</strong> Code in any language. All lines count equally.</li>
+                    <li><strong>Weekly Tracking:</strong> Your progress is measured every week since September.</li>
+                    <li><strong>Transparent Rules:</strong> Clear guidelines on what counts and what doesn't.</li>
+                    <li><strong>Badges & Achievements:</strong> Earn badges for consistency and milestones.</li>
+                    <li><strong>Campus Leaderboards:</strong> Compete with peers at your university.</li>
+                </ul>
+                <h2>What Counts?</h2>
+                <div class="info-box success">
+                    <h3>✅ Counted</h3>
+                    <ul>
+                        <li>Code you write in any programming language</li>
+                        <li>Python, Java, C++, JavaScript, HTML, CSS</li>
+                        <li>Code cells in Jupyter notebooks</li>
+                    </ul>
+                </div>
+                <div class="info-box warning">
+                    <h3>❌ Not Counted</h3>
+                    <ul>
+                        <li>Folders like node_modules and build</li>
+                        <li>Lock files and minified files</li>
+                        <li>Data files (.json, .csv, .sql)</li>
+                        <li>README, documentation, .txt files</li>
+                        <li>Libraries you add (Bootstrap, etc.)</li>
+                    </ul>
+                </div>
+                <h2>Quick Example</h2>
+                <p>Here's a simple Python function that counts toward your total:</p>
+                <pre class="code-block"><code>def two_sum(nums, target):
+    seen = {}
+    for i, n in enumerate(nums):
+        need = target - n
+        if need in seen:
+            return [seen[need], i]
+        seen[n] = i
+    return []</code></pre>
+                <p>This 9-line function will add 9 lines to your weekly count when pushed to your main branch.</p>
+                <h2>Next Steps</h2>
+                <ol class="steps-list">
+                    <li>Connect your GitHub account to BuilderHub</li>
+                    <li>Create a repository and start coding</li>
+                    <li>Push your code to the main branch</li>
+                    <li>Check your stats every Monday</li>
+                    <li>Climb the leaderboard!</li>
+                </ol>
+                <div class="doc-footer">
+                    <p>Was this page helpful? <a href="#">Yes</a> | <a href="#">No</a></p>
+                    <p>Last updated: November 9, 2026</p>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard - Builder Platform</title>
+    <link rel="stylesheet" href="analytics_dashboard.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="brand"><h2>Analytics Pro</h2></div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><span>📊</span> Overview</a></li>
+                    <li><a href="#"><span>📈</span> Line Count</a></li>
+                    <li><a href="#"><span>🌍</span> Languages</a></li>
+                    <li><a href="#"><span>🏆</span> Leaderboard</a></li>
+                    <li><a href="#"><span>🎯</span> Goals</a></li>
+                    <li><a href="#"><span>📅</span> History</a></li>
+                    <li><a href="#"><span>⚙️</span> Settings</a></li>
+                </ul>
+            </nav>
+            <div class="user-panel">
+                <span class="avatar">SM</span>
+                <div class="user-info"><p class="name">Sudeep M.</p><p class="role">Pro Member</p></div>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="topbar">
+                <div class="page-title"><h1>Analytics Overview</h1><p>Last updated: Nov 9, 2026 at 13:30</p></div>
+                <div class="topbar-actions">
+                    <select class="date-range"><option>Last 7 Days</option><option>Last 30 Days</option><option>Last 90 Days</option><option>All Time</option></select>
+                    <button class="btn-export">📥 Export Report</button>
+                    <button class="btn-refresh">🔄 Refresh</button>
+                </div>
+            </header>
+            <div class="content-area">
+                <div class="stats-row">
+                    <div class="stat-card primary"><div class="stat-icon">📝</div><div class="stat-details"><h3>Total Lines</h3><p class="stat-value">52,550</p><span class="stat-change positive">↑ 12% vs last week</span></div></div>
+                    <div class="stat-card success"><div class="stat-icon">🔥</div><div class="stat-details"><h3>Current Streak</h3><p class="stat-value">3 weeks</p><span class="stat-change neutral">Personal best: 5 weeks</span></div></div>
+                    <div class="stat-card warning"><div class="stat-icon">🏆</div><div class="stat-details"><h3>Global Rank</h3><p class="stat-value">#16</p><span class="stat-change positive">↑ 4 positions</span></div></div>
+                    <div class="stat-card info"><div class="stat-icon">⭐</div><div class="stat-details"><h3>Badges Earned</h3><p class="stat-value">7 / 15</p><span class="stat-change neutral">Next badge in 2 days</span></div></div>
+                </div>
+                <div class="charts-grid">
+                    <div class="chart-card large">
+                        <div class="card-header"><h3>Weekly Line Count Trend</h3><div class="chart-legend"><span class="legend-item"><span class="dot blue"></span>This Year</span><span class="legend-item"><span class="dot gray"></span>Last Year</span></div></div>
+                        <div class="chart-body">
+                            <div class="line-chart">
+                                <div class="chart-y-axis"><span>5K</span><span>4K</span><span>3K</span><span>2K</span><span>1K</span><span>0</span></div>
+                                <div class="chart-area">
+                                    <div class="chart-line this-year" style="height:45%"></div>
+                                    <div class="chart-line this-year" style="height:62%"></div>
+                                    <div class="chart-line this-year" style="height:58%"></div>
+                                    <div class="chart-line this-year" style="height:75%"></div>
+                                    <div class="chart-line this-year" style="height:68%"></div>
+                                    <div class="chart-line this-year" style="height:82%"></div>
+                                    <div class="chart-line this-year" style="height:90%"></div>
+                                </div>
+                                <div class="chart-x-axis"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <div class="card-header"><h3>Language Distribution</h3></div>
+                        <div class="chart-body">
+                            <div class="donut-chart">
+                                <div class="donut-segment python" style="--percent:45"></div>
+                                <div class="donut-segment javascript" style="--percent:35"></div>
+                                <div class="donut-segment html" style="--percent:20"></div>
+                                <div class="donut-center"><span class="donut-value">52K</span><span class="donut-label">Total</span></div>
+                            </div>
+                            <div class="chart-legend-list">
+                                <div class="legend-row"><span class="color-dot python"></span><span>Python</span><strong>45%</strong></div>
+                                <div class="legend-row"><span class="color-dot javascript"></span><span>JavaScript</span><strong>35%</strong></div>
+                                <div class="legend-row"><span class="color-dot html"></span><span>HTML/CSS</span><strong>20%</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-tables-grid">
+                    <div class="table-card">
+                        <div class="card-header"><h3>Daily Breakdown</h3><a href="#" class="view-all">View All →</a></div>
+                        <div class="card-body">
+                            <table class="data-table">
+                                <thead><tr><th>Date</th><th>Lines</th><th>Language</th><th>Rank Change</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Nov 9, 2026</td><td>+842</td><td><span class="lang-badge js">JS</span></td><td class="positive">↑ 2</td></tr>
+                                    <tr><td>Nov 8, 2026</td><td>+623</td><td><span class="lang-badge py">PY</span></td><td class="positive">↑ 1</td></tr>
+                                    <tr><td>Nov 7, 2026</td><td>+1,205</td><td><span class="lang-badge html">HTML</span></td><td class="positive">↑ 3</td></tr>
+                                    <tr><td>Nov 6, 2026</td><td>+456</td><td><span class="lang-badge js">JS</span></td><td class="neutral">—</td></tr>
+                                    <tr><td>Nov 5, 2026</td><td>+789</td><td><span class="lang-badge py">PY</span></td><td class="positive">↑ 1</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="table-card">
+                        <div class="card-header"><h3>Top Repositories</h3><a href="#" class="view-all">View All →</a></div>
+                        <div class="card-body">
+                            <table class="data-table">
+                                <thead><tr><th>Repository</th><th>Lines</th><th>Last Push</th></tr></thead>
+                                <tbody>
+                                    <tr><td>code-practice</td><td>48,230</td><td>2 hours ago</td></tr>
+                                    <tr><td>web-projects</td><td>3,420</td><td>1 day ago</td></tr>
+                                    <tr><td>algorithms</td><td>890</td><td>3 days ago</td></tr>
+                                    <tr><td>experiments</td><td>10</td><td>1 week ago</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="goals-section">
+                    <div class="card-header"><h3>Weekly Goals</h3></div>
+                    <div class="goals-grid">
+                        <div class="goal-card"><div class="goal-progress"><svg viewBox="0 0 36 36"><path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/><path class="circle-fill" stroke-dasharray="75, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/></svg><span class="goal-percent">75%</span></div><h4>Line Goal</h4><p>3,750 / 5,000 lines</p></div>
+                        <div class="goal-card"><div class="goal-progress"><svg viewBox="0 0 36 36"><path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/><path class="circle-fill" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/></svg><span class="goal-percent">100%</span></div><h4>Streak Goal</h4><p>7 / 7 days ✓</p></div>
+                        <div class="goal-card"><div class="goal-progress"><svg viewBox="0 0 36 36"><path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/><path class="circle-fill" stroke-dasharray="60, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/></svg><span class="goal-percent">60%</span></div><h4>Language Diversity</h4><p>3 / 5 languages</p></div>
+                        <div class="goal-card"><div class="goal-progress"><svg viewBox="0 0 36 36"><path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/><path class="circle-fill" stroke-dasharray="40, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/></svg><span class="goal-percent">40%</span></div><h4>Rank Goal</h4><p>#16 → Top 10</p></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

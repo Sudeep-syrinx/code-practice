@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Builder Platform</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <div class="brand"><h2>Admin Panel</h2></div>
+            <nav class="admin-nav">
+                <ul>
+                    <li class="active"><a href="#"><span>📊</span> Dashboard</a></li>
+                    <li><a href="#"><span>👥</span> Users</a></li>
+                    <li><a href="#"><span>📈</span> Analytics</a></li>
+                    <li><a href="#"><span>🏆</span> Leaderboards</a></li>
+                    <li><a href="#"><span>⚙️</span> Settings</a></li>
+                    <li><a href="#"><span>📝</span> Logs</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="admin-main">
+            <header class="admin-header">
+                <h1>Dashboard</h1>
+                <div class="header-actions">
+                    <span class="user-info">Admin: Sudeep</span>
+                    <button class="btn-logout">Logout</button>
+                </div>
+            </header>
+            <div class="admin-content">
+                <div class="stats-grid">
+                    <div class="stat-card"><h3>Total Users</h3><p class="stat-value">10,234</p><span class="stat-change positive">+12% this week</span></div>
+                    <div class="stat-card"><h3>Lines Today</h3><p class="stat-value">45,678</p><span class="stat-change positive">+8% vs yesterday</span></div>
+                    <div class="stat-card"><h3>Active Now</h3><p class="stat-value">1,234</p><span class="stat-change neutral">Real-time</span></div>
+                    <div class="stat-card"><h3>Reports</h3><p class="stat-value">23</p><span class="stat-change negative">Needs review</span></div>
+                </div>
+                <div class="content-grid">
+                    <div class="card">
+                        <div class="card-header"><h3>Recent Users</h3></div>
+                        <div class="card-body">
+                            <table class="data-table">
+                                <thead><tr><th>User</th><th>Joined</th><th>Lines</th><th>Rank</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Gopal M.</td><td>Nov 8, 2026</td><td>188,619</td><td>#1</td></tr>
+                                    <tr><td>Md Habib M.</td><td>Nov 7, 2026</td><td>123,884</td><td>#4</td></tr>
+                                    <tr><td>Sudeep M.</td><td>Nov 5, 2026</td><td>52,550</td><td>#16</td></tr>
+                                    <tr><td>Priya K.</td><td>Nov 4, 2026</td><td>34,221</td><td>#28</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header"><h3>System Health</h3></div>
+                        <div class="card-body">
+                            <div class="health-item"><span>CPU Usage</span><div class="health-bar"><div class="health-fill" style="width:45%"></div></div><span>45%</span></div>
+                            <div class="health-item"><span>Memory</span><div class="health-bar"><div class="health-fill" style="width:62%"></div></div><span>62%</span></div>
+                            <div class="health-item"><span>Disk Space</span><div class="health-bar"><div class="health-fill" style="width:38%"></div></div><span>38%</span></div>
+                            <div class="health-item"><span>API Latency</span><div class="health-bar"><div class="health-fill" style="width:12%"></div></div><span>12ms</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><h3>Activity Log</h3></div>
+                    <div class="card-body">
+                        <ul class="activity-list">
+                            <li><span class="time">2 min ago</span> User Gopal M. pushed 342 lines to code-practice</li>
+                            <li><span class="time">5 min ago</span> Weekly leaderboard updated successfully</li>
+                            <li><span class="time">12 min ago</span> New user registration: Priya K.</li>
+                            <li><span class="time">1 hour ago</span> Database backup completed</li>
+                            <li><span class="time">2 hours ago</span> API rate limit adjusted for campus ADTU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

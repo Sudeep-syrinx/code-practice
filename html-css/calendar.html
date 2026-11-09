@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar - Builder Platform</title>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <div class="calendar-layout">
+        <aside class="calendar-sidebar">
+            <div class="brand"><h2>Coding Calendar</h2></div>
+            <button class="btn-new-event">+ New Event</button>
+            <div class="mini-calendar">
+                <div class="mini-header"><button class="nav-arrow">‹</button><span>November 2026</span><button class="nav-arrow">›</button></div>
+                <div class="mini-grid">
+                    <span class="day-name">S</span><span class="day-name">M</span><span class="day-name">T</span><span class="day-name">W</span><span class="day-name">T</span><span class="day-name">F</span><span class="day-name">S</span>
+                    <span class="day other-month">26</span><span class="day other-month">27</span><span class="day other-month">28</span><span class="day other-month">29</span><span class="day other-month">30</span><span class="day other-month">31</span><span class="day">1</span>
+                    <span class="day">2</span><span class="day">3</span><span class="day">4</span><span class="day">5</span><span class="day">6</span><span class="day">7</span><span class="day">8</span>
+                    <span class="day today has-event">9</span><span class="day has-event">10</span><span class="day">11</span><span class="day">12</span><span class="day">13</span><span class="day">14</span><span class="day has-event">15</span>
+                    <span class="day">16</span><span class="day">17</span><span class="day">18</span><span class="day">19</span><span class="day has-event">20</span><span class="day">21</span><span class="day">22</span>
+                    <span class="day">23</span><span class="day">24</span><span class="day has-event">25</span><span class="day">26</span><span class="day">27</span><span class="day">28</span><span class="day">29</span>
+                    <span class="day">30</span><span class="day other-month">1</span><span class="day other-month">2</span><span class="day other-month">3</span><span class="day other-month">4</span><span class="day other-month">5</span><span class="day other-month">6</span>
+                </div>
+            </div>
+            <div class="upcoming-events">
+                <h3>Upcoming Events</h3>
+                <div class="event-list">
+                    <div class="event-item"><span class="event-date">Nov 10</span><div class="event-info"><h4>Code Review Session</h4><p>2:00 PM - 3:00 PM</p></div></div>
+                    <div class="event-item"><span class="event-date">Nov 15</span><div class="event-info"><h4>Algorithm Challenge</h4><p>All Day Event</p></div></div>
+                    <div class="event-item"><span class="event-date">Nov 20</span><div class="event-info"><h4>Data Structures Webinar</h4><p>6:00 PM - 7:30 PM</p></div></div>
+                    <div class="event-item"><span class="event-date">Nov 25</span><div class="event-info"><h4>Hackathon: Build a VM</h4><p>9:00 AM - 9:00 PM</p></div></div>
+                </div>
+            </div>
+            <div class="coding-streak">
+                <h3>Coding Streak</h3>
+                <div class="streak-display"><span class="streak-number">3</span><span class="streak-label">weeks</span></div>
+                <p class="streak-message">Keep it up! Next badge in 4 days.</p>
+            </div>
+        </aside>
+        <main class="calendar-main">
+            <header class="calendar-header">
+                <div class="header-left"><h1>November 2026</h1><div class="view-toggle"><button class="view-btn">Day</button><button class="view-btn">Week</button><button class="view-btn active">Month</button><button class="view-btn">Agenda</button></div></div>
+                <div class="header-right"><button class="btn-today">Today</button><button class="nav-arrow-lg">‹</button><button class="nav-arrow-lg">›</button></div>
+            </header>
+            <div class="calendar-grid">
+                <div class="calendar-weekdays"><span>Sunday</span><span>Monday</span><span>Tuesday</span><span>Wednesday</span><span>Thursday</span><span>Friday</span><span>Saturday</span></div>
+                <div class="calendar-days">
+                    <div class="calendar-day other-month"><span class="day-number">26</span></div>
+                    <div class="calendar-day other-month"><span class="day-number">27</span></div>
+                    <div class="calendar-day other-month"><span class="day-number">28</span></div>
+                    <div class="calendar-day other-month"><span class="day-number">29</span></div>
+                    <div class="calendar-day other-month"><span class="day-number">30</span></div>
+                    <div class="calendar-day other-month"><span class="day-number">31</span></div>
+                    <div class="calendar-day"><span class="day-number">1</span></div>
+                    <div class="calendar-day"><span class="day-number">2</span><div class="day-event coding">+456 lines</div></div>
+                    <div class="calendar-day"><span class="day-number">3</span><div class="day-event coding">+623 lines</div></div>
+                    <div class="calendar-day"><span class="day-number">4</span><div class="day-event coding">+789 lines</div></div>
+                    <div class="calendar-day"><span class="day-number">5</span><div class="day-event coding">+1,205 lines</div></div>
+                    <div class="calendar-day"><span class="day-number">6</span><div class="day-event coding">+456 lines</div></div>
+                    <div class="calendar-day"><span class="day-number">7</span><div class="day-event coding">+842 lines</div></div>
+                    <div class="calendar-day"><span class="day-number">8</span><div class="day-event coding">+623 lines</div></div>
+                    <div class="calendar-day today"><span class="day-number">9</span><div class="day-event coding">+342 lines (so far)</div><div class="day-event meeting">Code Review 2PM</div></div>
+                    <div class="calendar-day"><span class="day-number">10</span><div class="day-event meeting">Code Review 2PM</div></div>
+                    <div class="calendar-day"><span class="day-number">11</span></div>
+                    <div class="calendar-day"><span class="day-number">12</span></div>
+                    <div class="calendar-day"><span class="day-number">13</span></div>
+                    <div class="calendar-day"><span class="day-number">14</span></div>
+                    <div class="calendar-day"><span class="day-number">15</span><div class="day-event challenge">Algorithm Challenge</div></div>
+                    <div class="calendar-day"><span class="day-number">16</span></div>
+                    <div class="calendar-day"><span class="day-number">17</span></div>
+                    <div class="calendar-day"><span class="day-number">18</span></div>
+                    <div class="calendar-day"><span class="day-number">19</span></div>
+                    <div class="calendar-day"><span class="day-number">20</span><div class="day-event webinar">DSA Webinar 6PM</div></div>
+                    <div class="calendar-day"><span class="day-number">21</span></div>
+                    <div class="calendar-day"><span class="day-number">22</span></div>
+                    <div class="calendar-day"><span class="day-number">23</span></div>
+                    <div class="calendar-day"><span class="day-number">24</span></div>
+                    <div class="calendar-day"><span class="day-number">25</span><div class="day-event hackathon">Hackathon: Build a VM</div></div>
+                    <div class="calendar-day"><span class="day-number">26</span></div>
+                    <div class="calendar-day"><span class="day-number">27</span></div>
+                    <div class="calendar-day"><span class="day-number">28</span></div>
+                    <div class="calendar-day"><span class="day-number">29</span></div>
+                    <div class="calendar-day"><span class="day-number">30</span></div>
+                    <div class="calendar-day other-month"><span class="day-number">1</span></div>
+                    <div class="calendar-day other-month"><span class="day-number">2</span></div>
+                    <div class="calendar-day other-month"><span class="day-number">3</span></div>
+                    <div class="calendar-day other-month"><span class="day-number">4</span></div>
+                    <div class="calendar-day other-month"><span class="day-number">5</span></div>
+                    <div class="calendar-day other-month"><span class="day-number">6</span></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

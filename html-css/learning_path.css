@@ -1,0 +1,46 @@
+﻿/* =============================================
+   LEARNING PATH STYLESHEET
+   ============================================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #334155; background-color: #f8fafc; }
+.container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+.navbar { background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; padding: 1rem 0; }
+.navbar .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: 800; color: #2563eb; text-decoration: none; }
+.nav-links { display: flex; list-style: none; gap: 2rem; }
+.nav-links a { text-decoration: none; color: #475569; font-weight: 500; }
+.nav-links a.active { color: #2563eb; }
+.avatar { width: 36px; height: 36px; background-color: #2563eb; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+.path-hero { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 4rem 0; text-align: center; }
+.path-hero h1 { font-size: 2.5rem; margin-bottom: 1rem; color: #1e293b; }
+.path-hero p { font-size: 1.125rem; color: #475569; max-width: 600px; margin: 0 auto; }
+.paths-section { padding: 4rem 0; }
+.paths-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+.path-card { background-color: white; border-radius: 0.5rem; padding: 2rem; display: flex; gap: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; }
+.path-card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+.path-card.locked { opacity: 0.6; }
+.path-icon { font-size: 3rem; flex-shrink: 0; }
+.path-content { flex: 1; }
+.path-content h2 { font-size: 1.25rem; margin-bottom: 0.5rem; color: #1e293b; }
+.path-desc { color: #475569; font-size: 0.95rem; margin-bottom: 1rem; }
+.path-meta { display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: #64748b; flex-wrap: wrap; }
+.progress-bar { height: 0.5rem; background-color: #e2e8f0; border-radius: 999px; overflow: hidden; margin-bottom: 0.5rem; }
+.progress-fill { height: 100%; background-color: #2563eb; border-radius: 999px; }
+.progress-text { font-size: 0.875rem; color: #64748b; margin-bottom: 1rem; }
+.btn { display: inline-block; padding: 0.625rem 1.25rem; border-radius: 0.375rem; font-weight: 600; text-decoration: none; text-align: center; cursor: pointer; border: none; transition: all 0.2s; }
+.btn-primary { background-color: #2563eb; color: white; }
+.btn-primary:hover { background-color: #1d4ed8; }
+.btn-outline { background-color: transparent; border: 2px solid #2563eb; color: #2563eb; }
+.btn-outline:hover { background-color: #2563eb; color: white; }
+.btn-disabled { background-color: #e2e8f0; color: #94a3b8; cursor: not-allowed; }
+.achievements { padding: 4rem 0; background-color: white; }
+.achievements h2 { text-align: center; font-size: 2rem; margin-bottom: 3rem; color: #1e293b; }
+.badges-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto; }
+.badge-item { text-align: center; padding: 1.5rem; border-radius: 0.5rem; background-color: #f8fafc; opacity: 0.4; }
+.badge-item.earned { opacity: 1; background-color: #eff6ff; }
+.badge-icon { font-size: 2.5rem; display: block; margin-bottom: 0.5rem; }
+.badge-item p { font-size: 0.875rem; font-weight: 500; }
+@media (max-width: 768px) {
+    .path-card { flex-direction: column; text-align: center; }
+    .path-meta { justify-content: center; }
+}

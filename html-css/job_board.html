@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board - Builder Platform</title>
+    <link rel="stylesheet" href="job_board.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">DevJobs</a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Browse Jobs</a></li>
+                <li><a href="#">Companies</a></li>
+                <li><a href="#">Salaries</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-post-job">Post a Job</button>
+                <span class="avatar">SM</span>
+            </div>
+        </div>
+    </nav>
+    <section class="job-hero">
+        <div class="container">
+            <h1>Find Your Next Developer Role</h1>
+            <p>Thousands of jobs from top tech companies. Filter by location, salary, and tech stack.</p>
+            <form class="search-form">
+                <input type="text" placeholder="Job title, keywords, or company" class="search-input-lg">
+                <input type="text" placeholder="Location" class="search-input-lg">
+                <button type="submit" class="btn-search">Search Jobs</button>
+            </form>
+            <div class="popular-searches">
+                <span>Popular:</span>
+                <a href="#">Python Developer</a>
+                <a href="#">Frontend Engineer</a>
+                <a href="#">Data Structures</a>
+                <a href="#">Remote</a>
+            </div>
+        </div>
+    </section>
+    <div class="job-layout">
+        <aside class="job-filters">
+            <div class="filter-section">
+                <h3>Job Type</h3>
+                <label class="checkbox-label"><input type="checkbox" checked> Full-time <span class="count">(234)</span></label>
+                <label class="checkbox-label"><input type="checkbox"> Part-time <span class="count">(45)</span></label>
+                <label class="checkbox-label"><input type="checkbox"> Contract <span class="count">(67)</span></label>
+                <label class="checkbox-label"><input type="checkbox"> Internship <span class="count">(89)</span></label>
+            </div>
+            <div class="filter-section">
+                <h3>Experience Level</h3>
+                <label class="checkbox-label"><input type="checkbox"> Entry Level <span class="count">(123)</span></label>
+                <label class="checkbox-label"><input type="checkbox" checked> Mid Level <span class="count">(189)</span></label>
+                <label class="checkbox-label"><input type="checkbox"> Senior <span class="count">(98)</span></label>
+                <label class="checkbox-label"><input type="checkbox"> Lead <span class="count">(34)</span></label>
+            </div>
+            <div class="filter-section">
+                <h3>Salary Range</h3>
+                <div class="salary-range">
+                    <input type="range" min="0" max="200" value="50" class="range-slider">
+                    <div class="range-labels"><span>$0</span><span>$200k+</span></div>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Tech Stack</h3>
+                <label class="checkbox-label"><input type="checkbox" checked> Python <span class="count">(156)</span></label>
+                <label class="checkbox-label"><input type="checkbox" checked> JavaScript <span class="count">(189)</span></label>
+                <label class="checkbox-label"><input type="checkbox"> Java <span class="count">(98)</span></label>
+                <label class="checkbox-label"><input type="checkbox"> React <span class="count">(134)</span></label>
+                <label class="checkbox-label"><input type="checkbox"> Node.js <span class="count">(112)</span></label>
+                <label class="checkbox-label"><input type="checkbox"> HTML/CSS <span class="count">(87)</span></label>
+            </div>
+            <div class="filter-section">
+                <h3>Location</h3>
+                <label class="checkbox-label"><input type="checkbox" checked> Remote <span class="count">(178)</span></label>
+                <label class="checkbox-label"><input type="checkbox"> On-site <span class="count">(89)</span></label>
+                <label class="checkbox-label"><input type="checkbox"> Hybrid <span class="count">(67)</span></label>
+            </div>
+            <button class="btn-apply-filters">Apply Filters</button>
+        </aside>
+        <main class="job-listings">
+            <div class="listings-header">
+                <p><strong>434</strong> jobs found</p>
+                <select class="sort-select">
+                    <option>Most Relevant</option>
+                    <option>Newest First</option>
+                    <option>Highest Salary</option>
+                </select>
+            </div>
+            <article class="job-card featured">
+                <div class="company-logo">TC</div>
+                <div class="job-info">
+                    <h2>Senior Python Developer</h2>
+                    <p class="company-name">TechCorp <span class="verified">✓</span></p>
+                    <div class="job-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Remote</span>
+                    </div>
+                    <p class="job-desc">We're looking for a senior Python developer with strong data structures knowledge. BuilderHub rank #50 or better preferred.</p>
+                </div>
+                <div class="job-meta">
+                    <p class="salary">$120k - $160k</p>
+                    <p class="posted">Posted 2 hours ago</p>
+                    <button class="btn-apply">Apply Now</button>
+                </div>
+            </article>
+            <article class="job-card">
+                <div class="company-logo">SX</div>
+                <div class="job-info">
+                    <h2>Frontend Engineer (React)</h2>
+                    <p class="company-name">StartupXYZ</p>
+                    <div class="job-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Hybrid</span>
+                    </div>
+                    <p class="job-desc">Build beautiful UIs with React. Strong HTML/CSS skills required. Portfolio with BuilderHub projects is a plus.</p>
+                </div>
+                <div class="job-meta">
+                    <p class="salary">$90k - $130k</p>
+                    <p class="posted">Posted 5 hours ago</p>
+                    <button class="btn-apply">Apply Now</button>
+                </div>
+            </article>
+            <article class="job-card">
+                <div class="company-logo">DS</div>
+                <div class="job-info">
+                    <h2>Data Structures Engineer</h2>
+                    <p class="company-name">DevStudio <span class="verified">✓</span></p>
+                    <div class="job-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Algorithms</span>
+                        <span class="tag">Data Structures</span>
+                        <span class="tag">On-site</span>
+                    </div>
+                    <p class="job-desc">Design and implement efficient data structures. Experience with finger trees, wavelet trees, or similar is highly valued.</p>
+                </div>
+                <div class="job-meta">
+                    <p class="salary">$140k - $180k</p>
+                    <p class="posted">Posted 1 day ago</p>
+                    <button class="btn-apply">Apply Now</button>
+                </div>
+            </article>
+            <article class="job-card">
+                <div class="company-logo">BF</div>
+                <div class="job-info">
+                    <h2>Full-Stack Developer Intern</h2>
+                    <p class="company-name">BuildFast</p>
+                    <div class="job-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Remote</span>
+                    </div>
+                    <p class="job-desc">3-month internship for students. Must have active BuilderHub profile with 10K+ lines. Learn from senior devs.</p>
+                </div>
+                <div class="job-meta">
+                    <p class="salary">$25/hr</p>
+                    <p class="posted">Posted 2 days ago</p>
+                    <button class="btn-apply">Apply Now</button>
+                </div>
+            </article>
+            <div class="load-more">
+                <button class="btn-load-more">Load More Jobs</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

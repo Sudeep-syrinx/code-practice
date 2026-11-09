@@ -1,0 +1,147 @@
+﻿/* =============================================
+   RESUME STYLESHEET
+   ============================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #334155;
+    background-color: #f1f5f9;
+    padding: 2rem 0;
+}
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.resume-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+.resume-header h1 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+.title {
+    font-size: 1.25rem;
+    color: #2563eb;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    color: #64748b;
+}
+.resume-section {
+    margin-bottom: 2.5rem;
+}
+.resume-section h2 {
+    font-size: 1.5rem;
+    color: #1e293b;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #2563eb;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.resume-section p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.skill-group h3 {
+    font-size: 1rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+.skill-group p {
+    color: #475569;
+    font-size: 0.95rem;
+}
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.project-item h3 {
+    font-size: 1.125rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.lang-tag {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.project-item p {
+    color: #475569;
+    font-size: 0.95rem;
+}
+.edu-item h3 {
+    font-size: 1.125rem;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+}
+.edu-meta {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+.achievement-list {
+    padding-left: 1.5rem;
+}
+.achievement-list li {
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+}
+.resume-footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+    .resume-container {
+        box-shadow: none;
+        padding: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 2rem 1.5rem;
+        margin: 0 1rem;
+    }
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

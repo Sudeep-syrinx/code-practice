@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Builder Platform</title>
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">DevForum</a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Tags</a></li>
+                <li><a href="#">Members</a></li>
+            </ul>
+            <div class="nav-actions">
+                <input type="text" placeholder="Search forum..." class="search-input">
+                <button class="btn-new-topic">+ New Topic</button>
+                <span class="avatar">SM</span>
+            </div>
+        </div>
+    </nav>
+    <div class="forum-layout">
+        <aside class="forum-sidebar">
+            <div class="sidebar-section">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                    <li class="active"><a href="#"><span class="cat-icon">💬</span> General Discussion <span class="count">234</span></a></li>
+                    <li><a href="#"><span class="cat-icon">🐍</span> Python <span class="count">156</span></a></li>
+                    <li><a href="#"><span class="cat-icon">📜</span> JavaScript <span class="count">189</span></a></li>
+                    <li><a href="#"><span class="cat-icon">🌐</span> HTML/CSS <span class="count">98</span></a></li>
+                    <li><a href="#"><span class="cat-icon">🌳</span> Data Structures <span class="count">142</span></a></li>
+                    <li><a href="#"><span class="cat-icon">⚡</span> Algorithms <span class="count">167</span></a></li>
+                    <li><a href="#"><span class="cat-icon">🏆</span> BuilderHub <span class="count">89</span></a></li>
+                    <li><a href="#"><span class="cat-icon">💼</span> Career Advice <span class="count">76</span></a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>Popular Tags</h3>
+                <div class="tag-cloud">
+                    <span class="tag">python</span>
+                    <span class="tag">javascript</span>
+                    <span class="tag">datastructures</span>
+                    <span class="tag">algorithms</span>
+                    <span class="tag">webdev</span>
+                    <span class="tag">coding</span>
+                    <span class="tag">builderhub</span>
+                    <span class="tag">help</span>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h3>Top Contributors</h3>
+                <ul class="contributor-list">
+                    <li><span class="rank">1</span><span class="avatar-xs">GM</span><strong>Gopal M.</strong><span class="points">12,450 pts</span></li>
+                    <li><span class="rank">2</span><span class="avatar-xs">MH</span><strong>Md Habib M.</strong><span class="points">9,230 pts</span></li>
+                    <li><span class="rank">3</span><span class="avatar-xs">SM</span><strong>Sudeep M.</strong><span class="points">7,890 pts</span></li>
+                    <li><span class="rank">4</span><span class="avatar-xs">PK</span><strong>Priya K.</strong><span class="points">6,540 pts</span></li>
+                    <li><span class="rank">5</span><span class="avatar-xs">AR</span><strong>Arjun R.</strong><span class="points">5,120 pts</span></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="forum-main">
+            <div class="forum-header">
+                <h1>General Discussion</h1>
+                <div class="sort-options">
+                    <button class="sort-btn active">Latest</button>
+                    <button class="sort-btn">Top</button>
+                    <button class="sort-btn">Unanswered</button>
+                </div>
+            </div>
+            <div class="topic-list">
+                <article class="topic pinned">
+                    <div class="topic-status">📌</div>
+                    <div class="topic-content">
+                        <h2><a href="#">Welcome to DevForum! Read the rules first</a></h2>
+                        <p class="topic-excerpt">Please read our community guidelines before posting. Be respectful, stay on topic, and help others learn.</p>
+                        <div class="topic-meta">
+                            <span class="avatar-xs">AD</span>
+                            <span class="author">Admin</span>
+                            <span class="separator">•</span>
+                            <span class="date">Oct 1, 2026</span>
+                            <span class="separator">•</span>
+                            <span class="replies">💬 45 replies</span>
+                            <span class="separator">•</span>
+                            <span class="views">👁️ 2,340 views</span>
+                        </div>
+                    </div>
+                    <div class="topic-stats">
+                        <span class="stat-badge pinned-badge">Pinned</span>
+                    </div>
+                </article>
+                <article class="topic">
+                    <div class="topic-status">✅</div>
+                    <div class="topic-content">
+                        <h2><a href="#">How I reached Rank #16 on BuilderHub in 3 months</a></h2>
+                        <p class="topic-excerpt">Sharing my journey from rank #200 to #16. Consistency, multi-language practice, and HTML/CSS for volume. AMA!</p>
+                        <div class="topic-meta">
+                            <span class="avatar-xs">SM</span>
+                            <span class="author">Sudeep M.</span>
+                            <span class="separator">•</span>
+                            <span class="date">Nov 8, 2026</span>
+                            <span class="separator">•</span>
+                            <span class="replies">💬 67 replies</span>
+                            <span class="separator">•</span>
+                            <span class="views">👁️ 1,234 views</span>
+                        </div>
+                    </div>
+                    <div class="topic-stats">
+                        <span class="stat-badge solved">Solved</span>
+                    </div>
+                </article>
+                <article class="topic hot">
+                    <div class="topic-status">🔥</div>
+                    <div class="topic-content">
+                        <h2><a href="#">Finger Trees vs Wavelet Trees: When to use which?</a></h2>
+                        <p class="topic-excerpt">I've implemented both in JavaScript. Finger trees for sequences, wavelet trees for rank/select queries. Thoughts?</p>
+                        <div class="topic-meta">
+                            <span class="avatar-xs">SM</span>
+                            <span class="author">Sudeep M.</span>
+                            <span class="separator">•</span>
+                            <span class="date">Nov 7, 2026</span>
+                            <span class="separator">•</span>
+                            <span class="replies">💬 34 replies</span>
+                            <span class="separator">•</span>
+                            <span class="views">👁️ 892 views</span>
+                        </div>
+                    </div>
+                    <div class="topic-stats">
+                        <span class="stat-badge hot-badge">Hot</span>
+                    </div>
+                </article>
+                <article class="topic">
+                    <div class="topic-status"></div>
+                    <div class="topic-content">
+                        <h2><a href="#">Best resources for learning data structures in 2026?</a></h2>
+                        <p class="topic-excerpt">Looking for book recommendations, courses, or practice platforms. Already using BuilderHub for daily practice.</p>
+                        <div class="topic-meta">
+                            <span class="avatar-xs">NK</span>
+                            <span class="author">Neha K.</span>
+                            <span class="separator">•</span>
+                            <span class="date">Nov 6, 2026</span>
+                            <span class="separator">•</span>
+                            <span class="replies">💬 28 replies</span>
+                            <span class="separator">•</span>
+                            <span class="views">👁️ 567 views</span>
+                        </div>
+                    </div>
+                    <div class="topic-stats"></div>
+                </article>
+                <article class="topic">
+                    <div class="topic-status">✅</div>
+                    <div class="topic-content">
+                        <h2><a href="#">Does HTML/CSS really count on BuilderHub?</a></h2>
+                        <p class="topic-excerpt">Yes! Confirmed by the platform rules. HTML and CSS lines count just like Python or JavaScript. Great for boosting your total.</p>
+                        <div class="topic-meta">
+                            <span class="avatar-xs">PK</span>
+                            <span class="author">Priya K.</span>
+                            <span class="separator">•</span>
+                            <span class="date">Nov 5, 2026</span>
+                            <span class="separator">•</span>
+                            <span class="replies">💬 19 replies</span>
+                            <span class="separator">•</span>
+                            <span class="views">👁️ 423 views</span>
+                        </div>
+                    </div>
+                    <div class="topic-stats">
+                        <span class="stat-badge solved">Solved</span>
+                    </div>
+                </article>
+                <article class="topic">
+                    <div class="topic-status"></div>
+                    <div class="topic-content">
+                        <h2><a href="#">Building a Virtual Machine from scratch - tips?</a></h2>
+                        <p class="topic-excerpt">I'm building a stack-based VM in JavaScript. Any advice on opcode design, memory management, or assembler syntax?</p>
+                        <div class="topic-meta">
+                            <span class="avatar-xs">AR</span>
+                            <span class="author">Arjun R.</span>
+                            <span class="separator">•</span>
+                            <span class="date">Nov 4, 2026</span>
+                            <span class="separator">•</span>
+                            <span class="replies">💬 15 replies</span>
+                            <span class="separator">•</span>
+                            <span class="views">👁️ 312 views</span>
+                        </div>
+                    </div>
+                    <div class="topic-stats"></div>
+                </article>
+            </div>
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">Next →</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Components - Builder Platform</title>
+    <link rel="stylesheet" href="components.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="page-header">
+            <h1>UI Component Library</h1>
+            <p>Hand-crafted components for practice</p>
+        </header>
+        <main class="page-main">
+            <section class="component-section">
+                <h2 class="section-heading">Buttons</h2>
+                <div class="component-row">
+                    <button class="ui-btn btn-primary">Primary</button>
+                    <button class="ui-btn btn-secondary">Secondary</button>
+                    <button class="ui-btn btn-success">Success</button>
+                    <button class="ui-btn btn-danger">Danger</button>
+                    <button class="ui-btn btn-warning">Warning</button>
+                    <button class="ui-btn btn-info">Info</button>
+                </div>
+            </section>
+            <section class="component-section">
+                <h2 class="section-heading">Cards</h2>
+                <div class="cards-grid">
+                    <article class="ui-card">
+                        <div class="card-header"><h3>Basic Card</h3></div>
+                        <div class="card-body"><p>This is a simple card component with header and body sections.</p></div>
+                        <div class="card-footer"><button class="ui-btn btn-primary btn-sm">Action</button></div>
+                    </article>
+                    <article class="ui-card card-highlight">
+                        <div class="card-header"><h3>Highlighted Card</h3></div>
+                        <div class="card-body"><p>This card has a special border to draw attention.</p></div>
+                        <div class="card-footer"><button class="ui-btn btn-success btn-sm">Try It</button></div>
+                    </article>
+                    <article class="ui-card card-flat">
+                        <div class="card-header"><h3>Flat Card</h3></div>
+                        <div class="card-body"><p>No shadows. Minimalist design for dense layouts.</p></div>
+                    </article>
+                </div>
+            </section>
+            <section class="component-section">
+                <h2 class="section-heading">Form Elements</h2>
+                <form class="demo-form">
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Full Name</label>
+                        <input type="text" id="fullname" class="form-input" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailaddr" class="form-label">Email Address</label>
+                        <input type="email" id="emailaddr" class="form-input" placeholder="you@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="userrole" class="form-label">Role</label>
+                        <select id="userrole" class="form-select">
+                            <option value="">Select a role</option>
+                            <option value="student">Student</option>
+                            <option value="developer">Developer</option>
+                            <option value="designer">Designer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Preferences</label>
+                        <label class="checkbox-label"><input type="checkbox" class="checkbox-input"><span>Email notifications</span></label>
+                        <label class="checkbox-label"><input type="checkbox" class="checkbox-input"><span>Weekly digest</span></label>
+                        <label class="checkbox-label"><input type="checkbox" class="checkbox-input"><span>Product updates</span></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="userbio" class="form-label">Bio</label>
+                        <textarea id="userbio" class="form-textarea" rows="4" placeholder="Tell us about yourself..."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="ui-btn btn-primary">Submit</button>
+                        <button type="reset" class="ui-btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+            </section>
+            <section class="component-section">
+                <h2 class="section-heading">Badges</h2>
+                <div class="component-row">
+                    <span class="badge badge-success">Active</span>
+                    <span class="badge badge-warning">Pending</span>
+                    <span class="badge badge-danger">Inactive</span>
+                    <span class="badge badge-info">Beta</span>
+                    <span class="badge badge-pill badge-primary">Pill Badge</span>
+                </div>
+            </section>
+            <section class="component-section">
+                <h2 class="section-heading">Progress Bars</h2>
+                <div class="progress-bar"><div class="progress-fill" style="width:25%"></div></div>
+                <div class="progress-bar"><div class="progress-fill fill-success" style="width:50%"></div></div>
+                <div class="progress-bar"><div class="progress-fill fill-warning" style="width:75%"></div></div>
+                <div class="progress-bar"><div class="progress-fill fill-danger" style="width:100%"></div></div>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <p>Generated for Builder Platform line counting practice</p>
+        </footer>
+    </div>
+</body>
+</html>

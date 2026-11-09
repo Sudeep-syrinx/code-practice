@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Builder Platform</title>
+    <link rel="stylesheet" href="messaging.css">
+</head>
+<body>
+    <div class="messaging-layout">
+        <aside class="conversations-sidebar">
+            <div class="sidebar-header">
+                <h2>Messages</h2>
+                <button class="btn-new-message">✏️ New</button>
+            </div>
+            <div class="search-conversations">
+                <input type="text" placeholder="Search conversations..." class="search-input">
+            </div>
+            <div class="conversation-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Unread <span class="badge">3</span></button>
+                <button class="filter-btn">Groups</button>
+            </div>
+            <div class="conversation-list">
+                <div class="conversation-item active unread">
+                    <span class="avatar">GM</span>
+                    <div class="conv-info">
+                        <div class="conv-header"><h4>Gopal Maddheshiya</h4><span class="time">2m ago</span></div>
+                        <p class="conv-preview">Congrats on reaching 52K lines! What's your secret? 🎉</p>
+                    </div>
+                    <span class="unread-badge">2</span>
+                </div>
+                <div class="conversation-item unread">
+                    <span class="avatar">PK</span>
+                    <div class="conv-info">
+                        <div class="conv-header"><h4>Priya K.</h4><span class="time">15m ago</span></div>
+                        <p class="conv-preview">Thanks for the HTML/CSS tips! My line count jumped 3x this week!</p>
+                    </div>
+                    <span class="unread-badge">1</span>
+                </div>
+                <div class="conversation-item">
+                    <span class="avatar">AR</span>
+                    <div class="conv-info">
+                        <div class="conv-header"><h4>Arjun R.</h4><span class="time">1h ago</span></div>
+                        <p class="conv-preview">Your VM implementation is awesome. Can I contribute?</p>
+                    </div>
+                </div>
+                <div class="conversation-item">
+                    <span class="avatar group">DS</span>
+                    <div class="conv-info">
+                        <div class="conv-header"><h4>Data Structures Study Group</h4><span class="time">3h ago</span></div>
+                        <p class="conv-preview">Neha: Let's solve finger tree problems together tomorrow!</p>
+                    </div>
+                </div>
+                <div class="conversation-item">
+                    <span class="avatar">MH</span>
+                    <div class="conv-info">
+                        <div class="conv-header"><h4>Md Habib M.</h4><span class="time">Yesterday</span></div>
+                        <p class="conv-preview">See you at the hackathon next week!</p>
+                    </div>
+                </div>
+                <div class="conversation-item">
+                    <span class="avatar">NK</span>
+                    <div class="conv-info">
+                        <div class="conv-header"><h4>Neha K.</h4><span class="time">Yesterday</span></div>
+                        <p class="conv-preview">Shared a link to the wavelet tree article</p>
+                    </div>
+                </div>
+                <div class="conversation-item">
+                    <span class="avatar group">BH</span>
+                    <div class="conv-info">
+                        <div class="conv-header"><h4>BuilderHub Announcements</h4><span class="time">2d ago</span></div>
+                        <p class="conv-preview">New feature: Export your analytics data as CSV!</p>
+                    </div>
+                </div>
+                <div class="conversation-item">
+                    <span class="avatar">RV</span>
+                    <div class="conv-info">
+                        <div class="conv-header"><h4>Rahul V.</h4><span class="time">3d ago</span></div>
+                        <p class="conv-preview">Thanks for the code review feedback!</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="chat-area">
+            <header class="chat-header">
+                <div class="chat-user">
+                    <span class="avatar">GM</span>
+                    <div class="user-details"><h3>Gopal Maddheshiya</h3><p class="status online">● Online • Rank #1 • 188K lines</p></div>
+                </div>
+                <div class="chat-actions">
+                    <button class="icon-btn">📞</button>
+                    <button class="icon-btn">📹</button>
+                    <button class="icon-btn">⋮</button>
+                </div>
+            </header>
+            <div class="messages-container">
+                <div class="message-date-separator"><span>Today</span></div>
+                <div class="message received">
+                    <span class="avatar-sm">GM</span>
+                    <div class="message-content">
+                        <div class="message-bubble">Hey Sudeep! Just saw you hit #16 on the leaderboard. Amazing progress! 🚀</div>
+                        <span class="message-time">10:30 AM</span>
+                    </div>
+                </div>
+                <div class="message sent">
+                    <div class="message-content">
+                        <div class="message-bubble">Thanks Gopal! Your consistency is inspiring. 188K lines is incredible!</div>
+                        <span class="message-time">10:32 AM</span>
+                    </div>
+                    <span class="avatar-sm">SM</span>
+                </div>
+                <div class="message received">
+                    <span class="avatar-sm">GM</span>
+                    <div class="message-content">
+                        <div class="message-bubble">Congrats on reaching 52K lines! What's your secret? 🎉</div>
+                        <span class="message-time">10:35 AM</span>
+                    </div>
+                </div>
+                <div class="message sent">
+                    <div class="message-content">
+                        <div class="message-bubble">Three things: 1) Code every day without fail, 2) Switch between Python, JS, and HTML/CSS for volume, 3) Implement complex data structures — they add lots of lines!</div>
+                        <span class="message-time">10:38 AM</span>
+                    </div>
+                    <span class="avatar-sm">SM</span>
+                </div>
+                <div class="message received">
+                    <span class="avatar-sm">GM</span>
+                    <div class="message-content">
+                        <div class="message-bubble">Smart! I noticed you built a finger tree and wavelet tree recently. Those are advanced. How long did each take?</div>
+                        <span class="message-time">10:40 AM</span>
+                    </div>
+                </div>
+                <div class="message sent">
+                    <div class="message-content">
+                        <div class="message-bubble">Finger tree took about 4 hours (342 lines). Wavelet tree was 3 hours (298 lines). The VM was the biggest — 6 hours for 412 lines with the assembler.</div>
+                        <span class="message-time">10:43 AM</span>
+                    </div>
+                    <span class="avatar-sm">SM</span>
+                </div>
+                <div class="message received">
+                    <span class="avatar-sm">GM</span>
+                    <div class="message-content">
+                        <div class="message-bubble">That's dedication! I'm planning to try HTML/CSS next week for volume. Any template recommendations?</div>
+                        <span class="message-time">10:45 AM</span>
+                    </div>
+                </div>
+                <div class="message sent">
+                    <div class="message-content">
+                        <div class="message-bubble">Check my repo! I have portfolio, ecommerce, blog, dashboard, and social network templates. Each is 300-600 lines. All hand-written, no frameworks — perfect for BuilderHub counting.</div>
+                        <span class="message-time">10:47 AM</span>
+                    </div>
+                    <span class="avatar-sm">SM</span>
+                </div>
+                <div class="message received">
+                    <span class="avatar-sm">GM</span>
+                    <div class="message-content">
+                        <div class="message-bubble">Perfect! I'll check it out tonight. Thanks for sharing! 🙏</div>
+                        <span class="message-time">10:48 AM</span>
+                    </div>
+                </div>
+            </div>
+            <footer class="message-input-area">
+                <button class="attach-btn">📎</button>
+                <input type="text" placeholder="Type a message..." class="message-input">
+                <button class="emoji-btn">😊</button>
+                <button class="send-btn">➤</button>
+            </footer>
+        </main>
+        <aside class="chat-details-sidebar">
+            <div class="details-header">
+                <span class="avatar-lg">GM</span>
+                <h3>Gopal Maddheshiya</h3>
+                <p class="status online">● Online</p>
+            </div>
+            <div class="details-stats">
+                <div class="detail-stat"><span class="stat-label">Global Rank</span><span class="stat-value">#1</span></div>
+                <div class="detail-stat"><span class="stat-label">Total Lines</span><span class="stat-value">188,619</span></div>
+                <div class="detail-stat"><span class="stat-label">Streak</span><span class="stat-value">24 weeks</span></div>
+                <div class="detail-stat"><span class="stat-label">Badges</span><span class="stat-value">15/15</span></div>
+            </div>
+            <div class="shared-files">
+                <h4>Shared Files</h4>
+                <div class="file-list">
+                    <div class="file-item"><span class="file-icon">📄</span><span class="file-name">leaderboard_tips.md</span><span class="file-size">2KB</span></div>
+                    <div class="file-item"><span class="file-icon">📊</span><span class="file-name">weekly_report.csv</span><span class="file-size">15KB</span></div>
+                </div>
+            </div>
+            <div class="common-groups">
+                <h4>Common Groups</h4>
+                <div class="group-list">
+                    <div class="group-item"><span class="avatar-xs group">DS</span><span>Data Structures Study Group</span></div>
+                    <div class="group-item"><span class="avatar-xs group">BH</span><span>BuilderHub Announcements</span></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

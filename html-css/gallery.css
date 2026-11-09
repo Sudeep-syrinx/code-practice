@@ -1,0 +1,35 @@
+﻿/* =============================================
+   GALLERY STYLESHEET
+   ============================================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #334155; background-color: #f8fafc; }
+.container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+.gallery-header { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); color: white; padding: 4rem 0; text-align: center; }
+.gallery-header h1 { font-size: 3rem; margin-bottom: 1rem; }
+.gallery-header p { font-size: 1.25rem; opacity: 0.9; }
+.filter-nav { background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; padding: 1rem 0; }
+.filter-list { display: flex; list-style: none; justify-content: center; gap: 0.75rem; flex-wrap: wrap; }
+.filter-btn { padding: 0.5rem 1.25rem; background-color: #f1f5f9; border: none; border-radius: 999px; cursor: pointer; font-weight: 500; color: #475569; transition: all 0.2s; }
+.filter-btn:hover { background-color: #e2e8f0; }
+.filter-btn.active { background-color: #2563eb; color: white; }
+.gallery-main { padding: 3rem 0; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+.gallery-item { background-color: white; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; }
+.gallery-item:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+.item-image { font-size: 4rem; text-align: center; padding: 2rem; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
+.item-content { padding: 1.5rem; }
+.item-lang { display: inline-block; background-color: #dbeafe; color: #1e40af; padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.75rem; }
+.item-content h3 { font-size: 1.25rem; margin-bottom: 0.75rem; color: #1e293b; }
+.item-content p { color: #475569; font-size: 0.95rem; margin-bottom: 1rem; }
+.item-meta { display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: #64748b; }
+.item-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.tag { background-color: #f1f5f9; color: #475569; padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.75rem; }
+.gallery-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+.stat-box { background-color: white; padding: 1.5rem; border-radius: 0.5rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.stat-number { display: block; font-size: 2rem; font-weight: 800; color: #2563eb; margin-bottom: 0.25rem; }
+.stat-label { color: #64748b; font-size: 0.9rem; }
+.gallery-footer { background-color: #1e293b; color: #cbd5e1; padding: 2rem 0; text-align: center; margin-top: 3rem; }
+@media (max-width: 768px) {
+    .gallery-header h1 { font-size: 2rem; }
+    .filter-list { gap: 0.5rem; }
+}

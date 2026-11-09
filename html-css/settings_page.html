@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Builder Platform</title>
+    <link rel="stylesheet" href="settings_page.css">
+</head>
+<body>
+    <div class="settings-layout">
+        <aside class="settings-sidebar">
+            <div class="brand"><h2>Settings</h2></div>
+            <nav class="settings-nav">
+                <ul>
+                    <li class="active"><a href="#"><span>👤</span> Profile</a></li>
+                    <li><a href="#"><span>🔔</span> Notifications</a></li>
+                    <li><a href="#"><span>🔒</span> Privacy</a></li>
+                    <li><a href="#"><span>🎨</span> Appearance</a></li>
+                    <li><a href="#"><span>🔗</span> Integrations</a></li>
+                    <li><a href="#"><span>💳</span> Billing</a></li>
+                    <li><a href="#"><span>🗑️</span> Danger Zone</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="settings-main">
+            <header class="settings-header">
+                <h1>Profile Settings</h1>
+                <p>Manage your account information and preferences</p>
+            </header>
+            <div class="settings-content">
+                <section class="settings-section">
+                    <h2>Profile Information</h2>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label for="displayName">Display Name</label>
+                            <input type="text" id="displayName" class="form-input" value="Sudeep M.">
+                            <p class="form-help">This is how your name appears on leaderboards and profiles</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" value="sudeep@example.com">
+                            <p class="form-help">Used for notifications and account recovery</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="bio">Bio</label>
+                            <textarea id="bio" class="form-textarea" rows="4">Full-stack developer passionate about data structures and algorithms. Ranked #16 on BuilderHub with 52K+ lines of code.</textarea>
+                            <p class="form-help">Brief description for your profile (max 200 characters)</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="campus">Campus / University</label>
+                            <select id="campus" class="form-select">
+                                <option value="">Select your campus</option>
+                                <option value="srmu" selected>SRMU - Shri Ramswaroop Memorial University</option>
+                                <option value="adtu">ADTU - Assam Don Bosco University</option>
+                                <option value="iit">IIT - Indian Institute of Technology</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <p class="form-help">Your campus determines your leaderboard category</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Profile Photo</label>
+                            <div class="photo-upload">
+                                <div class="current-photo"><span class="avatar-lg">SM</span></div>
+                                <div class="upload-actions">
+                                    <button type="button" class="btn-upload">Upload New Photo</button>
+                                    <button type="button" class="btn-remove">Remove</button>
+                                </div>
+                            </div>
+                            <p class="form-help">JPG, PNG or GIF. Max size 2MB.</p>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                            <button type="reset" class="btn btn-secondary">Cancel</button>
+                        </div>
+                    </form>
+                </section>
+                <section class="settings-section">
+                    <h2>GitHub Integration</h2>
+                    <div class="integration-status connected">
+                        <div class="status-icon">✅</div>
+                        <div class="status-info">
+                            <h3>GitHub Connected</h3>
+                            <p>Connected as <strong>sudeep-syrinx</strong> on Nov 1, 2026</p>
+                        </div>
+                        <button class="btn-disconnect">Disconnect</button>
+                    </div>
+                    <div class="repo-settings">
+                        <h3>Tracked Repositories</h3>
+                        <p class="section-desc">Select which repositories to track for line counting</p>
+                        <div class="repo-list">
+                            <label class="repo-item"><input type="checkbox" checked><span class="repo-name">code-practice</span><span class="repo-lines">48,230 lines</span></label>
+                            <label class="repo-item"><input type="checkbox" checked><span class="repo-name">web-projects</span><span class="repo-lines">3,420 lines</span></label>
+                            <label class="repo-item"><input type="checkbox" checked><span class="repo-name">algorithms</span><span class="repo-lines">890 lines</span></label>
+                            <label class="repo-item"><input type="checkbox"><span class="repo-name">experiments</span><span class="repo-lines">10 lines</span></label>
+                            <label class="repo-item"><input type="checkbox"><span class="repo-name">archive</span><span class="repo-lines">0 lines</span></label>
+                        </div>
+                    </div>
+                </section>
+                <section class="settings-section">
+                    <h2>Notification Preferences</h2>
+                    <div class="notification-settings">
+                        <div class="notification-item">
+                            <div class="notif-info"><h4>Weekly Progress Report</h4><p>Receive a summary of your lines added every Monday</p></div>
+                            <label class="toggle"><input type="checkbox" checked><span class="slider"></span></label>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notif-info"><h4>Rank Changes</h4><p>Get notified when your global or campus rank changes</p></div>
+                            <label class="toggle"><input type="checkbox" checked><span class="slider"></span></label>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notif-info"><h4>Badge Earned</h4><p>Notifications when you earn a new achievement badge</p></div>
+                            <label class="toggle"><input type="checkbox" checked><span class="slider"></span></label>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notif-info"><h4>Streak Warning</h4><p>Alert if you're about to break your coding streak</p></div>
+                            <label class="toggle"><input type="checkbox"><span class="slider"></span></label>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notif-info"><h4>Product Updates</h4><p>New features, improvements, and platform news</p></div>
+                            <label class="toggle"><input type="checkbox"><span class="slider"></span></label>
+                        </div>
+                    </div>
+                </section>
+                <section class="settings-section">
+                    <h2>Privacy Settings</h2>
+                    <div class="privacy-settings">
+                        <div class="privacy-item">
+                            <div class="privacy-info"><h4>Public Profile</h4><p>Allow others to view your profile and statistics</p></div>
+                            <label class="toggle"><input type="checkbox" checked><span class="slider"></span></label>
+                        </div>
+                        <div class="privacy-item">
+                            <div class="privacy-info"><h4>Show on Leaderboard</h4><p>Display your name on global and campus leaderboards</p></div>
+                            <label class="toggle"><input type="checkbox" checked><span class="slider"></span></label>
+                        </div>
+                        <div class="privacy-item">
+                            <div class="privacy-info"><h4>Activity Status</h4><p>Show when you were last active on the platform</p></div>
+                            <label class="toggle"><input type="checkbox"><span class="slider"></span></label>
+                        </div>
+                    </div>
+                </section>
+                <section class="settings-section danger-zone">
+                    <h2>Danger Zone</h2>
+                    <div class="danger-actions">
+                        <div class="danger-item">
+                            <div class="danger-info"><h4>Export Data</h4><p>Download all your data including line counts, badges, and history</p></div>
+                            <button class="btn btn-outline">Export Data</button>
+                        </div>
+                        <div class="danger-item">
+                            <div class="danger-info"><h4>Delete Account</h4><p>Permanently delete your account and all associated data. This cannot be undone.</p></div>
+                            <button class="btn btn-danger">Delete Account</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

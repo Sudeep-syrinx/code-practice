@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Builder Platform</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="brand"><h2>BuilderHub</h2></div>
+            <nav class="sidebar-nav">
+                <ul class="nav-menu">
+                    <li class="nav-item active"><a href="#" class="nav-link"><span class="icon">📊</span><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="icon">👤</span><span>Profile</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="icon">🏆</span><span>Leaderboard</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="icon">📈</span><span>Analytics</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="icon">⚙️</span><span>Settings</span></a></li>
+                </ul>
+            </nav>
+            <div class="user-panel">
+                <div class="avatar">SM</div>
+                <div class="user-info">
+                    <p class="user-name">Sudeep M.</p>
+                    <p class="user-role">Student</p>
+                </div>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Dashboard Overview</h1>
+                <div class="topbar-actions">
+                    <button class="icon-btn">🔔</button>
+                    <button class="btn btn-primary">+ New Project</button>
+                </div>
+            </header>
+            <div class="content-area">
+                <div class="stats-row">
+                    <div class="stat-card"><div class="stat-icon bg-blue">📝</div><div class="stat-info"><h3 class="stat-value">52,550</h3><p class="stat-label">Total Lines</p></div></div>
+                    <div class="stat-card"><div class="stat-icon bg-green">🔥</div><div class="stat-info"><h3 class="stat-value">16</h3><p class="stat-label">Current Rank</p></div></div>
+                    <div class="stat-card"><div class="stat-icon bg-purple">🎯</div><div class="stat-info"><h3 class="stat-value">3</h3><p class="stat-label">Week Streak</p></div></div>
+                    <div class="stat-card"><div class="stat-icon bg-orange">⭐</div><div class="stat-info"><h3 class="stat-value">7</h3><p class="stat-label">Badges Earned</p></div></div>
+                </div>
+                <div class="grid-two">
+                    <div class="card">
+                        <div class="card-header"><h3>Weekly Line Count</h3></div>
+                        <div class="card-body">
+                            <div class="chart-bars">
+                                <div class="bar" style="height:40%"></div>
+                                <div class="bar" style="height:65%"></div>
+                                <div class="bar" style="height:50%"></div>
+                                <div class="bar" style="height:80%"></div>
+                                <div class="bar" style="height:70%"></div>
+                                <div class="bar" style="height:90%"></div>
+                                <div class="bar" style="height:60%"></div>
+                            </div>
+                            <div class="chart-labels"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header"><h3>Language Breakdown</h3></div>
+                        <div class="card-body">
+                            <div class="lang-item"><span class="lang-name">Python</span><div class="lang-bar"><div class="lang-fill" style="width:45%"></div></div><span class="lang-pct">45%</span></div>
+                            <div class="lang-item"><span class="lang-name">JavaScript</span><div class="lang-bar"><div class="lang-fill" style="width:35%"></div></div><span class="lang-pct">35%</span></div>
+                            <div class="lang-item"><span class="lang-name">HTML/CSS</span><div class="lang-bar"><div class="lang-fill" style="width:20%"></div></div><span class="lang-pct">20%</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><h3>Recent Activity</h3></div>
+                    <div class="card-body">
+                        <table class="data-table">
+                            <thead><tr><th>Time</th><th>Repository</th><th>Language</th><th>Lines</th><th>Status</th></tr></thead>
+                            <tbody>
+                                <tr><td>2 hours ago</td><td>code-practice</td><td><span class="tag tag-js">JS</span></td><td>+342</td><td><span class="status status-ok">Counted</span></td></tr>
+                                <tr><td>5 hours ago</td><td>code-practice</td><td><span class="tag tag-py">PY</span></td><td>+128</td><td><span class="status status-ok">Counted</span></td></tr>
+                                <tr><td>1 day ago</td><td>code-practice</td><td><span class="tag tag-html">HTML</span></td><td>+892</td><td><span class="status status-ok">Counted</span></td></tr>
+                                <tr><td>2 days ago</td><td>code-practice</td><td><span class="tag tag-json">JSON</span></td><td>+45</td><td><span class="status status-skip">Ignored</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
