@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Client - MailBox Pro</title>
+    <link rel="stylesheet" href="email_client.css">
+</head>
+<body>
+    <div class="email-app">
+        <aside class="email-sidebar">
+            <div class="compose-section">
+                <button class="compose-btn">
+                    <span class="compose-icon">Plus Icon</span>
+                    <span class="compose-text">Compose</span>
+                </button>
+            </div>
+            <nav class="folder-nav">
+                <ul class="folder-list">
+                    <li class="folder-item active-folder">
+                        <span class="folder-icon">Inbox Icon</span>
+                        <span class="folder-name">Inbox</span>
+                        <span class="folder-count">24</span>
+                    </li>
+                    <li class="folder-item">
+                        <span class="folder-icon">Star Icon</span>
+                        <span class="folder-name">Starred</span>
+                        <span class="folder-count">8</span>
+                    </li>
+                    <li class="folder-item">
+                        <span class="folder-icon">Snooze Icon</span>
+                        <span class="folder-name">Snoozed</span>
+                        <span class="folder-count">3</span>
+                    </li>
+                    <li class="folder-item">
+                        <span class="folder-icon">Sent Icon</span>
+                        <span class="folder-name">Sent</span>
+                    </li>
+                    <li class="folder-item">
+                        <span class="folder-icon">Draft Icon</span>
+                        <span class="folder-name">Drafts</span>
+                        <span class="folder-count">5</span>
+                    </li>
+                    <li class="folder-item">
+                        <span class="folder-icon">Spam Icon</span>
+                        <span class="folder-name">Spam</span>
+                        <span class="folder-count spam-count">12</span>
+                    </li>
+                    <li class="folder-item">
+                        <span class="folder-icon">Trash Icon</span>
+                        <span class="folder-name">Trash</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="labels-section">
+                <div class="labels-header">
+                    <h3 class="labels-title">Labels</h3>
+                    <button class="add-label-btn">Plus Icon</button>
+                </div>
+                <ul class="labels-list">
+                    <li class="label-item"><span class="label-dot" style="background:#ef4444"></span><span class="label-name">Important</span><span class="label-count">6</span></li>
+                    <li class="label-item"><span class="label-dot" style="background:#3b82f6"></span><span class="label-name">Work</span><span class="label-count">15</span></li>
+                    <li class="label-item"><span class="label-dot" style="background:#10b981"></span><span class="label-name">Personal</span><span class="label-count">9</span></li>
+                    <li class="label-item"><span class="label-dot" style="background:#f59e0b"></span><span class="label-name">BuilderHub</span><span class="label-count">4</span></li>
+                    <li class="label-item"><span class="label-dot" style="background:#8b5cf6"></span><span class="label-name">Projects</span><span class="label-count">7</span></li>
+                    <li class="label-item"><span class="label-dot" style="background:#ec4899"></span><span class="label-name">Newsletters</span><span class="label-count">23</span></li>
+                    <li class="label-item"><span class="label-dot" style="background:#06b6d4"></span><span class="label-name">Receipts</span><span class="label-count">11</span></li>
+                </ul>
+            </div>
+            <div class="storage-section">
+                <div class="storage-info">
+                    <span class="storage-label">Storage</span>
+                    <span class="storage-used">6.8 GB of 15 GB</span>
+                </div>
+                <div class="storage-bar">
+                    <div class="storage-fill" style="width:45%"></div>
+                </div>
+                <button class="upgrade-storage-btn">Upgrade Storage</button>
+            </div>
+        </aside>
+        <div class="email-list-panel">
+            <header class="list-header">
+                <div class="list-header-left">
+                    <button class="menu-toggle-btn">Menu Icon</button>
+                    <h2 class="list-title">Inbox</h2>
+                    <span class="list-subtitle">24 unread messages</span>
+                </div>
+                <div class="list-header-right">
+                    <div class="search-email-box">
+                        <input type="text" placeholder="Search all mail..." class="email-search-input">
+                        <button class="search-email-btn">Search Icon</button>
+                    </div>
+                    <button class="refresh-btn">Refresh Icon</button>
+                    <button class="more-options-btn">Three Dots Icon</button>
+                </div>
+            </header>
+            <div class="list-toolbar">
+                <div class="toolbar-left">
+                    <label class="select-all-checkbox"><input type="checkbox"><span class="custom-checkbox"></span></label>
+                    <button class="toolbar-btn" title="Archive">Archive Icon</button>
+                    <button class="toolbar-btn" title="Delete">Delete Icon</button>
+                    <button class="toolbar-btn" title="Mark as read">Mark Read Icon</button>
+                    <button class="toolbar-btn" title="Move to">Move Icon</button>
+                    <button class="toolbar-btn" title="Label">Label Icon</button>
+                </div>
+                <div class="toolbar-right">
+                    <span class="pagination-info">1-50 of 234</span>
+                    <button class="page-btn">Previous Arrow</button>
+                    <button class="page-btn">Next Arrow</button>
+                </div>
+            </div>
+            <div class="email-list">
+                <div class="email-item unread-email">
+                    <div class="email-actions-col">
+                        <label class="email-checkbox"><input type="checkbox"></label>
+                        <button class="star-btn">Star Outline</button>
+                    </div>
+                    <div class="email-content-col">
+                        <div class="email-sender-row">
+                            <span class="sender-name">Gopal Maddheshiya</span>
+                            <span class="email-label-tag" style="background:#dbeafe;color:#1e40af">Work</span>
+                        </div>
+                        <div class="email-subject-row">
+                            <span class="email-subject">Re: BuilderHub Leaderboard Update - Congratulations on Rank #16!</span>
+                        </div>
+                        <div class="email-preview-row">
+                            <span class="email-snippet">Hey Sudeep! Just saw the latest leaderboard update and wanted to congratulate you on reaching rank #16! Your consistency with daily coding practice is truly inspiring. I've been following your progress...</span>
+                            <span class="email-time">10:32 AM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-item unread-email">
+                    <div class="email-actions-col">
+                        <label class="email-checkbox"><input type="checkbox"></label>
+                        <button class="star-btn starred">Star Filled</button>
+                    </div>
+                    <div class="email-content-col">
+                        <div class="email-sender-row">
+                            <span class="sender-name">BuilderHub Team</span>
+                            <span class="email-label-tag" style="background:#dcfce7;color:#166534">BuilderHub</span>
+                        </div>
+                        <div class="email-subject-row">
+                            <span class="email-subject">Weekly Progress Report - You added 2,840 lines this week!</span>
+                        </div>
+                        <div class="email-preview-row">
+                            <span class="email-snippet">Hi Sudeep, Here's your weekly coding summary: Total Lines: 52,550 (+2,840 this week), Current Rank: #16 (up 4 positions), Languages: Python 45%, JavaScript 35%, HTML/CSS 20%. Keep up the amazing work! Your streak is now at 3 weeks...</span>
+                            <span class="email-time">9:15 AM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-item unread-email">
+                    <div class="email-actions-col">
+                        <label class="email-checkbox"><input type="checkbox"></label>
+                        <button class="star-btn">Star Outline</button>
+                    </div>
+                    <div class="email-content-col">
+                        <div class="email-sender-row">
+                            <span class="sender-name">Priya K.</span>
+                            <span class="email-label-tag" style="background:#fef3c7;color:#92400e">Important</span>
+                        </div>
+                        <div class="email-subject-row">
+                            <span class="email-subject">HTML/CSS Templates Review - Need your feedback on the new components</span>
+                        </div>
+                        <div class="email-preview-row">
+                            <span class="email-snippet">Hi Sudeep, I've finished the new set of HTML/CSS templates we discussed. Could you take a look when you get a chance? I particularly need feedback on the responsive breakpoints and the animation timing functions. The portfolio template turned out really well...</span>
+                            <span class="email-time">Yesterday</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-item">
+                    <div class="email-actions-col">
+                        <label class="email-checkbox"><input type="checkbox"></label>
+                        <button class="star-btn">Star Outline</button>
+                    </div>
+                    <div class="email-content-col">
+                        <div class="email-sender-row">
+                            <span class="sender-name">Arjun K.</span>
+                        </div>
+                        <div class="email-subject-row">
+                            <span class="email-subject">Wavelet Tree Implementation - Found a bug in the select operation</span>
+                        </div>
+                        <div class="email-preview-row">
+                            <span class="email-snippet">Hey, I was testing the wavelet tree code you shared and found an edge case bug in the select function when dealing with duplicate values. The occurrence counter isn't being decremented properly when traversing the left subtree. I've attached a patch...</span>
+                            <span class="email-time">Yesterday</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-item unread-email">
+                    <div class="email-actions-col">
+                        <label class="email-checkbox"><input type="checkbox"></label>
+                        <button class="star-btn starred">Star Filled</button>
+                    </div>
+                    <div class="email-content-col">
+                        <div class="email-sender-row">
+                            <span class="sender-name">GitHub</span>
+                            <span class="email-label-tag" style="background:#ede9fe;color:#6b21a8">Projects</span>
+                        </div>
+                        <div class="email-subject-row">
+                            <span class="email-subject">[code-practice] Pull Request #47: Add weather app and quiz platform templates</span>
+                        </div>
+                        <div class="email-preview-row">
+                            <span class="email-snippet">sudeep-syrinx requested your review on pull request #47 in code-practice. Changes include: 6 new HTML files, 6 new CSS files, approximately 3,200 lines of new code. Files changed: weather_app.html, weather_app.css, quiz_platform.html, quiz_platform.css...</span>
+                            <span class="email-time">Nov 7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-item">
+                    <div class="email-actions-col">
+                        <label class="email-checkbox"><input type="checkbox"></label>
+                        <button class="star-btn">Star Outline</button>
+                    </div>
+                    <div class="email-content-col">
+                        <div class="email-sender-row">
+                            <span class="sender-name">Neha K.</span>
+                        </div>
+                        <div class="email-subject-row">
+                            <span class="email-subject">Study Group Meeting - Data Structures Discussion Tomorrow at 4 PM</span>
+                        </div>
+                        <div class="email-preview-row">
+                            <span class="email-snippet">Hi everyone! Reminder that our data structures study group meets tomorrow at 4 PM in the virtual room. We'll be discussing finger trees, B-trees, and skip lists. Please review the material I shared last week. Looking forward to seeing everyone there...</span>
+                            <span class="email-time">Nov 7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-item">
+                    <div class="email-actions-col">
+                        <label class="email-checkbox"><input type="checkbox"></label>
+                        <button class="star-btn">Star Outline</button>
+                    </div>
+                    <div class="email-content-col">
+                        <div class="email-sender-row">
+                            <span class="sender-name">DevNewsletter</span>
+                            <span class="email-label-tag" style="background:#fce7f3;color:#be185d">Newsletters</span>
+                        </div>
+                        <div class="email-subject-row">
+                            <span class="email-subject">This Week in Dev: Top 10 Data Structure Articles and Coding Tips</span>
+                        </div>
+                        <div class="email-preview-row">
+                            <span class="email-snippet">Welcome to this week's edition of DevNewsletter! Featured articles: 1) Understanding Finger Trees from Scratch, 2) Wavelet Trees in Production Systems, 3) Building a VM in JavaScript, 4) Why Daily Coding Practice Matters, 5) HTML/CSS Line Counting Guide...</span>
+                            <span class="email-time">Nov 6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-item">
+                    <div class="email-actions-col">
+                        <label class="email-checkbox"><input type="checkbox"></label>
+                        <button class="star-btn">Star Outline</button>
+                    </div>
+                    <div class="email-content-col">
+                        <div class="email-sender-row">
+                            <span class="sender-name">Md Habib M.</span>
+                        </div>
+                        <div class="email-subject-row">
+                            <span class="email-subject">Collaboration Opportunity - Open Source Algorithm Library Project</span>
+                        </div>
+                        <div class="email-preview-row">
+                            <span class="email-snippet">Hi Sudeep, I'm starting an open source project to build a comprehensive algorithm library with implementations in multiple languages. Given your expertise with data structures and your impressive BuilderHub ranking, I'd love to have you on board as a contributor...</span>
+                            <span class="email-time">Nov 5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="email-reader-panel">
+            <div class="reader-empty-state">
+                <div class="empty-icon">Mail Icon Large</div>
+                <h3>Select a message to read</h3>
+                <p>Choose an email from the list to view its contents here</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

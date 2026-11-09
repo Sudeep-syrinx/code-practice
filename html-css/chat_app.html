@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App - DevChat Messenger</title>
+    <link rel="stylesheet" href="chat_app.css">
+</head>
+<body>
+    <div class="chat-app-container">
+        <aside class="channels-sidebar">
+            <div class="workspace-header">
+                <h2 class="workspace-title">BuilderHub Team</h2>
+                <button class="workspace-menu">Menu Icon</button>
+            </div>
+            <div class="sidebar-section">
+                <div class="section-header-row">
+                    <h3 class="section-label">Channels</h3>
+                    <button class="add-channel-btn">Plus Icon</button>
+                </div>
+                <ul class="channel-list">
+                    <li class="channel-item active-channel"><span class="channel-hash">#</span><span class="channel-name">general</span><span class="unread-indicator"></span></li>
+                    <li class="channel-item"><span class="channel-hash">#</span><span class="channel-name">announcements</span></li>
+                    <li class="channel-item"><span class="channel-hash">#</span><span class="channel-name">frontend-dev</span><span class="unread-count">5</span></li>
+                    <li class="channel-item"><span class="channel-hash">#</span><span class="channel-name">backend-dev</span></li>
+                    <li class="channel-item"><span class="channel-hash">#</span><span class="channel-name">data-structures</span><span class="unread-count">12</span></li>
+                    <li class="channel-item"><span class="channel-hash">#</span><span class="channel-name">algorithms</span></li>
+                    <li class="channel-item"><span class="channel-hash">#</span><span class="channel-name">html-css-help</span><span class="unread-count">3</span></li>
+                    <li class="channel-item"><span class="channel-hash">#</span><span class="channel-name">python-corner</span></li>
+                    <li class="channel-item"><span class="channel-hash">#</span><span class="channel-name">javascript-hub</span></li>
+                    <li class="channel-item"><span class="channel-hash">#</span><span class="channel-name">leaderboard-talk</span></li>
+                    <li class="channel-item"><span class="channel-hash">#</span><span class="channel-name">random</span><span class="unread-count">8</span></li>
+                    <li class="channel-item"><span class="channel-hash">#</span><span class="channel-name">introductions</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <div class="section-header-row">
+                    <h3 class="section-label">Direct Messages</h3>
+                    <button class="add-channel-btn">Plus Icon</button>
+                </div>
+                <ul class="dm-list">
+                    <li class="dm-item online"><span class="dm-avatar" style="background:#3b82f6">GM</span><span class="dm-name">Gopal M.</span><span class="status-dot-online"></span></li>
+                    <li class="dm-item online"><span class="dm-avatar" style="background:#10b981">PK</span><span class="dm-name">Priya K.</span><span class="status-dot-online"></span></li>
+                    <li class="dm-item away"><span class="dm-avatar" style="background:#f59e0b">AK</span><span class="dm-name">Arjun K.</span><span class="status-dot-away"></span></li>
+                    <li class="dm-item offline"><span class="dm-avatar" style="background:#8b5cf6">NK</span><span class="dm-name">Neha K.</span><span class="status-dot-offline"></span></li>
+                    <li class="dm-item online"><span class="dm-avatar" style="background:#ec4899">RV</span><span class="dm-name">Rahul V.</span><span class="status-dot-online"></span></li>
+                    <li class="dm-item offline"><span class="dm-avatar" style="background:#06b6d4">MH</span><span class="dm-name">Md Habib M.</span><span class="status-dot-offline"></span></li>
+                </ul>
+            </div>
+            <div class="user-panel-chat">
+                <span class="user-avatar-chat" style="background:#3b82f6">SM</span>
+                <div class="user-info-chat">
+                    <span class="user-name-chat">Sudeep M.</span>
+                    <span class="user-status-chat">Online</span>
+                </div>
+                <div class="user-controls">
+                    <button class="control-btn">Mic Icon</button>
+                    <button class="control-btn">Headphone Icon</button>
+                    <button class="control-btn">Settings Icon</button>
+                </div>
+            </div>
+        </aside>
+        <main class="chat-main-area">
+            <header class="chat-header-bar">
+                <div class="chat-header-info">
+                    <span class="chat-channel-hash">#</span>
+                    <h2 class="chat-channel-name">general</h2>
+                    <span class="chat-divider">|</span>
+                    <p class="chat-channel-desc">General discussion for the BuilderHub development team. Share updates, ask questions, and collaborate.</p>
+                </div>
+                <div class="chat-header-actions">
+                    <button class="header-action-btn">Pin Icon</button>
+                    <button class="header-action-btn">Members Icon</button>
+                    <button class="header-action-btn">Search Icon</button>
+                    <button class="header-action-btn">Inbox Icon</button>
+                </div>
+            </header>
+            <div class="messages-area">
+                <div class="date-divider"><span>November 9, 2026</span></div>
+                <div class="message-group">
+                    <span class="msg-avatar" style="background:#10b981">PK</span>
+                    <div class="msg-content">
+                        <div class="msg-header"><span class="msg-author">Priya K.</span><span class="msg-timestamp">9:15 AM</span></div>
+                        <p class="msg-text">Good morning team! Just pushed the new HTML/CSS templates to the repo. Added about 2,500 lines across 6 new files. BuilderHub should pick them up in the next weekly count!</p>
+                        <div class="msg-reactions">
+                            <span class="reaction"><span class="reaction-emoji">Fire Emoji</span><span class="reaction-count">4</span></span>
+                            <span class="reaction"><span class="reaction-emoji">Rocket Emoji</span><span class="reaction-count">2</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-group">
+                    <span class="msg-avatar" style="background:#3b82f6">GM</span>
+                    <div class="msg-content">
+                        <div class="msg-header"><span class="msg-author">Gopal M.</span><span class="msg-timestamp">9:23 AM</span></div>
+                        <p class="msg-text">Nice work Priya! That's a solid boost. I've been focusing on Python algorithms this week. Added a new graph traversal implementation yesterday - about 180 lines.</p>
+                    </div>
+                </div>
+                <div class="message-group">
+                    <span class="msg-avatar" style="background:#f59e0b">AK</span>
+                    <div class="msg-content">
+                        <div class="msg-header"><span class="msg-author">Arjun K.</span><span class="msg-timestamp">9:45 AM</span></div>
+                        <p class="msg-text">Has anyone tried the new wavelet tree implementation? I'm getting a segfault on the select operation when the array has duplicate values. Might be an edge case in the bit calculation.</p>
+                        <div class="msg-code-block">
+                            <div class="code-header"><span>javascript</span><button class="copy-code-btn">Copy</button></div>
+                            <pre><code>function select(node, occurrence, value, depth) {
+  if (!node) return -1;
+  const bit = this.bits - 1 - depth;
+  const valueBit = (value >> bit) & 1;
+  // Bug might be here with duplicates
+  if (valueBit === 0) {
+    const newPos = this._select(node.left, occurrence, value, depth + 1);
+    return newPos;
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-group">
+                    <span class="msg-avatar" style="background:#3b82f6">SM</span>
+                    <div class="msg-content">
+                        <div class="msg-header"><span class="msg-author">Sudeep M.</span><span class="msg-timestamp">10:02 AM</span></div>
+                        <p class="msg-text">Hey Arjun! I think I see the issue. When you have duplicates, the occurrence counter needs to track which instance you're looking for. Try passing the occurrence parameter down recursively and decrementing it when you find matches in the left subtree.</p>
+                        <p class="msg-text">I had the same bug last week. Here's the fix I used - let me know if it works for you too!</p>
+                        <div class="msg-reactions">
+                            <span class="reaction"><span class="reaction-emoji">Thumbs Up Emoji</span><span class="reaction-count">3</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-group">
+                    <span class="msg-avatar" style="background:#f59e0b">AK</span>
+                    <div class="msg-content">
+                        <div class="msg-header"><span class="msg-author">Arjun K.</span><span class="msg-timestamp">10:15 AM</span></div>
+                        <p class="msg-text">That fixed it! Thanks Sudeep. The occurrence tracking was exactly what was missing. Pushed the fix - added about 45 lines including tests. You saved me hours of debugging!</p>
+                        <div class="msg-reactions">
+                            <span class="reaction"><span class="reaction-emoji">Heart Emoji</span><span class="reaction-count">2</span></span>
+                            <span class="reaction"><span class="reaction-emoji">Celebration Emoji</span><span class="reaction-count">5</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-group">
+                    <span class="msg-avatar" style="background:#8b5cf6">NK</span>
+                    <div class="msg-content">
+                        <div class="msg-header"><span class="msg-author">Neha K.</span><span class="msg-timestamp">10:30 AM</span></div>
+                        <p class="msg-text">Quick question - does BuilderHub count Jupyter notebook code cells? I've been doing my Python practice in notebooks and want to make sure those lines are being tracked properly.</p>
+                    </div>
+                </div>
+                <div class="message-group">
+                    <span class="msg-avatar" style="background:#3b82f6">SM</span>
+                    <div class="msg-content">
+                        <div class="msg-header"><span class="msg-author">Sudeep M.</span><span class="msg-timestamp">10:35 AM</span></div>
+                        <p class="msg-text">Yes! According to the platform rules, code cells in Jupyter notebooks definitely count. Just make sure the notebook is in a public repo and pushed to the main branch. The markdown cells don't count though - only the actual code cells.</p>
+                        <div class="msg-reactions">
+                            <span class="reaction"><span class="reaction-emoji">Thumbs Up Emoji</span><span class="reaction-count">4</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-group">
+                    <span class="msg-avatar" style="background:#ec4899">RV</span>
+                    <div class="msg-content">
+                        <div class="msg-header"><span class="msg-author">Rahul V.</span><span class="msg-timestamp">11:00 AM</span></div>
+                        <p class="msg-text">Team update: Sprint 14 is going well. We've completed 6 tasks, have 4 in progress, and 5 in the todo column. The analytics dashboard feature is at 65% completion. Great work everyone!</p>
+                        <div class="msg-attachment">
+                            <div class="attachment-preview">
+                                <span class="attachment-icon">Chart Icon</span>
+                                <div class="attachment-info">
+                                    <span class="attachment-name">sprint-14-progress.png</span>
+                                    <span class="attachment-size">245 KB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="message-input-area">
+                <div class="input-toolbar">
+                    <button class="toolbar-btn">Bold Icon</button>
+                    <button class="toolbar-btn">Italic Icon</button>
+                    <button class="toolbar-btn">Link Icon</button>
+                    <button class="toolbar-btn">List Icon</button>
+                    <button class="toolbar-btn">Code Icon</button>
+                </div>
+                <div class="input-wrapper">
+                    <button class="attach-btn-input">Plus Icon</button>
+                    <textarea class="message-textarea" placeholder="Message #general" rows="1"></textarea>
+                    <div class="input-actions">
+                        <button class="emoji-btn-input">Emoji Icon</button>
+                        <button class="gif-btn-input">GIF Icon</button>
+                        <button class="send-btn-input">Send Icon</button>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <aside class="members-sidebar">
+            <div class="members-header">
+                <h3>Members - 6</h3>
+                <button class="members-search-btn">Search Icon</button>
+            </div>
+            <div class="members-section">
+                <h4 class="members-section-title">Online - 4</h4>
+                <div class="member-item-chat">
+                    <span class="member-avatar-chat" style="background:#3b82f6">SM</span>
+                    <div class="member-info-chat"><span class="member-name-chat">Sudeep M.</span><span class="member-role-chat">Admin</span></div>
+                </div>
+                <div class="member-item-chat">
+                    <span class="member-avatar-chat" style="background:#3b82f6">GM</span>
+                    <div class="member-info-chat"><span class="member-name-chat">Gopal M.</span><span class="member-role-chat">Rank #1</span></div>
+                </div>
+                <div class="member-item-chat">
+                    <span class="member-avatar-chat" style="background:#10b981">PK</span>
+                    <div class="member-info-chat"><span class="member-name-chat">Priya K.</span><span class="member-role-chat">Frontend Lead</span></div>
+                </div>
+                <div class="member-item-chat">
+                    <span class="member-avatar-chat" style="background:#ec4899">RV</span>
+                    <div class="member-info-chat"><span class="member-name-chat">Rahul V.</span><span class="member-role-chat">Project Manager</span></div>
+                </div>
+            </div>
+            <div class="members-section">
+                <h4 class="members-section-title">Away - 1</h4>
+                <div class="member-item-chat away-member">
+                    <span class="member-avatar-chat" style="background:#f59e0b">AK</span>
+                    <div class="member-info-chat"><span class="member-name-chat">Arjun K.</span><span class="member-role-chat">Backend Dev</span></div>
+                </div>
+            </div>
+            <div class="members-section">
+                <h4 class="members-section-title">Offline - 2</h4>
+                <div class="member-item-chat offline-member">
+                    <span class="member-avatar-chat" style="background:#8b5cf6">NK</span>
+                    <div class="member-info-chat"><span class="member-name-chat">Neha K.</span><span class="member-role-chat">DSA Expert</span></div>
+                </div>
+                <div class="member-item-chat offline-member">
+                    <span class="member-avatar-chat" style="background:#06b6d4">MH</span>
+                    <div class="member-info-chat"><span class="member-name-chat">Md Habib M.</span><span class="member-role-chat">Rank #4</span></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

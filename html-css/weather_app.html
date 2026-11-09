@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - SkyCast Pro</title>
+    <link rel="stylesheet" href="weather_app.css">
+</head>
+<body>
+    <div class="weather-app">
+        <aside class="weather-sidebar">
+            <div class="sidebar-header">
+                <h1 class="app-title">SkyCast</h1>
+                <p class="app-subtitle">Weather Forecast</p>
+            </div>
+            <div class="search-section">
+                <div class="search-box">
+                    <input type="text" placeholder="Search city..." class="city-search-input">
+                    <button class="search-btn">Search Icon</button>
+                </div>
+                <button class="location-btn">Use My Location</button>
+            </div>
+            <div class="saved-cities">
+                <h3 class="section-label">Saved Cities</h3>
+                <ul class="cities-list">
+                    <li class="city-item active-city">
+                        <div class="city-info">
+                            <span class="city-name">Bangalore</span>
+                            <span class="city-country">India</span>
+                        </div>
+                        <div class="city-temp-preview">
+                            <span class="temp-value">27°</span>
+                            <span class="weather-icon-small">Sunny Icon</span>
+                        </div>
+                    </li>
+                    <li class="city-item">
+                        <div class="city-info">
+                            <span class="city-name">Mumbai</span>
+                            <span class="city-country">India</span>
+                        </div>
+                        <div class="city-temp-preview">
+                            <span class="temp-value">32°</span>
+                            <span class="weather-icon-small">Cloudy Icon</span>
+                        </div>
+                    </li>
+                    <li class="city-item">
+                        <div class="city-info">
+                            <span class="city-name">New Delhi</span>
+                            <span class="city-country">India</span>
+                        </div>
+                        <div class="city-temp-preview">
+                            <span class="temp-value">24°</span>
+                            <span class="weather-icon-small">Hazy Icon</span>
+                        </div>
+                    </li>
+                    <li class="city-item">
+                        <div class="city-info">
+                            <span class="city-name">Tokyo</span>
+                            <span class="city-country">Japan</span>
+                        </div>
+                        <div class="city-temp-preview">
+                            <span class="temp-value">18°</span>
+                            <span class="weather-icon-small">Rainy Icon</span>
+                        </div>
+                    </li>
+                    <li class="city-item">
+                        <div class="city-info">
+                            <span class="city-name">London</span>
+                            <span class="city-country">United Kingdom</span>
+                        </div>
+                        <div class="city-temp-preview">
+                            <span class="temp-value">12°</span>
+                            <span class="weather-icon-small">Cloudy Icon</span>
+                        </div>
+                    </li>
+                    <li class="city-item">
+                        <div class="city-info">
+                            <span class="city-name">New York</span>
+                            <span class="city-country">United States</span>
+                        </div>
+                        <div class="city-temp-preview">
+                            <span class="temp-value">15°</span>
+                            <span class="weather-icon-small">Partly Cloudy</span>
+                        </div>
+                    </li>
+                    <li class="city-item">
+                        <div class="city-info">
+                            <span class="city-name">Sydney</span>
+                            <span class="city-country">Australia</span>
+                        </div>
+                        <div class="city-temp-preview">
+                            <span class="temp-value">22°</span>
+                            <span class="weather-icon-small">Sunny Icon</span>
+                        </div>
+                    </li>
+                    <li class="city-item">
+                        <div class="city-info">
+                            <span class="city-name">Dubai</span>
+                            <span class="city-country">UAE</span>
+                        </div>
+                        <div class="city-temp-preview">
+                            <span class="temp-value">38°</span>
+                            <span class="weather-icon-small">Hot Sunny</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <div class="unit-toggle">
+                    <button class="unit-btn active-unit">°C</button>
+                    <button class="unit-btn">°F</button>
+                </div>
+                <button class="settings-btn">Settings Icon</button>
+            </div>
+        </aside>
+        <main class="weather-main">
+            <div class="current-weather-hero">
+                <div class="weather-bg-animation"></div>
+                <div class="current-weather-content">
+                    <div class="location-info">
+                        <h2 class="current-city">Bangalore, India</h2>
+                        <p class="current-date-time">Saturday, November 9, 2026 • 2:30 PM IST</p>
+                    </div>
+                    <div class="main-weather-display">
+                        <div class="temperature-section">
+                            <span class="main-temp">27°</span>
+                            <span class="temp-unit">Celsius</span>
+                        </div>
+                        <div class="weather-condition">
+                            <div class="condition-icon-large">Partly Cloudy Icon</div>
+                            <p class="condition-text">Partly Cloudy</p>
+                            <p class="feels-like">Feels like 29°</p>
+                        </div>
+                    </div>
+                    <div class="quick-stats">
+                        <div class="quick-stat">
+                            <span class="stat-icon-w">Humidity Icon</span>
+                            <div class="stat-detail"><span class="stat-val">68%</span><span class="stat-lbl">Humidity</span></div>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="stat-icon-w">Wind Icon</span>
+                            <div class="stat-detail"><span class="stat-val">12 km/h</span><span class="stat-lbl">Wind Speed</span></div>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="stat-icon-w">UV Icon</span>
+                            <div class="stat-detail"><span class="stat-val">6</span><span class="stat-lbl">UV Index</span></div>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="stat-icon-w">Visibility Icon</span>
+                            <div class="stat-detail"><span class="stat-val">10 km</span><span class="stat-lbl">Visibility</span></div>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="stat-icon-w">Pressure Icon</span>
+                            <div class="stat-detail"><span class="stat-val">1013 hPa</span><span class="stat-lbl">Pressure</span></div>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="stat-icon-w">Sunrise Icon</span>
+                            <div class="stat-detail"><span class="stat-val">6:24 AM</span><span class="stat-lbl">Sunrise</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="hourly-forecast">
+                <h3 class="forecast-section-title">Hourly Forecast</h3>
+                <div class="hourly-scroll">
+                    <div class="hour-item now-hour"><span class="hour-time">Now</span><span class="hour-icon">Cloud Sun</span><span class="hour-temp">27°</span><span class="hour-rain">10%</span></div>
+                    <div class="hour-item"><span class="hour-time">3 PM</span><span class="hour-icon">Cloud Sun</span><span class="hour-temp">28°</span><span class="hour-rain">15%</span></div>
+                    <div class="hour-item"><span class="hour-time">4 PM</span><span class="hour-icon">Cloudy</span><span class="hour-temp">27°</span><span class="hour-rain">20%</span></div>
+                    <div class="hour-item"><span class="hour-time">5 PM</span><span class="hour-icon">Cloudy</span><span class="hour-temp">26°</span><span class="hour-rain">25%</span></div>
+                    <div class="hour-item"><span class="hour-time">6 PM</span><span class="hour-icon">Rain Cloud</span><span class="hour-temp">25°</span><span class="hour-rain">40%</span></div>
+                    <div class="hour-item"><span class="hour-time">7 PM</span><span class="hour-icon">Rain Cloud</span><span class="hour-temp">24°</span><span class="hour-rain">55%</span></div>
+                    <div class="hour-item"><span class="hour-time">8 PM</span><span class="hour-icon">Night Rain</span><span class="hour-temp">23°</span><span class="hour-rain">60%</span></div>
+                    <div class="hour-item"><span class="hour-time">9 PM</span><span class="hour-icon">Night Cloud</span><span class="hour-temp">22°</span><span class="hour-rain">35%</span></div>
+                    <div class="hour-item"><span class="hour-time">10 PM</span><span class="hour-icon">Night Clear</span><span class="hour-temp">21°</span><span class="hour-rain">10%</span></div>
+                    <div class="hour-item"><span class="hour-time">11 PM</span><span class="hour-icon">Night Clear</span><span class="hour-temp">21°</span><span class="hour-rain">5%</span></div>
+                    <div class="hour-item"><span class="hour-time">12 AM</span><span class="hour-icon">Night Clear</span><span class="hour-temp">20°</span><span class="hour-rain">5%</span></div>
+                    <div class="hour-item"><span class="hour-time">1 AM</span><span class="hour-icon">Night Clear</span><span class="hour-temp">20°</span><span class="hour-rain">5%</span></div>
+                </div>
+            </section>
+            <section class="daily-forecast">
+                <h3 class="forecast-section-title">7-Day Forecast</h3>
+                <div class="daily-list">
+                    <div class="day-item today-item"><span class="day-name">Today</span><span class="day-icon">Cloud Sun</span><span class="day-desc">Partly Cloudy</span><div class="temp-range"><span class="temp-bar" style="left:20%;width:40%"></span></div><span class="day-low">20°</span><span class="day-high">28°</span><span class="day-rain">40%</span></div>
+                    <div class="day-item"><span class="day-name">Sunday</span><span class="day-icon">Rain Cloud</span><span class="day-desc">Light Rain</span><div class="temp-range"><span class="temp-bar" style="left:15%;width:35%"></span></div><span class="day-low">19°</span><span class="day-high">25°</span><span class="day-rain">70%</span></div>
+                    <div class="day-item"><span class="day-name">Monday</span><span class="day-icon">Thunderstorm</span><span class="day-desc">Thunderstorm</span><div class="temp-range"><span class="temp-bar" style="left:10%;width:30%"></span></div><span class="day-low">18°</span><span class="day-high">23°</span><span class="day-rain">85%</span></div>
+                    <div class="day-item"><span class="day-name">Tuesday</span><span class="day-icon">Cloudy</span><span class="day-desc">Overcast</span><div class="temp-range"><span class="temp-bar" style="left:15%;width:35%"></span></div><span class="day-low">19°</span><span class="day-high">26°</span><span class="day-rain">30%</span></div>
+                    <div class="day-item"><span class="day-name">Wednesday</span><span class="day-icon">Sunny</span><span class="day-desc">Clear Sky</span><div class="temp-range"><span class="temp-bar" style="left:20%;width:45%"></span></div><span class="day-low">20°</span><span class="day-high">30°</span><span class="day-rain">5%</span></div>
+                    <div class="day-item"><span class="day-name">Thursday</span><span class="day-icon">Sunny</span><span class="day-desc">Sunny</span><div class="temp-range"><span class="temp-bar" style="left:25%;width:45%"></span></div><span class="day-low">21°</span><span class="day-high">31°</span><span class="day-rain">5%</span></div>
+                    <div class="day-item"><span class="day-name">Friday</span><span class="day-icon">Cloud Sun</span><span class="day-desc">Partly Cloudy</span><div class="temp-range"><span class="temp-bar" style="left:20%;width:40%"></span></div><span class="day-low">20°</span><span class="day-high">29°</span><span class="day-rain">20%</span></div>
+                </div>
+            </section>
+            <section class="weather-details-grid">
+                <div class="detail-card">
+                    <h4 class="detail-title">Wind Details</h4>
+                    <div class="wind-visual">
+                        <div class="compass-ring"><span class="compass-arrow" style="transform:rotate(225deg)">Arrow</span></div>
+                    </div>
+                    <div class="detail-stats">
+                        <div class="detail-stat"><span class="ds-label">Speed</span><span class="ds-value">12 km/h</span></div>
+                        <div class="detail-stat"><span class="ds-label">Gusts</span><span class="ds-value">18 km/h</span></div>
+                        <div class="detail-stat"><span class="ds-label">Direction</span><span class="ds-value">SW 225°</span></div>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <h4 class="detail-title">Sun & Moon</h4>
+                    <div class="sun-arc-visual"><div class="sun-path"><span class="sun-position">Sun Dot</span></div></div>
+                    <div class="detail-stats">
+                        <div class="detail-stat"><span class="ds-label">Sunrise</span><span class="ds-value">6:24 AM</span></div>
+                        <div class="detail-stat"><span class="ds-label">Sunset</span><span class="ds-value">5:52 PM</span></div>
+                        <div class="detail-stat"><span class="ds-label">Day Length</span><span class="ds-value">11h 28m</span></div>
+                        <div class="detail-stat"><span class="ds-label">Moon Phase</span><span class="ds-value">Waning Crescent</span></div>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <h4 class="detail-title">Air Quality</h4>
+                    <div class="aqi-gauge"><div class="aqi-fill" style="width:45%"></div><span class="aqi-value">AQI 72</span></div>
+                    <p class="aqi-label">Moderate</p>
+                    <div class="detail-stats">
+                        <div class="detail-stat"><span class="ds-label">PM2.5</span><span class="ds-value">28 µg/m³</span></div>
+                        <div class="detail-stat"><span class="ds-label">PM10</span><span class="ds-value">45 µg/m³</span></div>
+                        <div class="detail-stat"><span class="ds-label">O₃</span><span class="ds-value">32 ppb</span></div>
+                        <div class="detail-stat"><span class="ds-label">NO₂</span><span class="ds-value">18 ppb</span></div>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <h4 class="detail-title">Precipitation</h4>
+                    <div class="precip-chart">
+                        <div class="precip-bar" style="height:10%"></div>
+                        <div class="precip-bar" style="height:15%"></div>
+                        <div class="precip-bar" style="height:20%"></div>
+                        <div class="precip-bar" style="height:25%"></div>
+                        <div class="precip-bar" style="height:40%"></div>
+                        <div class="precip-bar" style="height:55%"></div>
+                        <div class="precip-bar" style="height:60%"></div>
+                        <div class="precip-bar" style="height:35%"></div>
+                        <div class="precip-bar" style="height:10%"></div>
+                        <div class="precip-bar" style="height:5%"></div>
+                        <div class="precip-bar" style="height:5%"></div>
+                        <div class="precip-bar" style="height:5%"></div>
+                    </div>
+                    <div class="detail-stats">
+                        <div class="detail-stat"><span class="ds-label">Chance of Rain</span><span class="ds-value">40%</span></div>
+                        <div class="detail-stat"><span class="ds-label">Expected</span><span class="ds-value">2.4 mm</span></div>
+                        <div class="detail-stat"><span class="ds-label">Type</span><span class="ds-value">Light Rain</span></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

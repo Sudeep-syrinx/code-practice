@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker - Build Your Best Self</title>
+    <link rel="stylesheet" href="fitness_tracker.css">
+</head>
+<body>
+    <nav class="fitness-navbar">
+        <div class="container">
+            <a href="#" class="fitness-logo">FitTrack</a>
+            <ul class="fitness-nav">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Workouts</a></li>
+                <li><a href="#">Nutrition</a></li>
+                <li><a href="#">Progress</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+            <div class="fitness-user">
+                <span class="streak-badge">3 Day Streak</span>
+                <span class="user-avatar">SM</span>
+            </div>
+        </div>
+    </nav>
+    <main class="fitness-main">
+        <div class="container">
+            <div class="fitness-layout">
+                <div class="fitness-content">
+                    <div class="stats-row">
+                        <div class="stat-card calories">
+                            <div class="stat-icon">CAL</div>
+                            <div class="stat-info">
+                                <h3>1,847</h3>
+                                <p>Calories Burned Today</p>
+                                <span class="stat-goal">Goal: 2,200 cal</span>
+                            </div>
+                        </div>
+                        <div class="stat-card steps">
+                            <div class="stat-icon">STP</div>
+                            <div class="stat-info">
+                                <h3>8,432</h3>
+                                <p>Steps Taken Today</p>
+                                <span class="stat-goal">Goal: 10,000 steps</span>
+                            </div>
+                        </div>
+                        <div class="stat-card workouts">
+                            <div class="stat-icon">ACT</div>
+                            <div class="stat-info">
+                                <h3>47</h3>
+                                <p>Minutes Active Today</p>
+                                <span class="stat-goal">Goal: 60 minutes</span>
+                            </div>
+                        </div>
+                        <div class="stat-card water">
+                            <div class="stat-icon">H2O</div>
+                            <div class="stat-info">
+                                <h3>6</h3>
+                                <p>Glasses of Water</p>
+                                <span class="stat-goal">Goal: 8 glasses</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workout-section">
+                        <div class="section-header">
+                            <h2>Today Workout Plan</h2>
+                            <a href="#" class="view-all-link">View All Workouts</a>
+                        </div>
+                        <div class="workout-list">
+                            <div class="workout-item completed">
+                                <div class="workout-check">Done</div>
+                                <div class="workout-details">
+                                    <h3>Morning Run Session</h3>
+                                    <p>5.2 km completed in 28 minutes total time</p>
+                                </div>
+                                <div class="workout-calories">-320 cal</div>
+                            </div>
+                            <div class="workout-item completed">
+                                <div class="workout-check">Done</div>
+                                <div class="workout-details">
+                                    <h3>Upper Body Strength Training</h3>
+                                    <p>45 minutes covering chest shoulders and arms muscles</p>
+                                </div>
+                                <div class="workout-calories">-280 cal</div>
+                            </div>
+                            <div class="workout-item active-workout">
+                                <div class="workout-check">Now</div>
+                                <div class="workout-details">
+                                    <h3>Core and Abs Workout</h3>
+                                    <p>In progress right now - 12 minutes elapsed so far today</p>
+                                </div>
+                                <div class="workout-calories">-95 cal</div>
+                            </div>
+                            <div class="workout-item">
+                                <div class="workout-check">Next</div>
+                                <div class="workout-details">
+                                    <h3>Evening Stretch Routine</h3>
+                                    <p>Scheduled for 7:00 PM tonight - 20 minutes duration planned</p>
+                                </div>
+                                <div class="workout-calories">-80 cal</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weekly-chart-section">
+                        <div class="section-header">
+                            <h2>Weekly Activity Overview</h2>
+                            <span class="chart-period">Nov 3 to Nov 9, 2026</span>
+                        </div>
+                        <div class="bar-chart">
+                            <div class="chart-bar-group"><div class="chart-bar" style="height:60%"></div><span>Mon</span></div>
+                            <div class="chart-bar-group"><div class="chart-bar" style="height:80%"></div><span>Tue</span></div>
+                            <div class="chart-bar-group"><div class="chart-bar" style="height:45%"></div><span>Wed</span></div>
+                            <div class="chart-bar-group"><div class="chart-bar" style="height:90%"></div><span>Thu</span></div>
+                            <div class="chart-bar-group"><div class="chart-bar" style="height:70%"></div><span>Fri</span></div>
+                            <div class="chart-bar-group"><div class="chart-bar" style="height:55%"></div><span>Sat</span></div>
+                            <div class="chart-bar-group"><div class="chart-bar today-bar" style="height:75%"></div><span>Sun</span></div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="fitness-sidebar">
+                    <div class="sidebar-card goals-card">
+                        <h3>Weekly Goals Progress</h3>
+                        <div class="goal-item">
+                            <div class="goal-label"><span>Workouts Completed</span><span>4/5</span></div>
+                            <div class="goal-bar"><div class="goal-fill" style="width:80%"></div></div>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-label"><span>Calories Burned</span><span>12K/15K</span></div>
+                            <div class="goal-bar"><div class="goal-fill" style="width:80%"></div></div>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-label"><span>Active Minutes</span><span>210/300</span></div>
+                            <div class="goal-bar"><div class="goal-fill" style="width:70%"></div></div>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-label"><span>Water Intake</span><span>38/56</span></div>
+                            <div class="goal-bar"><div class="goal-fill" style="width:68%"></div></div>
+                        </div>
+                    </div>
+                    <div class="sidebar-card achievements-card">
+                        <h3>Your Achievements</h3>
+                        <div class="achievement-list">
+                            <div class="achievement earned">
+                                <span class="ach-icon">FIRE</span>
+                                <div><strong>7-Day Streak Badge</strong><p>Completed on Nov 5, 2026</p></div>
+                            </div>
+                            <div class="achievement earned">
+                                <span class="ach-icon">STEP</span>
+                                <div><strong>10K Steps Club Member</strong><p>Completed on Nov 3, 2026</p></div>
+                            </div>
+                            <div class="achievement earned">
+                                <span class="ach-icon">RUN</span>
+                                <div><strong>First 5K Run Done</strong><p>Completed on Oct 28, 2026</p></div>
+                            </div>
+                            <div class="achievement locked">
+                                <span class="ach-icon">LOCK</span>
+                                <div><strong>Marathon Ready Badge</strong><p>Run 42 km total needed to unlock</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-card leaderboard-card">
+                        <h3>Friends Leaderboard</h3>
+                        <div class="leaderboard-list">
+                            <div class="lb-item">
+                                <span class="lb-rank">1</span>
+                                <span class="lb-avatar">AK</span>
+                                <div class="lb-info"><strong>Arjun K.</strong><span>14,230 cal burned this week</span></div>
+                            </div>
+                            <div class="lb-item current-user">
+                                <span class="lb-rank">2</span>
+                                <span class="lb-avatar">SM</span>
+                                <div class="lb-info"><strong>Sudeep M.</strong><span>12,847 cal burned this week</span></div>
+                            </div>
+                            <div class="lb-item">
+                                <span class="lb-rank">3</span>
+                                <span class="lb-avatar">PK</span>
+                                <div class="lb-info"><strong>Priya K.</strong><span>11,560 cal burned this week</span></div>
+                            </div>
+                            <div class="lb-item">
+                                <span class="lb-rank">4</span>
+                                <span class="lb-avatar">NK</span>
+                                <div class="lb-info"><strong>Neha K.</strong><span>9,890 cal burned this week</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

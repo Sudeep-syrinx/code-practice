@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Manager - CloudDrive Pro</title>
+    <link rel="stylesheet" href="file_manager.css">
+</head>
+<body>
+    <nav class="fm-navbar">
+        <div class="container-full-fm">
+            <div class="fm-nav-left">
+                <a href="#" class="fm-logo">CloudDrive</a>
+                <div class="breadcrumb-nav">
+                    <a href="#" class="breadcrumb-item">My Drive</a>
+                    <span class="breadcrumb-sep">Chevron Right</span>
+                    <a href="#" class="breadcrumb-item">Code Practice</a>
+                    <span class="breadcrumb-sep">Chevron Right</span>
+                    <span class="breadcrumb-current">HTML-CSS Projects</span>
+                </div>
+            </div>
+            <div class="fm-nav-center">
+                <div class="fm-search-box">
+                    <span class="fm-search-icon">Search Icon</span>
+                    <input type="text" placeholder="Search in CloudDrive..." class="fm-search-input">
+                </div>
+            </div>
+            <div class="fm-nav-right">
+                <button class="fm-icon-btn" title="Support">Help Icon</button>
+                <button class="fm-icon-btn" title="Settings">Settings Icon</button>
+                <button class="fm-icon-btn" title="Apps">Apps Grid Icon</button>
+                <span class="fm-user-avatar">SM</span>
+            </div>
+        </div>
+    </nav>
+    <div class="fm-layout">
+        <aside class="fm-sidebar">
+            <button class="fm-new-btn">
+                <span class="new-icon">Plus Icon</span>
+                <span class="new-text">New</span>
+            </button>
+            <nav class="fm-folder-nav">
+                <ul class="fm-nav-list">
+                    <li class="fm-nav-item active-nav-item"><span class="fm-nav-icon">Drive Icon</span><span class="fm-nav-text">My Drive</span></li>
+                    <li class="fm-nav-item"><span class="fm-nav-icon">Computer Icon</span><span class="fm-nav-text">Computers</span></li>
+                    <li class="fm-nav-item"><span class="fm-nav-icon">Shared Icon</span><span class="fm-nav-text">Shared with me</span></li>
+                    <li class="fm-nav-item"><span class="fm-nav-icon">Recent Icon</span><span class="fm-nav-text">Recent</span></li>
+                    <li class="fm-nav-item"><span class="fm-nav-icon">Starred Icon</span><span class="fm-nav-text">Starred</span></li>
+                    <li class="fm-nav-item"><span class="fm-nav-icon">Trash Icon</span><span class="fm-nav-text">Trash</span></li>
+                </ul>
+            </nav>
+            <div class="fm-storage-widget">
+                <div class="fm-storage-header">
+                    <span class="fm-storage-icon">Storage Icon</span>
+                    <span class="fm-storage-text">Storage</span>
+                </div>
+                <div class="fm-storage-bar">
+                    <div class="fm-storage-fill" style="width:45%"></div>
+                </div>
+                <p class="fm-storage-detail">6.8 GB of 15 GB used</p>
+                <button class="fm-get-storage-btn">Get more storage</button>
+            </div>
+        </aside>
+        <main class="fm-main-content">
+            <div class="fm-toolbar">
+                <div class="fm-toolbar-left">
+                    <div class="view-toggle-fm">
+                        <button class="view-btn-fm active-view">List View Icon</button>
+                        <button class="view-btn-fm">Grid View Icon</button>
+                    </div>
+                    <button class="fm-sort-btn">Sort Icon <span>Modified Date</span></button>
+                    <button class="fm-filter-btn">Filter Icon</button>
+                </div>
+                <div class="fm-toolbar-right">
+                    <span class="fm-item-count">24 items</span>
+                </div>
+            </div>
+            <section class="fm-priority-section">
+                <h3 class="fm-section-title">Priority</h3>
+                <div class="fm-priority-grid">
+                    <div class="fm-priority-card">
+                        <div class="priority-file-icon html-icon">HTML Icon</div>
+                        <div class="priority-info"><span class="priority-name">portfolio_v2.html</span><span class="priority-meta">Modified 2 hours ago</span></div>
+                    </div>
+                    <div class="fm-priority-card">
+                        <div class="priority-file-icon css-icon">CSS Icon</div>
+                        <div class="priority-info"><span class="priority-name">weather_app.css</span><span class="priority-meta">Modified 5 hours ago</span></div>
+                    </div>
+                    <div class="fm-priority-card">
+                        <div class="priority-file-icon html-icon">HTML Icon</div>
+                        <div class="priority-info"><span class="priority-name">quiz_platform.html</span><span class="priority-meta">Modified yesterday</span></div>
+                    </div>
+                    <div class="fm-priority-card">
+                        <div class="priority-file-icon css-icon">CSS Icon</div>
+                        <div class="priority-info"><span class="priority-name">kanban_board.css</span><span class="priority-meta">Modified 2 days ago</span></div>
+                    </div>
+                </div>
+            </section>
+            <section class="fm-files-section">
+                <div class="fm-table-header">
+                    <span class="fm-col-check"><input type="checkbox" class="fm-check-all"></span>
+                    <span class="fm-col-name">Name</span>
+                    <span class="fm-col-owner">Owner</span>
+                    <span class="fm-col-modified">Last Modified</span>
+                    <span class="fm-col-size">Size</span>
+                    <span class="fm-col-actions"></span>
+                </div>
+                <div class="fm-file-list">
+                    <div class="fm-file-row fm-folder-row">
+                        <span class="fm-col-check"><input type="checkbox"></span>
+                        <span class="fm-col-name"><span class="fm-file-icon folder-icon-color">Folder Icon</span><span class="fm-file-name">components</span></span>
+                        <span class="fm-col-owner">me</span>
+                        <span class="fm-col-modified">Nov 8, 2026</span>
+                        <span class="fm-col-size">--</span>
+                        <span class="fm-col-actions"><button class="fm-row-menu">Three Dots</button></span>
+                    </div>
+                    <div class="fm-file-row fm-folder-row">
+                        <span class="fm-col-check"><input type="checkbox"></span>
+                        <span class="fm-col-name"><span class="fm-file-icon folder-icon-color">Folder Icon</span><span class="fm-file-name">templates</span></span>
+                        <span class="fm-col-owner">me</span>
+                        <span class="fm-col-modified">Nov 7, 2026</span>
+                        <span class="fm-col-size">--</span>
+                        <span class="fm-col-actions"><button class="fm-row-menu">Three Dots</button></span>
+                    </div>
+                    <div class="fm-file-row">
+                        <span class="fm-col-check"><input type="checkbox"></span>
+                        <span class="fm-col-name"><span class="fm-file-icon html-icon-color">HTML Icon</span><span class="fm-file-name">analytics_dashboard.html</span></span>
+                        <span class="fm-col-owner">me</span>
+                        <span class="fm-col-modified">Nov 9, 2026</span>
+                        <span class="fm-col-size">8.2 KB</span>
+                        <span class="fm-col-actions"><button class="fm-row-menu">Three Dots</button></span>
+                    </div>
+                    <div class="fm-file-row">
+                        <span class="fm-col-check"><input type="checkbox"></span>
+                        <span class="fm-col-name"><span class="fm-file-icon css-icon-color">CSS Icon</span><span class="fm-file-name">analytics_dashboard.css</span></span>
+                        <span class="fm-col-owner">me</span>
+                        <span class="fm-col-modified">Nov 9, 2026</span>
+                        <span class="fm-col-size">6.8 KB</span>
+                        <span class="fm-col-actions"><button class="fm-row-menu">Three Dots</button></span>
+                    </div>
+                    <div class="fm-file-row">
+                        <span class="fm-col-check"><input type="checkbox"></span>
+                        <span class="fm-col-name"><span class="fm-file-icon html-icon-color">HTML Icon</span><span class="fm-file-name">chat_app.html</span></span>
+                        <span class="fm-col-owner">me</span>
+                        <span class="fm-col-modified">Nov 9, 2026</span>
+                        <span class="fm-col-size">12.4 KB</span>
+                        <span class="fm-col-actions"><button class="fm-row-menu">Three Dots</button></span>
+                    </div>
+                    <div class="fm-file-row">
+                        <span class="fm-col-check"><input type="checkbox"></span>
+                        <span class="fm-col-name"><span class="fm-file-icon css-icon-color">CSS Icon</span><span class="fm-file-name">chat_app.css</span></span>
+                        <span class="fm-col-owner">me</span>
+                        <span class="fm-col-modified">Nov 9, 2026</span>
+                        <span class="fm-col-size">18.2 KB</span>
+                        <span class="fm-col-actions"><button class="fm-row-menu">Three Dots</button></span>
+                    </div>
+                    <div class="fm-file-row">
+                        <span class="fm-col-check"><input type="checkbox"></span>
+                        <span class="fm-col-name"><span class="fm-file-icon html-icon-color">HTML Icon</span><span class="fm-file-name">course_platform.html</span></span>
+                        <span class="fm-col-owner">me</span>
+                        <span class="fm-col-modified">Nov 8, 2026</span>
+                        <span class="fm-col-size">9.8 KB</span>
+                        <span class="fm-col-actions"><button class="fm-row-menu">Three Dots</button></span>
+                    </div>
+                    <div class="fm-file-row">
+                        <span class="fm-col-check"><input type="checkbox"></span>
+                        <span class="fm-col-name"><span class="fm-file-icon css-icon-color">CSS Icon</span><span class="fm-file-name">course_platform.css</span></span>
+                        <span class="fm-col-owner">me</span>
+                        <span class="fm-col-modified">Nov 8, 2026</span>
+                        <span class="fm-col-size">14.6 KB</span>
+                        <span class="fm-col-actions"><button class="fm-row-menu">Three Dots</button></span>
+                    </div>
+                    <div class="fm-file-row">
+                        <span class="fm-col-check"><input type="checkbox"></span>
+                        <span class="fm-col-name"><span class="fm-file-icon html-icon-color">HTML Icon</span><span class="fm-file-name">ecommerce.html</span></span>
+                        <span class="fm-col-owner">me</span>
+                        <span class="fm-col-modified">Nov 7, 2026</span>
+                        <span class="fm-col-size">7.5 KB</span>
+                        <span class="fm-col-actions"><button class="fm-row-menu">Three Dots</button></span>
+                    </div>
+                    <div class="fm-file-row">
+                        <span class="fm-col-check"><input type="checkbox"></span>
+                        <span class="fm-col-name"><span class="fm-file-icon css-icon-color">CSS Icon</span><span class="fm-file-name">ecommerce.css</span></span>
+                        <span class="fm-col-owner">me</span>
+                        <span class="fm-col-modified">Nov 7, 2026</span>
+                        <span class="fm-col-size">11.2 KB</span>
+                        <span class="fm-col-actions"><button class="fm-row-menu">Three Dots</button></span>
+                    </div>
+                    <div class="fm-file-row">
+                        <span class="fm-col-check"><input type="checkbox"></span>
+                        <span class="fm-col-name"><span class="fm-file-icon html-icon-color">HTML Icon</span><span class="fm-file-name">fitness_tracker.html</span></span>
+                        <span class="fm-col-owner">me</span>
+                        <span class="fm-col-modified">Nov 8, 2026</span>
+                        <span class="fm-col-size">8.9 KB</span>
+                        <span class="fm-col-actions"><button class="fm-row-menu">Three Dots</button></span>
+                    </div>
+                    <div class="fm-file-row">
+                        <span class="fm-col-check"><input type="checkbox"></span>
+                        <span class="fm-col-name"><span class="fm-file-icon css-icon-color">CSS Icon</span><span class="fm-file-name">fitness_tracker.css</span></span>
+                        <span class="fm-col-owner">me</span>
+                        <span class="fm-col-modified">Nov 8, 2026</span>
+                        <span class="fm-col-size">13.8 KB</span>
+                        <span class="fm-col-actions"><button class="fm-row-menu">Three Dots</button></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside class="fm-details-panel">
+            <div class="fm-details-header">
+                <h3>Details</h3>
+                <button class="fm-close-details">Close Icon</button>
+            </div>
+            <div class="fm-details-preview">
+                <div class="preview-placeholder">File Preview Area</div>
+                <h4 class="preview-filename">portfolio_v2.html</h4>
+                <p class="preview-filetype">HTML Document</p>
+            </div>
+            <div class="fm-details-info">
+                <div class="detail-row-fm"><span class="detail-label-fm">Type</span><span class="detail-value-fm">HTML File</span></div>
+                <div class="detail-row-fm"><span class="detail-label-fm">Size</span><span class="detail-value-fm">14.2 KB</span></div>
+                <div class="detail-row-fm"><span class="detail-label-fm">Location</span><span class="detail-value-fm">My Drive > Code Practice > HTML-CSS</span></div>
+                <div class="detail-row-fm"><span class="detail-label-fm">Owner</span><span class="detail-value-fm">Sudeep M.</span></div>
+                <div class="detail-row-fm"><span class="detail-label-fm">Created</span><span class="detail-value-fm">Nov 9, 2026 at 11:23 AM</span></div>
+                <div class="detail-row-fm"><span class="detail-label-fm">Modified</span><span class="detail-value-fm">Nov 9, 2026 at 2:15 PM</span></div>
+                <div class="detail-row-fm"><span class="detail-label-fm">Lines of Code</span><span class="detail-value-fm">337 lines</span></div>
+            </div>
+            <div class="fm-details-actions">
+                <button class="fm-action-btn">Share Icon Share</button>
+                <button class="fm-action-btn">Download Icon Download</button>
+                <button class="fm-action-btn">Rename Icon Rename</button>
+                <button class="fm-action-btn danger-action">Delete Icon Delete</button>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

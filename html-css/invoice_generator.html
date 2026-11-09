@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator - BillCraft Pro</title>
+    <link rel="stylesheet" href="invoice_generator.css">
+</head>
+<body>
+    <nav class="invoice-navbar">
+        <div class="container">
+            <a href="#" class="invoice-logo">BillCraft</a>
+            <ul class="invoice-nav">
+                <li><a href="#" class="active">Create Invoice</a></li>
+                <li><a href="#">Templates</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+            <div class="invoice-actions">
+                <button class="btn-save-draft">Save Draft</button>
+                <button class="btn-preview">Preview</button>
+                <button class="btn-send-invoice">Send Invoice</button>
+            </div>
+        </div>
+    </nav>
+    <main class="invoice-main">
+        <div class="container">
+            <div class="invoice-workspace">
+                <div class="invoice-form-panel">
+                    <div class="form-section">
+                        <h2 class="form-section-title">Invoice Details</h2>
+                        <div class="form-grid-two">
+                            <div class="form-field">
+                                <label class="field-label">Invoice Number</label>
+                                <input type="text" class="field-input" value="INV-2026-0847" readonly>
+                            </div>
+                            <div class="form-field">
+                                <label class="field-label">Invoice Date</label>
+                                <input type="date" class="field-input" value="2026-11-09">
+                            </div>
+                            <div class="form-field">
+                                <label class="field-label">Due Date</label>
+                                <input type="date" class="field-input" value="2026-11-23">
+                            </div>
+                            <div class="form-field">
+                                <label class="field-label">Payment Terms</label>
+                                <select class="field-select">
+                                    <option>Net 14 Days</option>
+                                    <option selected>Net 30 Days</option>
+                                    <option>Net 60 Days</option>
+                                    <option>Due on Receipt</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <h2 class="form-section-title">From (Your Business)</h2>
+                        <div class="form-grid-two">
+                            <div class="form-field full-width">
+                                <label class="field-label">Business Name</label>
+                                <input type="text" class="field-input" value="Sudeep Development Services">
+                            </div>
+                            <div class="form-field full-width">
+                                <label class="field-label">Address</label>
+                                <textarea class="field-textarea" rows="2">123 Code Street, Tech City, TC 12345, India</textarea>
+                            </div>
+                            <div class="form-field">
+                                <label class="field-label">Email</label>
+                                <input type="email" class="field-input" value="billing@sudeepdev.com">
+                            </div>
+                            <div class="form-field">
+                                <label class="field-label">Phone</label>
+                                <input type="tel" class="field-input" value="+91 98765 43210">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <h2 class="form-section-title">Bill To (Client)</h2>
+                        <div class="form-grid-two">
+                            <div class="form-field full-width">
+                                <label class="field-label">Client Name</label>
+                                <input type="text" class="field-input" value="TechCorp Solutions Pvt Ltd">
+                            </div>
+                            <div class="form-field full-width">
+                                <label class="field-label">Client Address</label>
+                                <textarea class="field-textarea" rows="2">456 Business Park, Mumbai, MH 400001, India</textarea>
+                            </div>
+                            <div class="form-field">
+                                <label class="field-label">Client Email</label>
+                                <input type="email" class="field-input" value="accounts@techcorp.com">
+                            </div>
+                            <div class="form-field">
+                                <label class="field-label">Client Phone</label>
+                                <input type="tel" class="field-input" value="+91 22 1234 5678">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="section-header-with-action">
+                            <h2 class="form-section-title">Line Items</h2>
+                            <button class="btn-add-line">+ Add Line Item</button>
+                        </div>
+                        <div class="line-items-table">
+                            <div class="line-item-header">
+                                <span class="col-description">Description</span>
+                                <span class="col-quantity">Qty</span>
+                                <span class="col-rate">Rate</span>
+                                <span class="col-tax">Tax %</span>
+                                <span class="col-amount">Amount</span>
+                                <span class="col-action"></span>
+                            </div>
+                            <div class="line-item-row">
+                                <input type="text" class="line-input line-desc" value="Full-Stack Web Application Development - Phase 1">
+                                <input type="number" class="line-input line-qty" value="1">
+                                <input type="number" class="line-input line-rate" value="45000">
+                                <input type="number" class="line-input line-tax" value="18">
+                                <span class="line-amount-display">$53,100.00</span>
+                                <button class="btn-remove-line">X</button>
+                            </div>
+                            <div class="line-item-row">
+                                <input type="text" class="line-input line-desc" value="Data Structure Implementation Package (Finger Tree, Wavelet Tree, VM)">
+                                <input type="number" class="line-input line-qty" value="3">
+                                <input type="number" class="line-input line-rate" value="8500">
+                                <input type="number" class="line-input line-tax" value="18">
+                                <span class="line-amount-display">$30,090.00</span>
+                                <button class="btn-remove-line">X</button>
+                            </div>
+                            <div class="line-item-row">
+                                <input type="text" class="line-input line-desc" value="HTML/CSS Template Collection - 10 Responsive Templates">
+                                <input type="number" class="line-input line-qty" value="10">
+                                <input type="number" class="line-input line-rate" value="1200">
+                                <input type="number" class="line-input line-tax" value="18">
+                                <span class="line-amount-display">$14,160.00</span>
+                                <button class="btn-remove-line">X</button>
+                            </div>
+                            <div class="line-item-row">
+                                <input type="text" class="line-input line-desc" value="Technical Documentation and Code Review Services">
+                                <input type="number" class="line-input line-qty" value="20">
+                                <input type="number" class="line-input line-rate" value="750">
+                                <input type="number" class="line-input line-tax" value="18">
+                                <span class="line-amount-display">$17,700.00</span>
+                                <button class="btn-remove-line">X</button>
+                            </div>
+                            <div class="line-item-row">
+                                <input type="text" class="line-input line-desc" value="Monthly Maintenance and Support Retainer - November 2026">
+                                <input type="number" class="line-input line-qty" value="1">
+                                <input type="number" class="line-input line-rate" value="12000">
+                                <input type="number" class="line-input line-tax" value="18">
+                                <span class="line-amount-display">$14,160.00</span>
+                                <button class="btn-remove-line">X</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section totals-section">
+                        <div class="totals-grid">
+                            <div class="total-row"><span class="total-label">Subtotal</span><span class="total-value">$109,210.00</span></div>
+                            <div class="total-row"><span class="total-label">Tax (18% GST)</span><span class="total-value">$19,657.80</span></div>
+                            <div class="total-row discount-row"><span class="total-label">Discount (5%)</span><span class="total-value discount-value">-$5,460.50</span></div>
+                            <div class="total-row grand-total-row"><span class="total-label">Grand Total</span><span class="total-value grand-total-value">$123,407.30</span></div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <h2 class="form-section-title">Additional Notes</h2>
+                        <textarea class="field-textarea notes-textarea" rows="3" placeholder="Payment instructions, thank you note, or any additional information...">Thank you for your business! Payment is due within 14 days. Please include invoice number INV-2026-0847 in your payment reference. Bank details: HDFC Bank, Account: 1234567890, IFSC: HDFC0001234</textarea>
+                    </div>
+                </div>
+                <aside class="invoice-preview-panel">
+                    <div class="preview-sticky">
+                        <h3 class="preview-title">Live Preview</h3>
+                        <div class="preview-document">
+                            <div class="preview-header-invoice">
+                                <div class="preview-logo-area"><h2>BillCraft</h2><p>Professional Invoicing</p></div>
+                                <div class="preview-invoice-meta"><h1>INVOICE</h1><p>INV-2026-0847</p><p>Date: Nov 9, 2026</p><p>Due: Nov 23, 2026</p></div>
+                            </div>
+                            <div class="preview-parties">
+                                <div class="preview-from"><h4>From</h4><p>Sudeep Development Services</p><p>123 Code Street</p><p>Tech City, TC 12345</p><p>billing@sudeepdev.com</p></div>
+                                <div class="preview-to"><h4>Bill To</h4><p>TechCorp Solutions Pvt Ltd</p><p>456 Business Park</p><p>Mumbai, MH 400001</p><p>accounts@techcorp.com</p></div>
+                            </div>
+                            <table class="preview-table">
+                                <thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Full-Stack Web App Development</td><td>1</td><td>$45,000</td><td>$53,100</td></tr>
+                                    <tr><td>Data Structure Package (3 items)</td><td>3</td><td>$8,500</td><td>$30,090</td></tr>
+                                    <tr><td>HTML/CSS Templates (10 items)</td><td>10</td><td>$1,200</td><td>$14,160</td></tr>
+                                    <tr><td>Documentation and Code Review</td><td>20</td><td>$750</td><td>$17,700</td></tr>
+                                    <tr><td>Monthly Support Retainer</td><td>1</td><td>$12,000</td><td>$14,160</td></tr>
+                                </tbody>
+                            </table>
+                            <div class="preview-totals">
+                                <div class="preview-total-row"><span>Subtotal</span><span>$109,210.00</span></div>
+                                <div class="preview-total-row"><span>Tax (18%)</span><span>$19,657.80</span></div>
+                                <div class="preview-total-row"><span>Discount (5%)</span><span>-$5,460.50</span></div>
+                                <div class="preview-total-row preview-grand-total"><span>Total Due</span><span>$123,407.30</span></div>
+                            </div>
+                            <div class="preview-footer-invoice"><p>Thank you for your business!</p><p>Payment due within 14 days</p></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

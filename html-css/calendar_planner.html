@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Planner - SchedulePro</title>
+    <link rel="stylesheet" href="calendar_planner.css">
+</head>
+<body>
+    <nav class="cal-navbar">
+        <div class="container-full-cal">
+            <div class="cal-nav-left">
+                <a href="#" class="cal-logo">SchedulePro</a>
+                <button class="cal-today-btn">Today</button>
+                <div class="cal-nav-arrows">
+                    <button class="cal-arrow-btn">Left Arrow</button>
+                    <button class="cal-arrow-btn">Right Arrow</button>
+                </div>
+                <h2 class="cal-current-period">November 2026</h2>
+            </div>
+            <div class="cal-nav-center">
+                <div class="cal-view-switcher">
+                    <button class="cal-view-btn">Day</button>
+                    <button class="cal-view-btn">Week</button>
+                    <button class="cal-view-btn active-cal-view">Month</button>
+                    <button class="cal-view-btn">Year</button>
+                    <button class="cal-view-btn">Agenda</button>
+                </div>
+            </div>
+            <div class="cal-nav-right">
+                <button class="cal-search-btn">Search Icon</button>
+                <button class="cal-settings-btn">Settings Icon</button>
+                <button class="cal-new-event-btn">+ New Event</button>
+                <span class="cal-user-avatar">SM</span>
+            </div>
+        </div>
+    </nav>
+    <div class="cal-layout">
+        <aside class="cal-sidebar">
+            <div class="cal-mini-calendar">
+                <div class="mini-cal-header">
+                    <button class="mini-cal-arrow">Left</button>
+                    <span class="mini-cal-title">November 2026</span>
+                    <button class="mini-cal-arrow">Right</button>
+                </div>
+                <div class="mini-cal-grid">
+                    <span class="mini-day-name">S</span><span class="mini-day-name">M</span><span class="mini-day-name">T</span><span class="mini-day-name">W</span><span class="mini-day-name">T</span><span class="mini-day-name">F</span><span class="mini-day-name">S</span>
+                    <span class="mini-day other-month-day">26</span><span class="mini-day other-month-day">27</span><span class="mini-day other-month-day">28</span><span class="mini-day other-month-day">29</span><span class="mini-day other-month-day">30</span><span class="mini-day other-month-day">31</span><span class="mini-day">1</span>
+                    <span class="mini-day">2</span><span class="mini-day">3</span><span class="mini-day">4</span><span class="mini-day">5</span><span class="mini-day">6</span><span class="mini-day">7</span><span class="mini-day">8</span>
+                    <span class="mini-day today-mini has-events-mini">9</span><span class="mini-day has-events-mini">10</span><span class="mini-day">11</span><span class="mini-day">12</span><span class="mini-day has-events-mini">13</span><span class="mini-day">14</span><span class="mini-day has-events-mini">15</span>
+                    <span class="mini-day">16</span><span class="mini-day">17</span><span class="mini-day has-events-mini">18</span><span class="mini-day">19</span><span class="mini-day has-events-mini">20</span><span class="mini-day">21</span><span class="mini-day">22</span>
+                    <span class="mini-day">23</span><span class="mini-day">24</span><span class="mini-day has-events-mini">25</span><span class="mini-day">26</span><span class="mini-day">27</span><span class="mini-day">28</span><span class="mini-day">29</span>
+                    <span class="mini-day">30</span><span class="mini-day other-month-day">1</span><span class="mini-day other-month-day">2</span><span class="mini-day other-month-day">3</span><span class="mini-day other-month-day">4</span><span class="mini-day other-month-day">5</span><span class="mini-day other-month-day">6</span>
+                </div>
+            </div>
+            <div class="cal-my-calendars">
+                <div class="calendars-header">
+                    <h3>My Calendars</h3>
+                    <button class="add-calendar-btn">Plus Icon</button>
+                </div>
+                <ul class="calendars-list">
+                    <li class="calendar-toggle"><label><input type="checkbox" checked><span class="cal-color-dot" style="background:#1a73e8"></span><span class="cal-name">Personal</span></label></li>
+                    <li class="calendar-toggle"><label><input type="checkbox" checked><span class="cal-color-dot" style="background:#0b8043"></span><span class="cal-name">Work</span></label></li>
+                    <li class="calendar-toggle"><label><input type="checkbox" checked><span class="cal-color-dot" style="background:#8e24aa"></span><span class="cal-name">BuilderHub</span></label></li>
+                    <li class="calendar-toggle"><label><input type="checkbox" checked><span class="cal-color-dot" style="background:#e67c73"></span><span class="cal-name">Deadlines</span></label></li>
+                    <li class="calendar-toggle"><label><input type="checkbox" checked><span class="cal-color-dot" style="background:#f6c026"></span><span class="cal-name">Study Group</span></label></li>
+                    <li class="calendar-toggle"><label><input type="checkbox"><span class="cal-color-dot" style="background:#039be5"></span><span class="cal-name">Birthdays</span></label></li>
+                    <li class="calendar-toggle"><label><input type="checkbox"><span class="cal-color-dot" style="background:#616161"></span><span class="cal-name">Holidays</span></label></li>
+                </ul>
+            </div>
+            <div class="cal-upcoming-widget">
+                <h3>Upcoming Events</h3>
+                <div class="upcoming-list">
+                    <div class="upcoming-item"><span class="upcoming-dot" style="background:#8e24aa"></span><div class="upcoming-info"><span class="upcoming-title">Algorithm Challenge</span><span class="upcoming-time">Nov 15, All Day</span></div></div>
+                    <div class="upcoming-item"><span class="upcoming-dot" style="background:#0b8043"></span><div class="upcoming-info"><span class="upcoming-title">Code Review Meeting</span><span class="upcoming-time">Nov 10, 2:00 PM</span></div></div>
+                    <div class="upcoming-item"><span class="upcoming-dot" style="background:#f6c026"></span><div class="upcoming-info"><span class="upcoming-title">DSA Study Session</span><span class="upcoming-time">Nov 13, 4:00 PM</span></div></div>
+                    <div class="upcoming-item"><span class="upcoming-dot" style="background:#1a73e8"></span><div class="upcoming-info"><span class="upcoming-title">Portfolio Deadline</span><span class="upcoming-time">Nov 18, 11:59 PM</span></div></div>
+                    <div class="upcoming-item"><span class="upcoming-dot" style="background:#e67c73"></span><div class="upcoming-info"><span class="upcoming-title">Sprint 14 Ends</span><span class="upcoming-time">Nov 20, 5:00 PM</span></div></div>
+                </div>
+            </div>
+        </aside>
+        <main class="cal-main">
+            <div class="cal-weekday-header">
+                <span class="weekday-cell">Sunday</span>
+                <span class="weekday-cell">Monday</span>
+                <span class="weekday-cell">Tuesday</span>
+                <span class="weekday-cell">Wednesday</span>
+                <span class="weekday-cell">Thursday</span>
+                <span class="weekday-cell">Friday</span>
+                <span class="weekday-cell">Saturday</span>
+            </div>
+            <div class="cal-month-grid">
+                <div class="cal-day-cell other-month-cell"><span class="day-num">26</span></div>
+                <div class="cal-day-cell other-month-cell"><span class="day-num">27</span></div>
+                <div class="cal-day-cell other-month-cell"><span class="day-num">28</span></div>
+                <div class="cal-day-cell other-month-cell"><span class="day-num">29</span></div>
+                <div class="cal-day-cell other-month-cell"><span class="day-num">30</span></div>
+                <div class="cal-day-cell other-month-cell"><span class="day-num">31</span></div>
+                <div class="cal-day-cell"><span class="day-num">1</span></div>
+                <div class="cal-day-cell"><span class="day-num">2</span><div class="cal-event event-personal">Morning Run 7AM</div></div>
+                <div class="cal-day-cell"><span class="day-num">3</span><div class="cal-event event-work">Team Standup 10AM</div></div>
+                <div class="cal-day-cell"><span class="day-num">4</span><div class="cal-event event-builderhub">BuilderHub Weekly Reset</div></div>
+                <div class="cal-day-cell"><span class="day-num">5</span><div class="cal-event event-personal">Gym Session 6PM</div></div>
+                <div class="cal-day-cell"><span class="day-num">6</span><div class="cal-event event-study">DSA Study Group 4PM</div></div>
+                <div class="cal-day-cell"><span class="day-num">7</span><div class="cal-event event-work">Code Review 2PM</div></div>
+                <div class="cal-day-cell"><span class="day-num">8</span><div class="cal-event event-deadline">Project Phase 1 Due</div></div>
+                <div class="cal-day-cell today-cell"><span class="day-num today-num">9</span><div class="cal-event event-builderhub">Line Count Update</div><div class="cal-event event-personal">Morning Run 7AM</div><div class="cal-event event-work">Sprint Planning 11AM</div></div>
+                <div class="cal-day-cell"><span class="day-num">10</span><div class="cal-event event-work">Code Review Meeting 2PM</div><div class="cal-event event-personal">Dentist Appointment 4PM</div></div>
+                <div class="cal-day-cell"><span class="day-num">11</span></div>
+                <div class="cal-day-cell"><span class="day-num">12</span><div class="cal-event event-work">Backend Sync 3PM</div></div>
+                <div class="cal-day-cell"><span class="day-num">13</span><div class="cal-event event-study">DSA Study Session 4PM</div></div>
+                <div class="cal-day-cell"><span class="day-num">14</span><div class="cal-event event-personal">Movie Night 8PM</div></div>
+                <div class="cal-day-cell"><span class="day-num">15</span><div class="cal-event event-builderhub">Algorithm Challenge All Day</div></div>
+                <div class="cal-day-cell"><span class="day-num">16</span></div>
+                <div class="cal-day-cell"><span class="day-num">17</span><div class="cal-event event-work">Client Call 10AM</div></div>
+                <div class="cal-day-cell"><span class="day-num">18</span><div class="cal-event event-deadline">Portfolio Submission Deadline</div><div class="cal-event event-study">Study Group 5PM</div></div>
+                <div class="cal-day-cell"><span class="day-num">19</span></div>
+                <div class="cal-day-cell"><span class="day-num">20</span><div class="cal-event event-deadline">Sprint 14 Ends 5PM</div><div class="cal-event event-builderhub">DSA Webinar 6PM</div></div>
+                <div class="cal-day-cell"><span class="day-num">21</span></div>
+                <div class="cal-day-cell"><span class="day-num">22</span></div>
+                <div class="cal-day-cell"><span class="day-num">23</span></div>
+                <div class="cal-day-cell"><span class="day-num">24</span><div class="cal-event event-personal">Thanksgiving Prep</div></div>
+                <div class="cal-day-cell"><span class="day-num">25</span><div class="cal-event event-builderhub">Hackathon: Build a VM</div></div>
+                <div class="cal-day-cell"><span class="day-num">26</span></div>
+                <div class="cal-day-cell"><span class="day-num">27</span></div>
+                <div class="cal-day-cell"><span class="day-num">28</span></div>
+                <div class="cal-day-cell"><span class="day-num">29</span></div>
+                <div class="cal-day-cell"><span class="day-num">30</span><div class="cal-event event-work">Monthly Review 3PM</div></div>
+                <div class="cal-day-cell other-month-cell"><span class="day-num">1</span></div>
+                <div class="cal-day-cell other-month-cell"><span class="day-num">2</span></div>
+                <div class="cal-day-cell other-month-cell"><span class="day-num">3</span></div>
+                <div class="cal-day-cell other-month-cell"><span class="day-num">4</span></div>
+                <div class="cal-day-cell other-month-cell"><span class="day-num">5</span></div>
+                <div class="cal-day-cell other-month-cell"><span class="day-num">6</span></div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

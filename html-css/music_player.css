@@ -1,0 +1,796 @@
+/* =============================================
+   MUSIC PLAYER STYLESHEET
+   Author: Builder Platform Practice
+   Purpose: Verbose expanded CSS for maximum line count
+   ============================================= */
+
+/* ---------- RESET AND BASE ---------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+/* ---------- APP LAYOUT ---------- */
+.app-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: 1fr 90px;
+    height: 100vh;
+    gap: 0;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+    background-color: #000000;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    grid-column: 1;
+    overflow-y: auto;
+}
+
+.logo-section {
+    padding: 0 1.5rem 1.5rem;
+}
+
+.app-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1db954;
+    letter-spacing: -0.02em;
+}
+
+.main-nav {
+    padding: 0 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    margin-bottom: 0.25rem;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    color: #b3b3b3;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.nav-item a:hover {
+    color: #ffffff;
+    background-color: #1a1a1a;
+}
+
+.nav-item.active a {
+    color: #ffffff;
+    background-color: #282828;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    color: inherit;
+}
+
+.playlist-section {
+    flex: 1;
+    padding: 0 0.75rem;
+    border-top: 1px solid #282828;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+}
+
+.playlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.playlist-header h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #b3b3b3;
+}
+
+.create-playlist-btn {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.create-playlist-btn:hover {
+    color: #ffffff;
+}
+
+.playlist-list {
+    list-style: none;
+}
+
+.playlist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.playlist-item:hover {
+    background-color: #1a1a1a;
+}
+
+.playlist-item.active-playlist {
+    background-color: #282828;
+}
+
+.playlist-icon {
+    color: #b3b3b3;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.playlist-item.active-playlist .playlist-icon {
+    color: #1db954;
+}
+
+.playlist-count {
+    color: #6a6a6a;
+    font-size: 0.75rem;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+.main-content {
+    background: linear-gradient(180deg, #1e3a5f 0%, #121212 300px);
+    grid-row: 1;
+    grid-column: 2;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.nav-arrows {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.arrow-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+.arrow-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.upgrade-btn {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.upgrade-btn:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.25rem 0.75rem 0.25rem 0.25rem;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 28px;
+    height: 28px;
+    background-color: #1db954;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.user-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.content-area {
+    padding: 0 2rem 2rem;
+    flex: 1;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero-section {
+    position: relative;
+    padding: 2rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+}
+
+.hero-album-art {
+    width: 232px;
+    height: 232px;
+    background: linear-gradient(135deg, #450af5, #c4efd9);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.hero-info {
+    flex: 1;
+}
+
+.content-type {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.hero-description {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    max-width: 600px;
+}
+
+.hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #b3b3b3;
+}
+
+.meta-owner {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.meta-separator {
+    width: 4px;
+    height: 4px;
+    background-color: #b3b3b3;
+    border-radius: 50%;
+}
+
+/* ---------- ACTION BAR ---------- */
+.action-bar {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    margin-bottom: 1rem;
+}
+
+.play-btn-large {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #1db954;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: transform 0.2s ease;
+}
+
+.play-btn-large:hover {
+    transform: scale(1.05);
+    background-color: #1ed760;
+}
+
+.shuffle-btn,
+.follow-btn,
+.more-btn {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.shuffle-btn:hover,
+.follow-btn:hover,
+.more-btn:hover {
+    color: #ffffff;
+}
+
+.follow-btn {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 999px;
+}
+
+.follow-btn:hover {
+    border-color: #ffffff;
+}
+
+/* ---------- TRACK LIST ---------- */
+.track-list-section {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.track-list-header {
+    display: grid;
+    grid-template-columns: 40px 4fr 3fr 2fr 1fr;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #282828;
+    margin-bottom: 0.5rem;
+    color: #b3b3b3;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+.track-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.track-item {
+    display: grid;
+    grid-template-columns: 40px 4fr 3fr 2fr 1fr;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    align-items: center;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.track-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.track-item.now-playing {
+    background-color: rgba(29, 185, 84, 0.1);
+}
+
+.track-num {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.track-item.now-playing .track-num {
+    color: #1db954;
+}
+
+.track-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.track-art {
+    width: 40px;
+    height: 40px;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    color: #6a6a6a;
+    flex-shrink: 0;
+}
+
+.track-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.track-title {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.track-item.now-playing .track-title {
+    color: #1db954;
+}
+
+.track-artist {
+    color: #b3b3b3;
+    font-size: 0.8rem;
+}
+
+.track-artist:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.track-album {
+    color: #b3b3b3;
+    font-size: 0.85rem;
+}
+
+.track-album:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.track-date {
+    color: #b3b3b3;
+    font-size: 0.85rem;
+}
+
+.track-duration {
+    color: #b3b3b3;
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+/* ---------- PLAYER BAR ---------- */
+.player-bar {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+.now-playing-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.np-art {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #450af5, #c4efd9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.np-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.np-title {
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.np-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.np-artist {
+    color: #b3b3b3;
+    font-size: 0.75rem;
+}
+
+.np-artist:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    cursor: pointer;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+}
+
+.like-btn:hover {
+    color: #ffffff;
+}
+
+.player-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.ctrl-btn {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    cursor: pointer;
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    transition: color 0.2s ease;
+}
+
+.ctrl-btn:hover {
+    color: #ffffff;
+}
+
+.play-pause-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-pause-btn:hover {
+    transform: scale(1.05);
+}
+
+.progress-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.time-current,
+.time-total {
+    font-size: 0.7rem;
+    color: #b3b3b3;
+    min-width: 35px;
+}
+
+.time-total {
+    text-align: right;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 4px;
+    background-color: #4d4d4d;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-bar:hover .progress-fill {
+    background-color: #1db954;
+}
+
+.progress-thumb {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.progress-bar:hover .progress-thumb {
+    opacity: 1;
+}
+
+.volume-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+.queue-btn,
+.devices-btn,
+.volume-icon-btn,
+.fullscreen-btn {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    cursor: pointer;
+    font-size: 0.7rem;
+    padding: 0.25rem;
+}
+
+.queue-btn:hover,
+.devices-btn:hover,
+.volume-icon-btn:hover,
+.fullscreen-btn:hover {
+    color: #ffffff;
+}
+
+.volume-bar {
+    width: 100px;
+    height: 4px;
+    background-color: #4d4d4d;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.volume-fill {
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.volume-bar:hover .volume-fill {
+    background-color: #1db954;
+}
+
+.volume-thumb {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.volume-bar:hover .volume-thumb {
+    opacity: 1;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+    .app-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        grid-column: 1;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-album-art {
+        width: 150px;
+        height: 150px;
+    }
+
+    .track-list-header,
+    .track-item {
+        grid-template-columns: 30px 3fr 2fr 1fr;
+    }
+
+    .col-date,
+    .track-date {
+        display: none;
+    }
+}

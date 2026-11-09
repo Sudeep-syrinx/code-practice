@@ -1,0 +1,529 @@
+/* =============================================
+   FITNESS TRACKER STYLESHEET
+   Author: Builder Platform Practice
+   Purpose: Verbose expanded CSS for maximum line count
+   ============================================= */
+
+/* ---------- RESET AND BASE ---------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    background-color: #f0fdf4;
+}
+
+.container {
+    width: 94%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* ---------- NAVIGATION ---------- */
+.fitness-navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0.75rem 0;
+}
+
+.fitness-navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fitness-logo {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #16a34a;
+    text-decoration: none;
+}
+
+.fitness-nav {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.fitness-nav a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.fitness-nav a:hover,
+.fitness-nav a.active {
+    color: #16a34a;
+}
+
+.fitness-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.streak-badge {
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    background-color: #16a34a;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+/* ---------- MAIN LAYOUT ---------- */
+.fitness-main {
+    padding: 1.5rem 0;
+}
+
+.fitness-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 1.5rem;
+}
+
+/* ---------- STATS ROW ---------- */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    border-left: 4px solid transparent;
+}
+
+.stat-card.calories {
+    border-left-color: #ef4444;
+}
+
+.stat-card.steps {
+    border-left-color: #3b82f6;
+}
+
+.stat-card.workouts {
+    border-left-color: #16a34a;
+}
+
+.stat-card.water {
+    border-left-color: #0ea5e9;
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 0.5rem;
+    background-color: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    color: #64748b;
+    flex-shrink: 0;
+    font-weight: 700;
+}
+
+.stat-info h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+}
+
+.stat-info p {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-bottom: 0.15rem;
+}
+
+.stat-goal {
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+/* ---------- WORKOUT SECTION ---------- */
+.workout-section {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.section-header h2 {
+    font-size: 1.25rem;
+    color: #1e293b;
+}
+
+.view-all-link {
+    color: #16a34a;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.view-all-link:hover {
+    text-decoration: underline;
+}
+
+.workout-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.workout-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0;
+    transition: background-color 0.2s ease;
+}
+
+.workout-item.completed {
+    background-color: #f0fdf4;
+    border-color: #bbf7d0;
+}
+
+.workout-item.active-workout {
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+.workout-check {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.workout-item.completed .workout-check {
+    background-color: #16a34a;
+    color: #ffffff;
+}
+
+.workout-item.active-workout .workout-check {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+.workout-details {
+    flex: 1;
+}
+
+.workout-details h3 {
+    font-size: 1rem;
+    color: #1e293b;
+    margin-bottom: 0.2rem;
+}
+
+.workout-details p {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.workout-calories {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #ef4444;
+    flex-shrink: 0;
+}
+
+/* ---------- WEEKLY CHART ---------- */
+.weekly-chart-section {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.chart-period {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.bar-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    height: 180px;
+    padding-top: 1rem;
+}
+
+.chart-bar-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.chart-bar {
+    width: 100%;
+    background: linear-gradient(to top, #16a34a, #22c55e);
+    border-radius: 0.375rem 0.375rem 0 0;
+    min-height: 8px;
+    transition: height 0.3s ease;
+}
+
+.today-bar {
+    background: linear-gradient(to top, #1d4ed8, #3b82f6);
+}
+
+.chart-bar-group span {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+/* ---------- SIDEBAR ---------- */
+.fitness-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.sidebar-card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.sidebar-card h3 {
+    font-size: 1rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #f0fdf4;
+}
+
+/* ---------- GOALS ---------- */
+.goal-item {
+    margin-bottom: 1rem;
+}
+
+.goal-item:last-child {
+    margin-bottom: 0;
+}
+
+.goal-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+}
+
+.goal-label span:first-child {
+    color: #475569;
+}
+
+.goal-label span:last-child {
+    color: #64748b;
+    font-weight: 600;
+}
+
+.goal-bar {
+    height: 6px;
+    background-color: #e2e8f0;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.goal-fill {
+    height: 100%;
+    background-color: #16a34a;
+    border-radius: 999px;
+    transition: width 0.3s ease;
+}
+
+/* ---------- ACHIEVEMENTS ---------- */
+.achievement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}
+
+.achievement.earned {
+    background-color: #f0fdf4;
+}
+
+.achievement.locked {
+    opacity: 0.5;
+    background-color: #f8fafc;
+}
+
+.ach-icon {
+    width: 36px;
+    height: 36px;
+    background-color: #dcfce7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    color: #16a34a;
+    flex-shrink: 0;
+    font-weight: 700;
+}
+
+.achievement.locked .ach-icon {
+    background-color: #e2e8f0;
+    color: #94a3b8;
+}
+
+.achievement strong {
+    display: block;
+    font-size: 0.85rem;
+    color: #1e293b;
+}
+
+.achievement p {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+/* ---------- LEADERBOARD ---------- */
+.leaderboard-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.lb-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+}
+
+.lb-item.current-user {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+}
+
+.lb-rank {
+    width: 22px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #64748b;
+    text-align: center;
+}
+
+.lb-avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #16a34a;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.lb-info {
+    flex: 1;
+}
+
+.lb-info strong {
+    display: block;
+    font-size: 0.85rem;
+    color: #1e293b;
+}
+
+.lb-info span {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+    .fitness-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .stats-row {
+        grid-template-columns: 1fr;
+    }
+
+    .fitness-nav {
+        display: none;
+    }
+}

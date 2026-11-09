@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player - SoundWave</title>
+    <link rel="stylesheet" href="music_player.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo-section">
+                <h1 class="app-logo">SoundWave</h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item active"><a href="#"><span class="nav-icon">Home Icon</span><span class="nav-text">Home</span></a></li>
+                    <li class="nav-item"><a href="#"><span class="nav-icon">Search Icon</span><span class="nav-text">Search</span></a></li>
+                    <li class="nav-item"><a href="#"><span class="nav-icon">Library Icon</span><span class="nav-text">Your Library</span></a></li>
+                    <li class="nav-item"><a href="#"><span class="nav-icon">Radio Icon</span><span class="nav-text">Radio</span></a></li>
+                    <li class="nav-item"><a href="#"><span class="nav-icon">Podcasts Icon</span><span class="nav-text">Podcasts</span></a></li>
+                </ul>
+            </nav>
+            <div class="playlist-section">
+                <div class="playlist-header">
+                    <h3>Your Playlists</h3>
+                    <button class="create-playlist-btn">+ Create</button>
+                </div>
+                <ul class="playlist-list">
+                    <li class="playlist-item active-playlist"><span class="playlist-icon">Liked Songs</span><span class="playlist-count">234 songs</span></li>
+                    <li class="playlist-item"><span class="playlist-icon">Workout Mix</span><span class="playlist-count">45 songs</span></li>
+                    <li class="playlist-item"><span class="playlist-icon">Coding Focus</span><span class="playlist-count">67 songs</span></li>
+                    <li class="playlist-item"><span class="playlist-icon">Chill Vibes</span><span class="playlist-count">89 songs</span></li>
+                    <li class="playlist-item"><span class="playlist-icon">Morning Energy</span><span class="playlist-count">32 songs</span></li>
+                    <li class="playlist-item"><span class="playlist-icon">Late Night Jazz</span><span class="playlist-count">56 songs</span></li>
+                    <li class="playlist-item"><span class="playlist-icon">Road Trip Anthems</span><span class="playlist-count">78 songs</span></li>
+                    <li class="playlist-item"><span class="playlist-icon">Study Session</span><span class="playlist-count">41 songs</span></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="nav-arrows">
+                    <button class="arrow-btn">Back Arrow</button>
+                    <button class="arrow-btn">Forward Arrow</button>
+                </div>
+                <div class="user-section">
+                    <button class="upgrade-btn">Upgrade to Premium</button>
+                    <div class="user-profile">
+                        <span class="user-avatar">SM</span>
+                        <span class="user-name">Sudeep M.</span>
+                    </div>
+                </div>
+            </header>
+            <div class="content-area">
+                <section class="hero-section">
+                    <div class="hero-gradient"></div>
+                    <div class="hero-content">
+                        <div class="hero-album-art">Album Cover Art</div>
+                        <div class="hero-info">
+                            <span class="content-type">Playlist</span>
+                            <h1 class="hero-title">Coding Focus - Deep Work Mix</h1>
+                            <p class="hero-description">Ambient electronic and lo-fi beats perfect for deep coding sessions. Curated for maximum concentration and flow state.</p>
+                            <div class="hero-meta">
+                                <span class="meta-owner">Created by Sudeep M.</span>
+                                <span class="meta-separator">bullet</span>
+                                <span class="meta-count">67 songs</span>
+                                <span class="meta-separator">bullet</span>
+                                <span class="meta-duration">4 hr 23 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="action-bar">
+                    <button class="play-btn-large">Play Button</button>
+                    <button class="shuffle-btn">Shuffle Icon</button>
+                    <button class="follow-btn">Follow Playlist</button>
+                    <button class="more-btn">More Options</button>
+                </section>
+                <section class="track-list-section">
+                    <div class="track-list-header">
+                        <span class="col-num">#</span>
+                        <span class="col-title">Title</span>
+                        <span class="col-album">Album</span>
+                        <span class="col-date">Date Added</span>
+                        <span class="col-duration">Duration</span>
+                    </div>
+                    <div class="track-list">
+                        <div class="track-item now-playing">
+                            <span class="track-num">1</span>
+                            <div class="track-info">
+                                <div class="track-art">Track Art 1</div>
+                                <div class="track-details">
+                                    <span class="track-title">Midnight Code</span>
+                                    <span class="track-artist">Lo-Fi Coder</span>
+                                </div>
+                            </div>
+                            <span class="track-album">Deep Focus Vol. 1</span>
+                            <span class="track-date">Nov 5, 2026</span>
+                            <span class="track-duration">3:42</span>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-num">2</span>
+                            <div class="track-info">
+                                <div class="track-art">Track Art 2</div>
+                                <div class="track-details">
+                                    <span class="track-title">Algorithm Dreams</span>
+                                    <span class="track-artist">Synth Dev</span>
+                                </div>
+                            </div>
+                            <span class="track-album">Binary Beats</span>
+                            <span class="track-date">Nov 4, 2026</span>
+                            <span class="track-duration">4:15</span>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-num">3</span>
+                            <div class="track-info">
+                                <div class="track-art">Track Art 3</div>
+                                <div class="track-details">
+                                    <span class="track-title">Recursive Lullaby</span>
+                                    <span class="track-artist">Function Keys</span>
+                                </div>
+                            </div>
+                            <span class="track-album">Stack Overflow</span>
+                            <span class="track-date">Nov 3, 2026</span>
+                            <span class="track-duration">3:58</span>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-num">4</span>
+                            <div class="track-info">
+                                <div class="track-art">Track Art 4</div>
+                                <div class="track-details">
+                                    <span class="track-title">Variable Sunset</span>
+                                    <span class="track-artist">Const Waves</span>
+                                </div>
+                            </div>
+                            <span class="track-album">Runtime Environment</span>
+                            <span class="track-date">Nov 2, 2026</span>
+                            <span class="track-duration">5:01</span>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-num">5</span>
+                            <div class="track-info">
+                                <div class="track-art">Track Art 5</div>
+                                <div class="track-details">
+                                    <span class="track-title">Null Pointer Blues</span>
+                                    <span class="track-artist">Memory Leak</span>
+                                </div>
+                            </div>
+                            <span class="track-album">Garbage Collection</span>
+                            <span class="track-date">Nov 1, 2026</span>
+                            <span class="track-duration">4:33</span>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-num">6</span>
+                            <div class="track-info">
+                                <div class="track-art">Track Art 6</div>
+                                <div class="track-details">
+                                    <span class="track-title">Async Await</span>
+                                    <span class="track-artist">Promise Ring</span>
+                                </div>
+                            </div>
+                            <span class="track-album">Event Loop</span>
+                            <span class="track-date">Oct 30, 2026</span>
+                            <span class="track-duration">3:27</span>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-num">7</span>
+                            <div class="track-info">
+                                <div class="track-art">Track Art 7</div>
+                                <div class="track-details">
+                                    <span class="track-title">Git Commit Push</span>
+                                    <span class="track-artist">Branch Manager</span>
+                                </div>
+                            </div>
+                            <span class="track-album">Version Control</span>
+                            <span class="track-date">Oct 28, 2026</span>
+                            <span class="track-duration">4:44</span>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-num">8</span>
+                            <div class="track-info">
+                                <div class="track-art">Track Art 8</div>
+                                <div class="track-details">
+                                    <span class="track-title">Docker Container</span>
+                                    <span class="track-artist">Kubernetes</span>
+                                </div>
+                            </div>
+                            <span class="track-album">Cloud Native</span>
+                            <span class="track-date">Oct 25, 2026</span>
+                            <span class="track-duration">3:55</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="player-bar">
+            <div class="now-playing-info">
+                <div class="np-art">Now Playing Art</div>
+                <div class="np-details">
+                    <span class="np-title">Midnight Code</span>
+                    <span class="np-artist">Lo-Fi Coder</span>
+                </div>
+                <button class="like-btn">Like Heart Icon</button>
+            </div>
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button class="ctrl-btn">Shuffle Icon</button>
+                    <button class="ctrl-btn">Previous Icon</button>
+                    <button class="ctrl-btn play-pause-btn">Play Pause Icon</button>
+                    <button class="ctrl-btn">Next Icon</button>
+                    <button class="ctrl-btn">Repeat Icon</button>
+                </div>
+                <div class="progress-section">
+                    <span class="time-current">1:23</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:35%"></div>
+                        <div class="progress-thumb" style="left:35%"></div>
+                    </div>
+                    <span class="time-total">3:42</span>
+                </div>
+            </div>
+            <div class="volume-section">
+                <button class="queue-btn">Queue Icon</button>
+                <button class="devices-btn">Devices Icon</button>
+                <button class="volume-icon-btn">Volume Icon</button>
+                <div class="volume-bar">
+                    <div class="volume-fill" style="width:70%"></div>
+                    <div class="volume-thumb" style="left:70%"></div>
+                </div>
+                <button class="fullscreen-btn">Fullscreen Icon</button>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

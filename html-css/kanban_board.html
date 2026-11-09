@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board - TaskFlow Pro</title>
+    <link rel="stylesheet" href="kanban_board.css">
+</head>
+<body>
+    <nav class="kanban-navbar">
+        <div class="container-full">
+            <div class="navbar-left">
+                <a href="#" class="kanban-logo">TaskFlow</a>
+                <div class="workspace-selector">
+                    <span class="workspace-name">Code Practice Project</span>
+                    <span class="dropdown-arrow">Dropdown Arrow</span>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <div class="board-tabs">
+                    <button class="tab-btn active">Board View</button>
+                    <button class="tab-btn">Timeline</button>
+                    <button class="tab-btn">Calendar</button>
+                    <button class="tab-btn">Table</button>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <button class="filter-btn">Filter Icon</button>
+                <button class="search-toggle">Search Icon</button>
+                <button class="notifications-btn">Bell Icon <span class="notif-badge">3</span></button>
+                <div class="members-avatars">
+                    <span class="member-avatar" style="background:#3b82f6">SM</span>
+                    <span class="member-avatar" style="background:#10b981">AK</span>
+                    <span class="member-avatar" style="background:#f59e0b">PK</span>
+                    <span class="member-avatar more-members">+2</span>
+                </div>
+                <button class="share-btn">Share Button</button>
+                <span class="user-menu-avatar">SM</span>
+            </div>
+        </div>
+    </nav>
+    <main class="kanban-main">
+        <div class="board-header">
+            <div class="board-title-section">
+                <h1 class="board-title">Sprint 14 - BuilderHub Features</h1>
+                <p class="board-description">Current sprint focusing on analytics dashboard, leaderboard improvements, and badge system upgrades.</p>
+            </div>
+            <div class="board-actions">
+                <button class="btn-add-task">+ Add Task</button>
+                <button class="btn-automate">Automate Icon</button>
+                <button class="btn-settings">Settings Icon</button>
+            </div>
+        </div>
+        <div class="kanban-columns">
+            <div class="kanban-column">
+                <div class="column-header backlog-header">
+                    <div class="column-title-row">
+                        <span class="column-indicator" style="background:#6b7280"></span>
+                        <h2 class="column-title">Backlog</h2>
+                        <span class="task-count">8</span>
+                    </div>
+                    <button class="column-menu">Three Dots</button>
+                </div>
+                <div class="column-cards">
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-feature">Feature</span><span class="card-label label-high">High Priority</span></div>
+                        <h3 class="card-title">Implement real-time line counting API endpoint for live dashboard updates</h3>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>2/5 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#3b82f6">SM</span></div>
+                            <span class="card-due-date">Nov 20</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-bug">Bug</span></div>
+                        <h3 class="card-title">Fix leaderboard sorting issue when multiple users have same line count total score</h3>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>0/3 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#10b981">AK</span></div>
+                            <span class="card-due-date overdue">Nov 12</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-improvement">Improvement</span></div>
+                        <h3 class="card-title">Add export functionality for weekly progress reports in CSV and PDF format options</h3>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#f59e0b">PK</span><span class="card-member" style="background:#3b82f6">SM</span></div>
+                            <span class="card-due-date">Nov 25</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-feature">Feature</span></div>
+                        <h3 class="card-title">Design and implement campus-specific leaderboard view with filtering options</h3>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>1/4 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#8b5cf6">NK</span></div>
+                            <span class="card-due-date">Dec 01</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card card-has-cover">
+                        <div class="card-cover" style="background:linear-gradient(135deg,#667eea,#764ba2)">Cover Image</div>
+                        <div class="card-labels"><span class="card-label label-design">Design</span></div>
+                        <h3 class="card-title">Redesign badge achievement notification with animation effects and confetti</h3>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#ec4899">RV</span></div>
+                            <span class="card-due-date">Dec 05</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-card-btn">+ Add a card</button>
+            </div>
+            <div class="kanban-column">
+                <div class="column-header todo-header">
+                    <div class="column-title-row">
+                        <span class="column-indicator" style="background:#3b82f6"></span>
+                        <h2 class="column-title">To Do</h2>
+                        <span class="task-count">5</span>
+                    </div>
+                    <button class="column-menu">Three Dots</button>
+                </div>
+                <div class="column-cards">
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-feature">Feature</span><span class="card-label label-medium">Medium</span></div>
+                        <h3 class="card-title">Build streak tracking system with calendar heatmap visualization component</h3>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>3/6 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#3b82f6">SM</span><span class="card-member" style="background:#10b981">AK</span></div>
+                            <span class="card-due-date">Nov 15</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-improvement">Improvement</span></div>
+                        <h3 class="card-title">Optimize database queries for leaderboard page load time under 200 milliseconds target</h3>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>1/4 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#10b981">AK</span></div>
+                            <span class="card-due-date">Nov 18</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-feature">Feature</span></div>
+                        <h3 class="card-title">Add GitHub webhook integration for automatic commit detection and line counting trigger</h3>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#3b82f6">SM</span></div>
+                            <span class="card-due-date">Nov 22</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-bug">Bug</span><span class="card-label label-high">High Priority</span></div>
+                        <h3 class="card-title">Resolve CSS rendering issue on mobile devices for analytics dashboard charts display</h3>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>0/2 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#f59e0b">PK</span></div>
+                            <span class="card-due-date overdue">Nov 10</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-improvement">Improvement</span></div>
+                        <h3 class="card-title">Implement dark mode toggle across all pages with user preference persistence storage</h3>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#8b5cf6">NK</span><span class="card-member" style="background:#ec4899">RV</span></div>
+                            <span class="card-due-date">Nov 28</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-card-btn">+ Add a card</button>
+            </div>
+            <div class="kanban-column">
+                <div class="column-header progress-header">
+                    <div class="column-title-row">
+                        <span class="column-indicator" style="background:#f59e0b"></span>
+                        <h2 class="column-title">In Progress</h2>
+                        <span class="task-count">4</span>
+                    </div>
+                    <button class="column-menu">Three Dots</button>
+                </div>
+                <div class="column-cards">
+                    <div class="kanban-card card-highlighted">
+                        <div class="card-labels"><span class="card-label label-feature">Feature</span><span class="card-label label-high">High Priority</span></div>
+                        <h3 class="card-title">Develop analytics dashboard with weekly line count charts and language breakdown graphs</h3>
+                        <div class="card-progress-bar"><div class="card-progress-fill" style="width:65%"></div></div>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>5/8 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#3b82f6">SM</span></div>
+                            <span class="card-due-date">Nov 14</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-improvement">Improvement</span></div>
+                        <h3 class="card-title">Refactor badge calculation engine to support custom badge creation by administrators</h3>
+                        <div class="card-progress-bar"><div class="card-progress-fill" style="width:40%"></div></div>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>2/5 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#10b981">AK</span><span class="card-member" style="background:#f59e0b">PK</span></div>
+                            <span class="card-due-date">Nov 17</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-feature">Feature</span></div>
+                        <h3 class="card-title">Create notification system for rank changes, streak warnings, and achievement unlocks</h3>
+                        <div class="card-progress-bar"><div class="card-progress-fill" style="width:25%"></div></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#8b5cf6">NK</span></div>
+                            <span class="card-due-date">Nov 21</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-design">Design</span></div>
+                        <h3 class="card-title">Design new onboarding flow for first-time users with interactive tutorial steps guide</h3>
+                        <div class="card-progress-bar"><div class="card-progress-fill" style="width:80%"></div></div>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>4/5 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#ec4899">RV</span></div>
+                            <span class="card-due-date">Nov 13</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-card-btn">+ Add a card</button>
+            </div>
+            <div class="kanban-column">
+                <div class="column-header review-header">
+                    <div class="column-title-row">
+                        <span class="column-indicator" style="background:#8b5cf6"></span>
+                        <h2 class="column-title">Review</h2>
+                        <span class="task-count">3</span>
+                    </div>
+                    <button class="column-menu">Three Dots</button>
+                </div>
+                <div class="column-cards">
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-feature">Feature</span></div>
+                        <h3 class="card-title">Multi-language support for line counting including Java C++ and TypeScript file parsing logic</h3>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>6/6 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#3b82f6">SM</span><span class="card-member" style="background:#10b981">AK</span></div>
+                            <span class="card-due-date">Nov 11</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-improvement">Improvement</span></div>
+                        <h3 class="card-title">Performance optimization for profile page loading with lazy loading and caching strategy implementation</h3>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>4/4 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#f59e0b">PK</span></div>
+                            <span class="card-due-date">Nov 12</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card">
+                        <div class="card-labels"><span class="card-label label-bug">Bug</span></div>
+                        <h3 class="card-title">Fix timezone handling for weekly reset calculation across different user geographic locations worldwide</h3>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>3/3 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#8b5cf6">NK</span></div>
+                            <span class="card-due-date">Nov 10</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-card-btn">+ Add a card</button>
+            </div>
+            <div class="kanban-column">
+                <div class="column-header done-header">
+                    <div class="column-title-row">
+                        <span class="column-indicator" style="background:#10b981"></span>
+                        <h2 class="column-title">Done</h2>
+                        <span class="task-count">6</span>
+                    </div>
+                    <button class="column-menu">Three Dots</button>
+                </div>
+                <div class="column-cards">
+                    <div class="kanban-card card-done">
+                        <div class="card-labels"><span class="card-label label-feature">Feature</span></div>
+                        <h3 class="card-title">User registration and authentication system with OAuth GitHub login integration support</h3>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>5/5 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#3b82f6">SM</span></div>
+                            <span class="card-completed">Completed Nov 5</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card card-done">
+                        <div class="card-labels"><span class="card-label label-improvement">Improvement</span></div>
+                        <h3 class="card-title">Responsive design overhaul for all pages ensuring mobile tablet and desktop compatibility</h3>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>7/7 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#ec4899">RV</span><span class="card-member" style="background:#f59e0b">PK</span></div>
+                            <span class="card-completed">Completed Nov 3</span>
+                        </div>
+                    </div>
+                    <div class="kanban-card card-done">
+                        <div class="card-labels"><span class="card-label label-feature">Feature</span></div>
+                        <h3 class="card-title">Basic leaderboard page with global rankings and search functionality for finding users quickly</h3>
+                        <div class="card-checklist"><span class="checklist-icon">Checklist Icon</span><span>4/4 tasks done</span></div>
+                        <div class="card-footer">
+                            <div class="card-members"><span class="card-member" style="background:#10b981">AK</span></div>
+                            <span class="card-completed">Completed Oct 30</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-card-btn">+ Add a card</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

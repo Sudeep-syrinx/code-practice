@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hub - Cook Like a Pro</title>
+    <link rel="stylesheet" href="recipe_site.css">
+</head>
+<body>
+    <nav class="recipe-navbar">
+        <div class="container">
+            <a href="#" class="recipe-logo">RecipeHub</a>
+            <ul class="recipe-nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Breakfast</a></li>
+                <li><a href="#">Lunch</a></li>
+                <li><a href="#">Dinner</a></li>
+                <li><a href="#">Desserts</a></li>
+                <li><a href="#">Drinks</a></li>
+            </ul>
+            <div class="recipe-actions">
+                <input type="text" placeholder="Search recipes..." class="recipe-search">
+                <button class="btn-add-recipe">+ Add Recipe</button>
+            </div>
+        </div>
+    </nav>
+    <section class="recipe-hero">
+        <div class="container">
+            <h1 class="recipe-hero-title">Discover Delicious Recipes Every Single Day</h1>
+            <p class="recipe-hero-subtitle">Thousands of tested recipes from home cooks and professional chefs around the world</p>
+            <div class="recipe-search-large">
+                <input type="text" placeholder="What do you want to cook today?" class="search-large-input">
+                <button class="search-large-btn">Search Recipes</button>
+            </div>
+            <div class="popular-tags">
+                <span>Popular:</span>
+                <a href="#" class="tag-link">Pasta</a>
+                <a href="#" class="tag-link">Chicken</a>
+                <a href="#" class="tag-link">Vegetarian</a>
+                <a href="#" class="tag-link">Quick Meals</a>
+                <a href="#" class="tag-link">Desserts</a>
+            </div>
+        </div>
+    </section>
+    <section class="featured-recipes">
+        <div class="container">
+            <h2 class="section-title">Featured Recipes This Week</h2>
+            <p class="section-subtitle">Hand-picked recipes our community loves this week</p>
+            <div class="recipes-grid">
+                <article class="recipe-card">
+                    <div class="recipe-image">Pasta Dish Image</div>
+                    <div class="recipe-badge">Popular</div>
+                    <div class="recipe-card-body">
+                        <span class="recipe-difficulty easy">Easy</span>
+                        <h3 class="recipe-card-title">Creamy Garlic Parmesan Pasta</h3>
+                        <p class="recipe-card-desc">Rich and creamy pasta with fresh garlic parmesan cheese and a hint of lemon ready in twenty minutes.</p>
+                        <div class="recipe-stats"><span>20 min</span><span>4 servings</span><span>4.9 stars</span></div>
+                        <a href="#" class="recipe-view-btn">View Recipe</a>
+                    </div>
+                </article>
+                <article class="recipe-card">
+                    <div class="recipe-image">Chicken Dish Image</div>
+                    <div class="recipe-badge new-badge">New</div>
+                    <div class="recipe-card-body">
+                        <span class="recipe-difficulty medium">Medium</span>
+                        <h3 class="recipe-card-title">Honey Glazed Chicken Thighs</h3>
+                        <p class="recipe-card-desc">Juicy chicken thighs with sweet honey glaze roasted vegetables and fresh herbs perfect weeknight dinner.</p>
+                        <div class="recipe-stats"><span>45 min</span><span>6 servings</span><span>4.8 stars</span></div>
+                        <a href="#" class="recipe-view-btn">View Recipe</a>
+                    </div>
+                </article>
+                <article class="recipe-card">
+                    <div class="recipe-image">Salad Dish Image</div>
+                    <div class="recipe-card-body">
+                        <span class="recipe-difficulty easy">Easy</span>
+                        <h3 class="recipe-card-title">Mediterranean Quinoa Salad Bowl</h3>
+                        <p class="recipe-card-desc">Fresh quinoa salad with cucumbers tomatoes olives feta cheese and a tangy lemon dressing for lunch.</p>
+                        <div class="recipe-stats"><span>15 min</span><span>4 servings</span><span>4.7 stars</span></div>
+                        <a href="#" class="recipe-view-btn">View Recipe</a>
+                    </div>
+                </article>
+                <article class="recipe-card">
+                    <div class="recipe-image">Cake Dish Image</div>
+                    <div class="recipe-badge popular-badge">Top Rated</div>
+                    <div class="recipe-card-body">
+                        <span class="recipe-difficulty hard">Advanced</span>
+                        <h3 class="recipe-card-title">Classic Chocolate Layer Cake</h3>
+                        <p class="recipe-card-desc">Decadent three-layer chocolate cake with rich buttercream frosting the ultimate celebration cake recipe.</p>
+                        <div class="recipe-stats"><span>90 min</span><span>12 servings</span><span>5.0 stars</span></div>
+                        <a href="#" class="recipe-view-btn">View Recipe</a>
+                    </div>
+                </article>
+                <article class="recipe-card">
+                    <div class="recipe-image">Soup Dish Image</div>
+                    <div class="recipe-card-body">
+                        <span class="recipe-difficulty easy">Easy</span>
+                        <h3 class="recipe-card-title">Homemade Tomato Basil Soup</h3>
+                        <p class="recipe-card-desc">Comforting homemade tomato soup with fresh basil garlic and a swirl of cream perfect with grilled cheese.</p>
+                        <div class="recipe-stats"><span>30 min</span><span>6 servings</span><span>4.6 stars</span></div>
+                        <a href="#" class="recipe-view-btn">View Recipe</a>
+                    </div>
+                </article>
+                <article class="recipe-card">
+                    <div class="recipe-image">Smoothie Image</div>
+                    <div class="recipe-badge new-badge">New</div>
+                    <div class="recipe-card-body">
+                        <span class="recipe-difficulty easy">Easy</span>
+                        <h3 class="recipe-card-title">Tropical Mango Smoothie Bowl</h3>
+                        <p class="recipe-card-desc">Thick and creamy smoothie bowl topped with fresh fruits granola coconut flakes and chia seeds breakfast.</p>
+                        <div class="recipe-stats"><span>10 min</span><span>2 servings</span><span>4.8 stars</span></div>
+                        <a href="#" class="recipe-view-btn">View Recipe</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="recipe-categories-section">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="categories-grid">
+                <a href="#" class="category-card"><span class="cat-icon">Breakfast Icon</span><h3>Breakfast</h3><p>234 recipes available</p></a>
+                <a href="#" class="category-card"><span class="cat-icon">Lunch Icon</span><h3>Lunch</h3><p>189 recipes available</p></a>
+                <a href="#" class="category-card"><span class="cat-icon">Dinner Icon</span><h3>Dinner</h3><p>312 recipes available</p></a>
+                <a href="#" class="category-card"><span class="cat-icon">Dessert Icon</span><h3>Desserts</h3><p>156 recipes available</p></a>
+                <a href="#" class="category-card"><span class="cat-icon">Drinks Icon</span><h3>Drinks</h3><p>98 recipes available</p></a>
+                <a href="#" class="category-card"><span class="cat-icon">Vegan Icon</span><h3>Vegan</h3><p>145 recipes available</p></a>
+            </div>
+        </div>
+    </section>
+    <footer class="recipe-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4>Recipes</h4><ul><li><a href="#">Breakfast</a></li><li><a href="#">Lunch</a></li><li><a href="#">Dinner</a></li><li><a href="#">Desserts</a></li></ul></div>
+                <div class="footer-col"><h4>Community</h4><ul><li><a href="#">Add Recipe</a></li><li><a href="#">Top Cooks</a></li><li><a href="#">Forum</a></li><li><a href="#">Blog</a></li></ul></div>
+                <div class="footer-col"><h4>Support</h4><ul><li><a href="#">Help Center</a></li><li><a href="#">Contact Us</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Use</a></li></ul></div>
+            </div>
+            <p class="copyright">2026 RecipeHub Platform. All rights reserved worldwide.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Platform - CodeQuiz Master</title>
+    <link rel="stylesheet" href="quiz_platform.css">
+</head>
+<body>
+    <nav class="quiz-navbar">
+        <div class="container">
+            <a href="#" class="quiz-logo">CodeQuiz</a>
+            <ul class="quiz-nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Leaderboard</a></li>
+                <li><a href="#">My Progress</a></li>
+                <li><a href="#">Create Quiz</a></li>
+            </ul>
+            <div class="quiz-user-area">
+                <div class="streak-indicator">
+                    <span class="streak-fire">Fire Icon</span>
+                    <span class="streak-count">7 Day Streak</span>
+                </div>
+                <div class="xp-display">
+                    <span class="xp-label">XP</span>
+                    <span class="xp-value">2,450</span>
+                </div>
+                <span class="quiz-avatar">SM</span>
+            </div>
+        </div>
+    </nav>
+    <main class="quiz-main">
+        <div class="container">
+            <section class="quiz-hero-section">
+                <div class="quiz-hero-content">
+                    <span class="quiz-badge-hero">Daily Challenge Available</span>
+                    <h1 class="quiz-hero-title">Test Your Coding Knowledge</h1>
+                    <p class="quiz-hero-subtitle">Challenge yourself with quizzes on data structures, algorithms, programming languages, and web development. Earn XP, climb the leaderboard, and master your craft.</p>
+                    <div class="quiz-hero-actions">
+                        <button class="btn-start-quiz">Start Daily Challenge</button>
+                        <button class="btn-browse-quizzes">Browse All Quizzes</button>
+                    </div>
+                    <div class="quiz-hero-stats">
+                        <div class="qh-stat"><span class="qh-num">150+</span><span class="qh-label">Quizzes</span></div>
+                        <div class="qh-stat"><span class="qh-num">2,500+</span><span class="qh-label">Questions</span></div>
+                        <div class="qh-stat"><span class="qh-num">10K+</span><span class="qh-label">Players</span></div>
+                        <div class="qh-stat"><span class="qh-num">95%</span><span class="qh-label">Pass Rate</span></div>
+                    </div>
+                </div>
+            </section>
+            <section class="active-quiz-section">
+                <div class="section-header-quiz">
+                    <h2 class="section-title-quiz">Current Challenge</h2>
+                    <span class="time-remaining">Time Remaining: 14:32</span>
+                </div>
+                <div class="quiz-progress-bar-container">
+                    <div class="quiz-progress-info">
+                        <span>Question 7 of 15</span>
+                        <span>Score: 420 / 600</span>
+                    </div>
+                    <div class="quiz-progress-track">
+                        <div class="quiz-progress-fill" style="width:47%"></div>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-category">Data Structures</span>
+                        <span class="question-difficulty hard-diff">Hard</span>
+                        <span class="question-points">+40 XP</span>
+                    </div>
+                    <h3 class="question-text">What is the time complexity of accessing an element by index in a Finger Tree?</h3>
+                    <div class="options-grid">
+                        <label class="option-item">
+                            <input type="radio" name="q7" class="option-radio">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">O(1) - Constant time</span>
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="q7" class="option-radio">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">O(log n) - Logarithmic time</span>
+                        </label>
+                        <label class="option-item selected-option">
+                            <input type="radio" name="q7" class="option-radio" checked>
+                            <span class="option-letter">C</span>
+                            <span class="option-text">O(n) - Linear time in worst case</span>
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="q7" class="option-radio">
+                            <span class="option-letter">D</span>
+                            <span class="option-text">O(n log n) - Linearithmic time</span>
+                        </label>
+                    </div>
+                    <div class="question-actions">
+                        <button class="btn-skip">Skip Question</button>
+                        <button class="btn-hint">Use Hint (2 remaining)</button>
+                        <button class="btn-submit-answer">Submit Answer</button>
+                    </div>
+                </div>
+            </section>
+            <section class="categories-section-quiz">
+                <h2 class="section-title-quiz">Quiz Categories</h2>
+                <p class="section-subtitle-quiz">Choose a topic and start testing your knowledge</p>
+                <div class="categories-grid-quiz">
+                    <div class="category-card-quiz">
+                        <div class="cat-icon-quiz">Tree Icon</div>
+                        <h3 class="cat-title-quiz">Data Structures</h3>
+                        <p class="cat-desc-quiz">Trees, graphs, heaps, hash tables, and advanced structures like finger trees and wavelet trees.</p>
+                        <div class="cat-meta-quiz"><span>45 quizzes</span><span>680 questions</span></div>
+                        <div class="cat-progress-quiz"><div class="cat-progress-fill" style="width:65%"></div></div>
+                        <span class="cat-progress-text">65% completed</span>
+                    </div>
+                    <div class="category-card-quiz">
+                        <div class="cat-icon-quiz">Algorithm Icon</div>
+                        <h3 class="cat-title-quiz">Algorithms</h3>
+                        <p class="cat-desc-quiz">Sorting, searching, dynamic programming, greedy algorithms, and graph traversal techniques.</p>
+                        <div class="cat-meta-quiz"><span>38 quizzes</span><span>520 questions</span></div>
+                        <div class="cat-progress-quiz"><div class="cat-progress-fill" style="width:42%"></div></div>
+                        <span class="cat-progress-text">42% completed</span>
+                    </div>
+                    <div class="category-card-quiz">
+                        <div class="cat-icon-quiz">Python Icon</div>
+                        <h3 class="cat-title-quiz">Python</h3>
+                        <p class="cat-desc-quiz">Syntax, data types, OOP, decorators, generators, async programming, and standard library.</p>
+                        <div class="cat-meta-quiz"><span>32 quizzes</span><span>450 questions</span></div>
+                        <div class="cat-progress-quiz"><div class="cat-progress-fill" style="width:78%"></div></div>
+                        <span class="cat-progress-text">78% completed</span>
+                    </div>
+                    <div class="category-card-quiz">
+                        <div class="cat-icon-quiz">JS Icon</div>
+                        <h3 class="cat-title-quiz">JavaScript</h3>
+                        <p class="cat-desc-quiz">ES6+, closures, prototypes, async/await, event loop, DOM manipulation, and modern frameworks.</p>
+                        <div class="cat-meta-quiz"><span>28 quizzes</span><span>390 questions</span></div>
+                        <div class="cat-progress-quiz"><div class="cat-progress-fill" style="width:55%"></div></div>
+                        <span class="cat-progress-text">55% completed</span>
+                    </div>
+                    <div class="category-card-quiz">
+                        <div class="cat-icon-quiz">Web Icon</div>
+                        <h3 class="cat-title-quiz">HTML & CSS</h3>
+                        <p class="cat-desc-quiz">Semantic HTML, CSS Grid, Flexbox, responsive design, animations, accessibility, and best practices.</p>
+                        <div class="cat-meta-quiz"><span>22 quizzes</span><span>310 questions</span></div>
+                        <div class="cat-progress-quiz"><div class="cat-progress-fill" style="width:88%"></div></div>
+                        <span class="cat-progress-text">88% completed</span>
+                    </div>
+                    <div class="category-card-quiz">
+                        <div class="cat-icon-quiz">System Icon</div>
+                        <h3 class="cat-title-quiz">System Design</h3>
+                        <p class="cat-desc-quiz">Scalability, databases, caching, load balancing, microservices, and distributed systems concepts.</p>
+                        <div class="cat-meta-quiz"><span>18 quizzes</span><span>240 questions</span></div>
+                        <div class="cat-progress-quiz"><div class="cat-progress-fill" style="width:25%"></div></div>
+                        <span class="cat-progress-text">25% completed</span>
+                    </div>
+                </div>
+            </section>
+            <section class="leaderboard-section-quiz">
+                <h2 class="section-title-quiz">Weekly Leaderboard</h2>
+                <div class="leaderboard-table-quiz">
+                    <div class="lb-header-quiz">
+                        <span class="lb-col-rank">Rank</span>
+                        <span class="lb-col-player">Player</span>
+                        <span class="lb-col-quizzes">Quizzes</span>
+                        <span class="lb-col-score">Score</span>
+                        <span class="lb-col-streak">Streak</span>
+                    </div>
+                    <div class="lb-row-quiz">
+                        <span class="lb-rank-num gold-rank">1</span>
+                        <div class="lb-player-info"><span class="lb-player-avatar" style="background:#3b82f6">GM</span><span class="lb-player-name">Gopal M.</span></div>
+                        <span class="lb-quizzes-count">28</span>
+                        <span class="lb-score-val">12,450 XP</span>
+                        <span class="lb-streak-val">24 days</span>
+                    </div>
+                    <div class="lb-row-quiz">
+                        <span class="lb-rank-num silver-rank">2</span>
+                        <div class="lb-player-info"><span class="lb-player-avatar" style="background:#10b981">AK</span><span class="lb-player-name">Arjun K.</span></div>
+                        <span class="lb-quizzes-count">24</span>
+                        <span class="lb-score-val">10,890 XP</span>
+                        <span class="lb-streak-val">18 days</span>
+                    </div>
+                    <div class="lb-row-quiz current-player-row">
+                        <span class="lb-rank-num bronze-rank">3</span>
+                        <div class="lb-player-info"><span class="lb-player-avatar" style="background:#f59e0b">SM</span><span class="lb-player-name">Sudeep M. (You)</span></div>
+                        <span class="lb-quizzes-count">21</span>
+                        <span class="lb-score-val">9,230 XP</span>
+                        <span class="lb-streak-val">7 days</span>
+                    </div>
+                    <div class="lb-row-quiz">
+                        <span class="lb-rank-num">4</span>
+                        <div class="lb-player-info"><span class="lb-player-avatar" style="background:#ec4899">PK</span><span class="lb-player-name">Priya K.</span></div>
+                        <span class="lb-quizzes-count">19</span>
+                        <span class="lb-score-val">8,560 XP</span>
+                        <span class="lb-streak-val">12 days</span>
+                    </div>
+                    <div class="lb-row-quiz">
+                        <span class="lb-rank-num">5</span>
+                        <div class="lb-player-info"><span class="lb-player-avatar" style="background:#8b5cf6">NK</span><span class="lb-player-name">Neha K.</span></div>
+                        <span class="lb-quizzes-count">17</span>
+                        <span class="lb-score-val">7,890 XP</span>
+                        <span class="lb-streak-val">5 days</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
