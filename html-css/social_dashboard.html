@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Dashboard - Analytics Pro</title>
+    <link rel="stylesheet" href="social_dashboard.css">
+</head>
+<body>
+    <div class="dashboard-app">
+        <aside class="dash-sidebar">
+            <div class="dash-brand">
+                <h1 class="dash-logo">SocialPulse</h1>
+                <p class="dash-tagline">Analytics Dashboard</p>
+            </div>
+            <nav class="dash-nav">
+                <ul class="dash-nav-list">
+                    <li class="dash-nav-item active-dash"><a href="#"><span class="dash-nav-icon">Dashboard Icon</span><span class="dash-nav-text">Overview</span></a></li>
+                    <li class="dash-nav-item"><a href="#"><span class="dash-nav-icon">Analytics Icon</span><span class="dash-nav-text">Analytics</span></a></li>
+                    <li class="dash-nav-item"><a href="#"><span class="dash-nav-icon">Posts Icon</span><span class="dash-nav-text">Posts</span></a></li>
+                    <li class="dash-nav-item"><a href="#"><span class="dash-nav-icon">Audience Icon</span><span class="dash-nav-text">Audience</span></a></li>
+                    <li class="dash-nav-item"><a href="#"><span class="dash-nav-icon">Messages Icon</span><span class="dash-nav-text">Messages</span><span class="dash-nav-badge">12</span></a></li>
+                    <li class="dash-nav-item"><a href="#"><span class="dash-nav-icon">Campaigns Icon</span><span class="dash-nav-text">Campaigns</span></a></li>
+                    <li class="dash-nav-item"><a href="#"><span class="dash-nav-icon">Reports Icon</span><span class="dash-nav-text">Reports</span></a></li>
+                    <li class="dash-nav-item"><a href="#"><span class="dash-nav-icon">Settings Icon</span><span class="dash-nav-text">Settings</span></a></li>
+                </ul>
+            </nav>
+            <div class="dash-account-switcher">
+                <div class="account-info-dash">
+                    <span class="account-avatar-dash" style="background:#3b82f6">SM</span>
+                    <div class="account-details-dash">
+                        <span class="account-name-dash">Sudeep M.</span>
+                        <span class="account-handle-dash">@sudeep_codes</span>
+                    </div>
+                </div>
+                <button class="switch-account-btn">Switch Account</button>
+            </div>
+        </aside>
+        <main class="dash-main">
+            <header class="dash-topbar">
+                <div class="topbar-left">
+                    <h2 class="dash-page-title">Dashboard Overview</h2>
+                    <p class="dash-page-subtitle">Track your social media performance across all platforms</p>
+                </div>
+                <div class="topbar-right">
+                    <select class="date-range-select">
+                        <option>Last 7 Days</option>
+                        <option selected>Last 30 Days</option>
+                        <option>Last 90 Days</option>
+                        <option>This Year</option>
+                    </select>
+                    <button class="btn-export-report">Export Report</button>
+                    <button class="btn-refresh-data">Refresh Icon</button>
+                </div>
+            </header>
+            <div class="dash-content">
+                <section class="metrics-row">
+                    <div class="metric-card metric-followers">
+                        <div class="metric-header">
+                            <span class="metric-icon">Followers Icon</span>
+                            <span class="metric-trend positive-trend">+12.5%</span>
+                        </div>
+                        <h3 class="metric-value">24,580</h3>
+                        <p class="metric-label">Total Followers</p>
+                        <div class="metric-sparkline"><div class="spark-bar" style="height:40%"></div><div class="spark-bar" style="height:55%"></div><div class="spark-bar" style="height:45%"></div><div class="spark-bar" style="height:70%"></div><div class="spark-bar" style="height:65%"></div><div class="spark-bar" style="height:80%"></div><div class="spark-bar" style="height:90%"></div></div>
+                    </div>
+                    <div class="metric-card metric-engagement">
+                        <div class="metric-header">
+                            <span class="metric-icon">Engagement Icon</span>
+                            <span class="metric-trend positive-trend">+8.3%</span>
+                        </div>
+                        <h3 class="metric-value">6.8%</h3>
+                        <p class="metric-label">Engagement Rate</p>
+                        <div class="metric-sparkline"><div class="spark-bar" style="height:50%"></div><div class="spark-bar" style="height:60%"></div><div class="spark-bar" style="height:55%"></div><div class="spark-bar" style="height:65%"></div><div class="spark-bar" style="height:70%"></div><div class="spark-bar" style="height:75%"></div><div class="spark-bar" style="height:85%"></div></div>
+                    </div>
+                    <div class="metric-card metric-impressions">
+                        <div class="metric-header">
+                            <span class="metric-icon">Impressions Icon</span>
+                            <span class="metric-trend positive-trend">+23.1%</span>
+                        </div>
+                        <h3 class="metric-value">1.2M</h3>
+                        <p class="metric-label">Impressions</p>
+                        <div class="metric-sparkline"><div class="spark-bar" style="height:35%"></div><div class="spark-bar" style="height:45%"></div><div class="spark-bar" style="height:60%"></div><div class="spark-bar" style="height:55%"></div><div class="spark-bar" style="height:75%"></div><div class="spark-bar" style="height:85%"></div><div class="spark-bar" style="height:95%"></div></div>
+                    </div>
+                    <div class="metric-card metric-clicks">
+                        <div class="metric-header">
+                            <span class="metric-icon">Clicks Icon</span>
+                            <span class="metric-trend negative-trend">-2.4%</span>
+                        </div>
+                        <h3 class="metric-value">8,432</h3>
+                        <p class="metric-label">Link Clicks</p>
+                        <div class="metric-sparkline"><div class="spark-bar" style="height:70%"></div><div class="spark-bar" style="height:65%"></div><div class="spark-bar" style="height:60%"></div><div class="spark-bar" style="height:55%"></div><div class="spark-bar" style="height:50%"></div><div class="spark-bar" style="height:45%"></div><div class="spark-bar" style="height:40%"></div></div>
+                    </div>
+                </section>
+                <section class="charts-row">
+                    <div class="chart-card main-chart">
+                        <div class="chart-card-header">
+                            <h3 class="chart-title">Follower Growth</h3>
+                            <div class="chart-legend-dash">
+                                <span class="legend-item-dash"><span class="legend-dot" style="background:#3b82f6"></span>Twitter</span>
+                                <span class="legend-item-dash"><span class="legend-dot" style="background:#ec4899"></span>Instagram</span>
+                                <span class="legend-item-dash"><span class="legend-dot" style="background:#0ea5e9"></span>LinkedIn</span>
+                            </div>
+                        </div>
+                        <div class="chart-area-dash">
+                            <div class="chart-y-axis-dash"><span>30K</span><span>25K</span><span>20K</span><span>15K</span><span>10K</span><span>5K</span><span>0</span></div>
+                            <div class="chart-bars-area">
+                                <div class="chart-bar-group-dash"><div class="bar-twitter" style="height:45%"></div><div class="bar-instagram" style="height:60%"></div><div class="bar-linkedin" style="height:30%"></div><span class="bar-label-dash">Week 1</span></div>
+                                <div class="chart-bar-group-dash"><div class="bar-twitter" style="height:50%"></div><div class="bar-instagram" style="height:65%"></div><div class="bar-linkedin" style="height:35%"></div><span class="bar-label-dash">Week 2</span></div>
+                                <div class="chart-bar-group-dash"><div class="bar-twitter" style="height:55%"></div><div class="bar-instagram" style="height:70%"></div><div class="bar-linkedin" style="height:40%"></div><span class="bar-label-dash">Week 3</span></div>
+                                <div class="chart-bar-group-dash"><div class="bar-twitter" style="height:65%"></div><div class="bar-instagram" style="height:75%"></div><div class="bar-linkedin" style="height:50%"></div><span class="bar-label-dash">Week 4</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-card side-chart">
+                        <div class="chart-card-header">
+                            <h3 class="chart-title">Platform Distribution</h3>
+                        </div>
+                        <div class="donut-chart-dash">
+                            <div class="donut-segment-dash seg-twitter" style="--pct:45"></div>
+                            <div class="donut-segment-dash seg-instagram" style="--pct:35"></div>
+                            <div class="donut-segment-dash seg-linkedin" style="--pct:20"></div>
+                            <div class="donut-center-dash"><span class="donut-total">24.5K</span><span class="donut-label-dash">Total</span></div>
+                        </div>
+                        <div class="platform-breakdown">
+                            <div class="platform-row"><span class="platform-dot" style="background:#3b82f6"></span><span class="platform-name">Twitter</span><span class="platform-pct">45%</span><span class="platform-count">11,061</span></div>
+                            <div class="platform-row"><span class="platform-dot" style="background:#ec4899"></span><span class="platform-name">Instagram</span><span class="platform-pct">35%</span><span class="platform-count">8,603</span></div>
+                            <div class="platform-row"><span class="platform-dot" style="background:#0ea5e9"></span><span class="platform-name">LinkedIn</span><span class="platform-pct">20%</span><span class="platform-count">4,916</span></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="recent-posts-section">
+                    <div class="section-header-dash">
+                        <h3 class="section-title-dash">Recent Posts Performance</h3>
+                        <a href="#" class="view-all-dash">View All Posts</a>
+                    </div>
+                    <div class="posts-table-dash">
+                        <div class="posts-table-header">
+                            <span class="pt-col-post">Post</span>
+                            <span class="pt-col-platform">Platform</span>
+                            <span class="pt-col-date">Date</span>
+                            <span class="pt-col-reach">Reach</span>
+                            <span class="pt-col-engagement">Engagement</span>
+                            <span class="pt-col-clicks">Clicks</span>
+                        </div>
+                        <div class="posts-table-row">
+                            <div class="pt-post-info"><div class="pt-post-thumb" style="background:#dbeafe">Thumb 1</div><span class="pt-post-text">Just hit 52K lines on BuilderHub! Consistency is key...</span></div>
+                            <span class="pt-platform-badge twitter-badge">Twitter</span>
+                            <span class="pt-date">Nov 8, 2026</span>
+                            <span class="pt-reach">45.2K</span>
+                            <span class="pt-engagement">8.4%</span>
+                            <span class="pt-clicks">1,234</span>
+                        </div>
+                        <div class="posts-table-row">
+                            <div class="pt-post-info"><div class="pt-post-thumb" style="background:#fce7f3">Thumb 2</div><span class="pt-post-text">New blog post: Understanding Finger Trees from scratch...</span></div>
+                            <span class="pt-platform-badge instagram-badge">Instagram</span>
+                            <span class="pt-date">Nov 7, 2026</span>
+                            <span class="pt-reach">32.8K</span>
+                            <span class="pt-engagement">6.2%</span>
+                            <span class="pt-clicks">892</span>
+                        </div>
+                        <div class="posts-table-row">
+                            <div class="pt-post-info"><div class="pt-post-thumb" style="background:#e0f2fe">Thumb 3</div><span class="pt-post-text">Thread: How I built a Virtual Machine in JavaScript...</span></div>
+                            <span class="pt-platform-badge twitter-badge">Twitter</span>
+                            <span class="pt-date">Nov 5, 2026</span>
+                            <span class="pt-reach">67.5K</span>
+                            <span class="pt-engagement">9.1%</span>
+                            <span class="pt-clicks">2,456</span>
+                        </div>
+                        <div class="posts-table-row">
+                            <div class="pt-post-info"><div class="pt-post-thumb" style="background:#dcfce7">Thumb 4</div><span class="pt-post-text">HTML/CSS counts on BuilderHub! Here's my strategy...</span></div>
+                            <span class="pt-platform-badge linkedin-badge">LinkedIn</span>
+                            <span class="pt-date">Nov 3, 2026</span>
+                            <span class="pt-reach">28.4K</span>
+                            <span class="pt-engagement">5.8%</span>
+                            <span class="pt-clicks">678</span>
+                        </div>
+                        <div class="posts-table-row">
+                            <div class="pt-post-info"><div class="pt-post-thumb" style="background:#fef3c7">Thumb 5</div><span class="pt-post-text">Wavelet Trees explained with visual examples and code...</span></div>
+                            <span class="pt-platform-badge instagram-badge">Instagram</span>
+                            <span class="pt-date">Nov 1, 2026</span>
+                            <span class="pt-reach">41.2K</span>
+                            <span class="pt-engagement">7.3%</span>
+                            <span class="pt-clicks">1,567</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="bottom-row-dash">
+                    <div class="audience-card">
+                        <h3 class="card-title-dash">Audience Demographics</h3>
+                        <div class="demo-grid">
+                            <div class="demo-item"><span class="demo-label">Age 18-24</span><div class="demo-bar"><div class="demo-fill" style="width:35%"></div></div><span class="demo-pct">35%</span></div>
+                            <div class="demo-item"><span class="demo-label">Age 25-34</span><div class="demo-bar"><div class="demo-fill" style="width:42%"></div></div><span class="demo-pct">42%</span></div>
+                            <div class="demo-item"><span class="demo-label">Age 35-44</span><div class="demo-bar"><div class="demo-fill" style="width:18%"></div></div><span class="demo-pct">18%</span></div>
+                            <div class="demo-item"><span class="demo-label">Age 45+</span><div class="demo-bar"><div class="demo-fill" style="width:5%"></div></div><span class="demo-pct">5%</span></div>
+                        </div>
+                        <div class="gender-split">
+                            <div class="gender-item"><span class="gender-dot" style="background:#3b82f6"></span><span>Male 68%</span></div>
+                            <div class="gender-item"><span class="gender-dot" style="background:#ec4899"></span><span>Female 30%</span></div>
+                            <div class="gender-item"><span class="gender-dot" style="background:#8b5cf6"></span><span>Other 2%</span></div>
+                        </div>
+                    </div>
+                    <div class="top-countries-card">
+                        <h3 class="card-title-dash">Top Countries</h3>
+                        <div class="countries-list">
+                            <div class="country-row"><span class="country-flag">IN</span><span class="country-name">India</span><div class="country-bar"><div class="country-fill" style="width:45%"></div></div><span class="country-pct">45%</span></div>
+                            <div class="country-row"><span class="country-flag">US</span><span class="country-name">United States</span><div class="country-bar"><div class="country-fill" style="width:22%"></div></div><span class="country-pct">22%</span></div>
+                            <div class="country-row"><span class="country-flag">GB</span><span class="country-name">United Kingdom</span><div class="country-bar"><div class="country-fill" style="width:12%"></div></div><span class="country-pct">12%</span></div>
+                            <div class="country-row"><span class="country-flag">CA</span><span class="country-name">Canada</span><div class="country-bar"><div class="country-fill" style="width:8%"></div></div><span class="country-pct">8%</span></div>
+                            <div class="country-row"><span class="country-flag">DE</span><span class="country-name">Germany</span><div class="country-bar"><div class="country-fill" style="width:6%"></div></div><span class="country-pct">6%</span></div>
+                            <div class="country-row"><span class="country-flag">AU</span><span class="country-name">Australia</span><div class="country-bar"><div class="country-fill" style="width:4%"></div></div><span class="country-pct">4%</span></div>
+                        </div>
+                    </div>
+                    <div class="engagement-times-card">
+                        <h3 class="card-title-dash">Best Posting Times</h3>
+                        <div class="heatmap-grid">
+                            <div class="heatmap-row"><span class="heatmap-label">Mon</span><span class="heat-cell h1"></span><span class="heat-cell h2"></span><span class="heat-cell h3"></span><span class="heat-cell h4"></span><span class="heat-cell h5"></span><span class="heat-cell h3"></span><span class="heat-cell h2"></span></div>
+                            <div class="heatmap-row"><span class="heatmap-label">Tue</span><span class="heat-cell h2"></span><span class="heat-cell h3"></span><span class="heat-cell h4"></span><span class="heat-cell h5"></span><span class="heat-cell h4"></span><span class="heat-cell h3"></span><span class="heat-cell h1"></span></div>
+                            <div class="heatmap-row"><span class="heatmap-label">Wed</span><span class="heat-cell h1"></span><span class="heat-cell h3"></span><span class="heat-cell h5"></span><span class="heat-cell h4"></span><span class="heat-cell h5"></span><span class="heat-cell h4"></span><span class="heat-cell h2"></span></div>
+                            <div class="heatmap-row"><span class="heatmap-label">Thu</span><span class="heat-cell h2"></span><span class="heat-cell h4"></span><span class="heat-cell h5"></span><span class="heat-cell h3"></span><span class="heat-cell h4"></span><span class="heat-cell h5"></span><span class="heat-cell h3"></span></div>
+                            <div class="heatmap-row"><span class="heatmap-label">Fri</span><span class="heat-cell h3"></span><span class="heat-cell h4"></span><span class="heat-cell h3"></span><span class="heat-cell h2"></span><span class="heat-cell h3"></span><span class="heat-cell h4"></span><span class="heat-cell h5"></span></div>
+                            <div class="heatmap-row"><span class="heatmap-label">Sat</span><span class="heat-cell h4"></span><span class="heat-cell h5"></span><span class="heat-cell h4"></span><span class="heat-cell h3"></span><span class="heat-cell h2"></span><span class="heat-cell h3"></span><span class="heat-cell h4"></span></div>
+                            <div class="heatmap-row"><span class="heatmap-label">Sun</span><span class="heat-cell h3"></span><span class="heat-cell h4"></span><span class="heat-cell h5"></span><span class="heat-cell h4"></span><span class="heat-cell h3"></span><span class="heat-cell h2"></span><span class="heat-cell h3"></span></div>
+                        </div>
+                        <div class="heatmap-legend"><span>Low</span><span class="heat-cell h1"></span><span class="heat-cell h2"></span><span class="heat-cell h3"></span><span class="heat-cell h4"></span><span class="heat-cell h5"></span><span>High</span></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

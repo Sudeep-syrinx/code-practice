@@ -1,0 +1,133 @@
+/* =============================================
+   CRM DASHBOARD STYLESHEET
+   Author: Builder Platform Practice
+   Purpose: Verbose expanded CSS for maximum line count
+   ============================================= */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.5; color: #1e293b; background-color: #f8fafc; overflow: hidden; }
+
+.crm-app { display: grid; grid-template-columns: 260px 1fr; height: 100vh; }
+
+/* ---------- SIDEBAR ---------- */
+.crm-sidebar { background-color: #1e293b; display: flex; flex-direction: column; padding: 1.25rem 0; overflow-y: auto; }
+.crm-brand { padding: 0 1.25rem 1.25rem; border-bottom: 1px solid #334155; display: flex; align-items: center; justify-content: space-between; }
+.crm-logo { font-size: 1.35rem; font-weight: 800; color: #ffffff; }
+.crm-plan-badge { background: linear-gradient(135deg, #f59e0b, #d97706); color: #ffffff; padding: 0.2rem 0.5rem; border-radius: 999px; font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.crm-nav { flex: 1; padding: 1rem 0.75rem; }
+.crm-nav-list { list-style: none; }
+.crm-nav-item { margin-bottom: 0.2rem; }
+.crm-nav-item a { display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem 0.75rem; color: #94a3b8; text-decoration: none; border-radius: 0.5rem; transition: all 0.2s ease; font-size: 0.875rem; font-weight: 500; }
+.crm-nav-item a:hover { background-color: #334155; color: #e2e8f0; }
+.active-crm a { background-color: #3b82f6 !important; color: #ffffff !important; }
+.crm-icon { width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; }
+.crm-badge { margin-left: auto; background-color: #475569; color: #e2e8f0; font-size: 0.65rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 999px; min-width: 20px; text-align: center; }
+.urgent-badge { background-color: #ef4444 !important; color: #ffffff !important; }
+.crm-user-panel { padding: 1rem 1.25rem; border-top: 1px solid #334155; display: flex; align-items: center; gap: 0.75rem; }
+.crm-user-avatar { width: 36px; height: 36px; background-color: #3b82f6; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8rem; flex-shrink: 0; }
+.crm-user-info { flex: 1; min-width: 0; }
+.crm-user-name { display: block; font-size: 0.85rem; font-weight: 600; color: #e2e8f0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.crm-user-role { display: block; font-size: 0.7rem; color: #64748b; }
+.crm-logout-btn { width: 28px; height: 28px; border-radius: 0.375rem; background: none; border: none; color: #64748b; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; }
+.crm-logout-btn:hover { background-color: #334155; color: #ef4444; }
+
+/* ---------- MAIN CONTENT ---------- */
+.crm-main { overflow-y: auto; display: flex; flex-direction: column; }
+.crm-topbar { background-color: #ffffff; padding: 0.75rem 2rem; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 50; gap: 1rem; }
+.crm-search-bar { display: flex; align-items: center; gap: 0.75rem; background-color: #f1f5f9; border-radius: 0.5rem; padding: 0.5rem 1rem; flex: 1; max-width: 500px; border: 1px solid transparent; transition: all 0.2s ease; }
+.crm-search-bar:focus-within { background-color: #ffffff; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
+.crm-search-icon { color: #94a3b8; font-size: 0.8rem; }
+.crm-search-input { flex: 1; background: none; border: none; font-size: 0.9rem; color: #1e293b; }
+.crm-search-input:focus { outline: none; }
+.crm-search-input::placeholder { color: #94a3b8; }
+.crm-search-shortcut { background-color: #e2e8f0; color: #64748b; padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.65rem; font-weight: 600; }
+.crm-topbar-actions { display: flex; align-items: center; gap: 0.75rem; }
+.crm-icon-btn { width: 36px; height: 36px; border-radius: 50%; background: none; border: none; color: #64748b; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; position: relative; transition: all 0.15s ease; }
+.crm-icon-btn:hover { background-color: #f1f5f9; color: #334155; }
+.crm-notif-dot { position: absolute; top: 6px; right: 6px; width: 8px; height: 8px; background-color: #ef4444; border-radius: 50%; border: 2px solid #ffffff; }
+.btn-new-deal { padding: 0.5rem 1.25rem; background-color: #3b82f6; color: #ffffff; border: none; border-radius: 0.375rem; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: all 0.2s ease; }
+.btn-new-deal:hover { background-color: #2563eb; transform: translateY(-1px); box-shadow: 0 2px 8px rgba(59,130,246,0.3); }
+.crm-content { padding: 1.5rem 2rem; display: flex; flex-direction: column; gap: 1.5rem; }
+
+/* ---------- METRICS ROW ---------- */
+.crm-metrics-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+.crm-metric-card { background-color: #ffffff; border-radius: 0.75rem; padding: 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; transition: all 0.2s ease; }
+.crm-metric-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.crm-metric-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+.crm-metric-label { font-size: 0.8rem; color: #64748b; font-weight: 500; text-transform: uppercase; letter-spacing: 0.03em; }
+.crm-metric-trend { font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 999px; }
+.crm-metric-trend.up { background-color: #dcfce7; color: #15803d; }
+.crm-metric-trend.down { background-color: #fee2e2; color: #b91c1c; }
+.crm-metric-value { font-size: 1.75rem; font-weight: 800; color: #0f172a; margin-bottom: 0.25rem; line-height: 1; }
+.crm-metric-sub { font-size: 0.75rem; color: #94a3b8; margin-bottom: 0.75rem; }
+.crm-mini-chart { display: flex; align-items: flex-end; gap: 0.2rem; height: 32px; }
+.mini-bar { flex: 1; background: linear-gradient(to top, #3b82f6, #60a5fa); border-radius: 0.125rem; min-height: 3px; }
+
+/* ---------- PIPELINE ---------- */
+.crm-pipeline-section { background-color: #ffffff; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+.crm-section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; }
+.crm-section-title { font-size: 1.15rem; font-weight: 700; color: #0f172a; }
+.btn-view-pipeline { padding: 0.4rem 1rem; background-color: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; border-radius: 0.375rem; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease; }
+.btn-view-pipeline:hover { background-color: #e2e8f0; }
+.pipeline-stages { display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 0.5rem; }
+.pipeline-stage { min-width: 240px; max-width: 240px; background-color: #f8fafc; border-radius: 0.5rem; padding: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.stage-header { display: flex; align-items: center; gap: 0.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e2e8f0; }
+.stage-name { font-size: 0.8rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.03em; flex: 1; }
+.stage-count { background-color: #e2e8f0; color: #475569; font-size: 0.7rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 999px; }
+.stage-value { font-size: 0.75rem; font-weight: 700; color: #0f172a; }
+.stage-won .stage-header { border-bottom-color: #10b981; }
+.stage-won .stage-name { color: #059669; }
+.stage-cards { display: flex; flex-direction: column; gap: 0.5rem; }
+.deal-card-mini { background-color: #ffffff; border-radius: 0.375rem; padding: 0.6rem; border: 1px solid #e2e8f0; display: flex; flex-direction: column; gap: 0.3rem; cursor: grab; transition: all 0.15s ease; }
+.deal-card-mini:hover { box-shadow: 0 2px 6px rgba(0,0,0,0.08); border-color: #cbd5e1; }
+.won-deal { border-left: 3px solid #10b981; }
+.deal-company { font-size: 0.8rem; font-weight: 600; color: #1e293b; }
+.deal-amount { font-size: 0.85rem; font-weight: 700; color: #059669; }
+.deal-owner-avatar { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.55rem; font-weight: 700; color: #ffffff; align-self: flex-end; }
+
+/* ---------- BOTTOM ROW ---------- */
+.crm-bottom-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; }
+.crm-recent-activity, .crm-upcoming-tasks, .crm-top-performers { background-color: #ffffff; border-radius: 0.75rem; padding: 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+.crm-card-title { font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid #e2e8f0; }
+.activity-feed { display: flex; flex-direction: column; gap: 0.75rem; }
+.activity-item { display: flex; gap: 0.75rem; align-items: flex-start; }
+.activity-dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 0.35rem; flex-shrink: 0; }
+.activity-content { flex: 1; }
+.activity-content p { font-size: 0.8rem; color: #475569; line-height: 1.4; }
+.activity-content strong { color: #1e293b; }
+.activity-time { font-size: 0.7rem; color: #94a3b8; }
+.tasks-list-crm { display: flex; flex-direction: column; gap: 0.5rem; }
+.task-item-crm { display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem; border-radius: 0.375rem; border: 1px solid #f1f5f9; transition: background-color 0.15s ease; }
+.task-item-crm:hover { background-color: #f8fafc; }
+.urgent-task { border-left: 3px solid #ef4444; background-color: #fef2f2; }
+.task-check-crm { width: 16px; height: 16px; cursor: pointer; flex-shrink: 0; }
+.task-details-crm { flex: 1; min-width: 0; }
+.task-title-crm { display: block; font-size: 0.8rem; font-weight: 500; color: #1e293b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.task-due-crm { display: block; font-size: 0.7rem; color: #64748b; }
+.overdue-task { color: #dc2626 !important; font-weight: 600; }
+.task-priority-high, .task-priority-medium, .task-priority-low { font-size: 0.6rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 999px; text-transform: uppercase; flex-shrink: 0; }
+.task-priority-high { background-color: #fee2e2; color: #b91c1c; }
+.task-priority-medium { background-color: #fef3c7; color: #92400e; }
+.task-priority-low { background-color: #dcfce7; color: #15803d; }
+.performers-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.performer-item { display: flex; align-items: center; gap: 0.6rem; }
+.performer-rank { width: 20px; font-size: 0.8rem; font-weight: 800; color: #94a3b8; text-align: center; }
+.performer-rank.gold { color: #f59e0b; }
+.performer-rank.silver { color: #94a3b8; }
+.performer-rank.bronze { color: #d97706; }
+.performer-avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; font-weight: 700; color: #ffffff; flex-shrink: 0; }
+.performer-info { min-width: 90px; }
+.performer-name { display: block; font-size: 0.8rem; font-weight: 600; color: #1e293b; }
+.performer-stat { display: block; font-size: 0.7rem; color: #64748b; }
+.performer-bar-wrap { flex: 1; height: 6px; background-color: #e2e8f0; border-radius: 999px; overflow: hidden; }
+.performer-bar { height: 100%; background: linear-gradient(90deg, #3b82f6, #60a5fa); border-radius: 999px; }
+
+/* ---------- SCROLLBAR ---------- */
+.crm-sidebar::-webkit-scrollbar, .crm-main::-webkit-scrollbar, .pipeline-stages::-webkit-scrollbar { width: 6px; height: 6px; }
+.crm-sidebar::-webkit-scrollbar-track, .crm-main::-webkit-scrollbar-track, .pipeline-stages::-webkit-scrollbar-track { background: transparent; }
+.crm-sidebar::-webkit-scrollbar-thumb, .crm-main::-webkit-scrollbar-thumb, .pipeline-stages::-webkit-scrollbar-thumb { background-color: #475569; border-radius: 999px; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1200px) { .crm-metrics-row { grid-template-columns: repeat(2, 1fr); } .crm-bottom-row { grid-template-columns: 1fr; } }
+@media (max-width: 768px) { .crm-app { grid-template-columns: 1fr; } .crm-sidebar { display: none; } .crm-metrics-row { grid-template-columns: 1fr; } .crm-topbar { padding: 0.75rem 1rem; } .crm-content { padding: 1rem; } }

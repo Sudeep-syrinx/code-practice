@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management - TaskMaster Pro</title>
+    <link rel="stylesheet" href="project_mgmt.css">
+</head>
+<body>
+    <div class="pm-app">
+        <aside class="pm-sidebar">
+            <div class="pm-brand"><h1 class="pm-logo">TaskMaster</h1></div>
+            <div class="pm-workspace"><span class="pm-ws-icon">CP</span><div class="pm-ws-info"><span class="pm-ws-name">Code Practice</span><span class="pm-ws-plan">Pro Workspace</span></div></div>
+            <nav class="pm-nav"><ul class="pm-nav-list">
+                <li class="pm-nav-item active-pm"><a href="#"><span class="pm-nav-icon">Home Icon</span><span>Home</span></a></li>
+                <li class="pm-nav-item"><a href="#"><span class="pm-nav-icon">My Tasks Icon</span><span>My Tasks</span><span class="pm-nav-count">12</span></a></li>
+                <li class="pm-nav-item"><a href="#"><span class="pm-nav-icon">Inbox Icon</span><span>Inbox</span><span class="pm-nav-count notif">5</span></a></li>
+                <li class="pm-nav-item"><a href="#"><span class="pm-nav-icon">Timeline Icon</span><span>Timeline</span></a></li>
+                <li class="pm-nav-item"><a href="#"><span class="pm-nav-icon">Calendar Icon</span><span>Calendar</span></a></li>
+            </ul></nav>
+            <div class="pm-projects-section"><div class="pm-projects-header"><h3>Projects</h3><button class="pm-add-project">Plus Icon</button></div>
+                <ul class="pm-projects-list">
+                    <li class="pm-project-item active-project"><span class="pm-proj-dot" style="background:#3b82f6"></span><span class="pm-proj-name">BuilderHub Platform</span><span class="pm-proj-count">24</span></li>
+                    <li class="pm-project-item"><span class="pm-proj-dot" style="background:#10b981"></span><span class="pm-proj-name">Portfolio Redesign</span><span class="pm-proj-count">8</span></li>
+                    <li class="pm-project-item"><span class="pm-proj-dot" style="background:#f59e0b"></span><span class="pm-proj-name">Algorithm Library</span><span class="pm-proj-count">15</span></li>
+                    <li class="pm-project-item"><span class="pm-proj-dot" style="background:#8b5cf6"></span><span class="pm-proj-name">Mobile App MVP</span><span class="pm-proj-count">6</span></li>
+                    <li class="pm-project-item"><span class="pm-proj-dot" style="background:#ec4899"></span><span class="pm-proj-name">Documentation Site</span><span class="pm-proj-count">11</span></li>
+                </ul>
+            </div>
+            <div class="pm-team-section"><h3>Team Members</h3>
+                <div class="pm-team-list">
+                    <div class="pm-team-member online-member"><span class="pm-tm-avatar" style="background:#3b82f6">SM</span><span class="pm-tm-name">Sudeep M.</span><span class="pm-tm-status"></span></div>
+                    <div class="pm-team-member online-member"><span class="pm-tm-avatar" style="background:#10b981">AK</span><span class="pm-tm-name">Arjun K.</span><span class="pm-tm-status"></span></div>
+                    <div class="pm-team-member away-member"><span class="pm-tm-avatar" style="background:#f59e0b">PK</span><span class="pm-tm-name">Priya K.</span><span class="pm-tm-status"></span></div>
+                    <div class="pm-team-member offline-member"><span class="pm-tm-avatar" style="background:#8b5cf6">NK</span><span class="pm-tm-name">Neha K.</span><span class="pm-tm-status"></span></div>
+                    <div class="pm-team-member online-member"><span class="pm-tm-avatar" style="background:#ec4899">RV</span><span class="pm-tm-name">Rahul V.</span><span class="pm-tm-status"></span></div>
+                </div>
+            </div>
+        </aside>
+        <main class="pm-main">
+            <header class="pm-topbar"><div class="pm-breadcrumb"><a href="#">Projects</a><span class="pm-bc-sep">/</span><a href="#">BuilderHub Platform</a><span class="pm-bc-sep">/</span><span class="pm-bc-current">Sprint 14</span></div><div class="pm-topbar-actions"><button class="pm-btn-filter">Filter Icon Filter</button><button class="pm-btn-sort">Sort Icon Sort</button><button class="pm-btn-view active-view-btn">Board View</button><button class="pm-btn-view">List View</button><button class="pm-btn-add-task">+ Add Task</button></div></header>
+            <div class="pm-content">
+                <div class="pm-project-overview">
+                    <div class="pm-overview-card"><h3>Sprint Progress</h3><div class="pm-progress-ring"><svg viewBox="0 0 36 36"><path class="ring-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/><path class="ring-fill" stroke-dasharray="68, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/></svg><span class="ring-text">68%</span></div><p class="pm-overview-sub">17 of 25 tasks completed</p></div>
+                    <div class="pm-overview-card"><h3>Time Remaining</h3><div class="pm-countdown"><span class="countdown-num">5</span><span class="countdown-label">days left</span></div><p class="pm-overview-sub">Sprint ends Nov 14, 2026</p></div>
+                    <div class="pm-overview-card"><h3>Team Velocity</h3><div class="pm-velocity-value"><span class="velocity-num">42</span><span class="velocity-label">points/sprint</span></div><p class="pm-overview-sub">+8 vs last sprint</p></div>
+                    <div class="pm-overview-card"><h3>Bug Count</h3><div class="pm-bug-value"><span class="bug-num">3</span><span class="bug-label">open bugs</span></div><p class="pm-overview-sub">1 critical, 2 minor</p></div>
+                </div>
+                <div class="pm-task-board">
+                    <div class="pm-column"><div class="pm-col-header todo-col"><h3>To Do</h3><span class="pm-col-count">5</span></div>
+                        <div class="pm-task-card"><div class="pm-task-tags"><span class="pm-tag tag-feature">Feature</span><span class="pm-tag tag-high">High</span></div><h4 class="pm-task-title">Implement real-time notifications for rank changes and badge unlocks</h4><div class="pm-task-footer"><div class="pm-task-assignees"><span class="pm-ta" style="background:#3b82f6">SM</span><span class="pm-ta" style="background:#10b981">AK</span></div><span class="pm-task-meta">5 subtasks</span><span class="pm-task-date">Nov 14</span></div></div>
+                        <div class="pm-task-card"><div class="pm-task-tags"><span class="pm-tag tag-bug">Bug</span></div><h4 class="pm-task-title">Fix mobile responsive issues on analytics dashboard charts</h4><div class="pm-task-footer"><div class="pm-task-assignees"><span class="pm-ta" style="background:#f59e0b">PK</span></div><span class="pm-task-meta">2 subtasks</span><span class="pm-task-date pm-overdue">Nov 10</span></div></div>
+                        <div class="pm-task-card"><div class="pm-task-tags"><span class="pm-tag tag-improvement">Improvement</span></div><h4 class="pm-task-title">Add dark mode support across all platform pages</h4><div class="pm-task-footer"><div class="pm-task-assignees"><span class="pm-ta" style="background:#8b5cf6">NK</span></div><span class="pm-task-meta">8 subtasks</span><span class="pm-task-date">Nov 18</span></div></div>
+                    </div>
+                    <div class="pm-column"><div class="pm-col-header progress-col"><h3>In Progress</h3><span class="pm-col-count">4</span></div>
+                        <div class="pm-task-card pm-card-active"><div class="pm-task-tags"><span class="pm-tag tag-feature">Feature</span><span class="pm-tag tag-high">High</span></div><h4 class="pm-task-title">Build campus leaderboard with filtering and search capabilities</h4><div class="pm-task-progress"><div class="pm-task-progress-bar"><div class="pm-task-progress-fill" style="width:65%"></div></div><span class="pm-task-progress-text">65%</span></div><div class="pm-task-footer"><div class="pm-task-assignees"><span class="pm-ta" style="background:#3b82f6">SM</span></div><span class="pm-task-meta">6 subtasks</span><span class="pm-task-date">Nov 12</span></div></div>
+                        <div class="pm-task-card"><div class="pm-task-tags"><span class="pm-tag tag-improvement">Improvement</span></div><h4 class="pm-task-title">Optimize database queries for leaderboard page performance</h4><div class="pm-task-progress"><div class="pm-task-progress-bar"><div class="pm-task-progress-fill" style="width:40%"></div></div><span class="pm-task-progress-text">40%</span></div><div class="pm-task-footer"><div class="pm-task-assignees"><span class="pm-ta" style="background:#10b981">AK</span></div><span class="pm-task-meta">4 subtasks</span><span class="pm-task-date">Nov 15</span></div></div>
+                        <div class="pm-task-card"><div class="pm-task-tags"><span class="pm-tag tag-design">Design</span></div><h4 class="pm-task-title">Redesign badge achievement modal with animations</h4><div class="pm-task-progress"><div class="pm-task-progress-bar"><div class="pm-task-progress-fill" style="width:80%"></div></div><span class="pm-task-progress-text">80%</span></div><div class="pm-task-footer"><div class="pm-task-assignees"><span class="pm-ta" style="background:#ec4899">RV</span></div><span class="pm-task-meta">3 subtasks</span><span class="pm-task-date">Nov 11</span></div></div>
+                    </div>
+                    <div class="pm-column"><div class="pm-col-header review-col"><h3>In Review</h3><span class="pm-col-count">3</span></div>
+                        <div class="pm-task-card"><div class="pm-task-tags"><span class="pm-tag tag-feature">Feature</span></div><h4 class="pm-task-title">Multi-language line counting support for Java and C++ files</h4><div class="pm-task-footer"><div class="pm-task-assignees"><span class="pm-ta" style="background:#3b82f6">SM</span><span class="pm-ta" style="background:#10b981">AK</span></div><span class="pm-task-meta">Done</span><span class="pm-task-date">Review</span></div></div>
+                        <div class="pm-task-card"><div class="pm-task-tags"><span class="pm-tag tag-improvement">Improvement</span></div><h4 class="pm-task-title">Profile page lazy loading and caching optimization</h4><div class="pm-task-footer"><div class="pm-task-assignees"><span class="pm-ta" style="background:#f59e0b">PK</span></div><span class="pm-task-meta">Done</span><span class="pm-task-date">Review</span></div></div>
+                    </div>
+                    <div class="pm-column"><div class="pm-col-header done-col"><h3>Completed</h3><span class="pm-col-count">6</span></div>
+                        <div class="pm-task-card pm-card-done"><div class="pm-task-tags"><span class="pm-tag tag-feature">Feature</span></div><h4 class="pm-task-title">User authentication with GitHub OAuth integration</h4><div class="pm-task-footer"><div class="pm-task-assignees"><span class="pm-ta" style="background:#3b82f6">SM</span></div><span class="pm-task-done-badge">Done Nov 5</span></div></div>
+                        <div class="pm-task-card pm-card-done"><div class="pm-task-tags"><span class="pm-tag tag-improvement">Improvement</span></div><h4 class="pm-task-title">Responsive design overhaul for all pages</h4><div class="pm-task-footer"><div class="pm-task-assignees"><span class="pm-ta" style="background:#ec4899">RV</span><span class="pm-ta" style="background:#f59e0b">PK</span></div><span class="pm-task-done-badge">Done Nov 3</span></div></div>
+                        <div class="pm-task-card pm-card-done"><div class="pm-task-tags"><span class="pm-tag tag-feature">Feature</span></div><h4 class="pm-task-title">Basic leaderboard with global rankings</h4><div class="pm-task-footer"><div class="pm-task-assignees"><span class="pm-ta" style="background:#10b981">AK</span></div><span class="pm-task-done-badge">Done Oct 30</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

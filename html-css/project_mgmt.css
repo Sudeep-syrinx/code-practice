@@ -1,0 +1,138 @@
+/* =============================================
+   PROJECT MANAGEMENT STYLESHEET
+   Author: Builder Platform Practice
+   Purpose: Verbose expanded CSS for maximum line count
+   ============================================= */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.5; color: #1e293b; background-color: #f1f5f9; overflow: hidden; }
+
+.pm-app { display: grid; grid-template-columns: 260px 1fr; height: 100vh; }
+
+/* ---------- SIDEBAR ---------- */
+.pm-sidebar { background-color: #1e1b4b; display: flex; flex-direction: column; padding: 1rem 0; overflow-y: auto; }
+.pm-brand { padding: 0 1.25rem 1rem; }
+.pm-logo { font-size: 1.35rem; font-weight: 800; color: #a78bfa; }
+.pm-workspace { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1.25rem; margin: 0 0.75rem 1rem; background-color: rgba(255,255,255,0.08); border-radius: 0.5rem; cursor: pointer; transition: background-color 0.2s ease; }
+.pm-workspace:hover { background-color: rgba(255,255,255,0.12); }
+.pm-ws-icon { width: 32px; height: 32px; background: linear-gradient(135deg, #7c3aed, #4f46e5); border-radius: 0.375rem; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: #ffffff; flex-shrink: 0; }
+.pm-ws-info { display: flex; flex-direction: column; }
+.pm-ws-name { font-size: 0.85rem; font-weight: 600; color: #e2e8f0; }
+.pm-ws-plan { font-size: 0.7rem; color: #a78bfa; }
+.pm-nav { padding: 0 0.75rem; margin-bottom: 1rem; }
+.pm-nav-list { list-style: none; }
+.pm-nav-item { margin-bottom: 0.15rem; }
+.pm-nav-item a { display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 0.75rem; color: #a5b4fc; text-decoration: none; border-radius: 0.375rem; transition: all 0.2s ease; font-size: 0.85rem; font-weight: 500; }
+.pm-nav-item a:hover { background-color: rgba(255,255,255,0.08); color: #e2e8f0; }
+.active-pm a { background-color: rgba(167,139,250,0.2) !important; color: #ffffff !important; }
+.pm-nav-icon { width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; }
+.pm-nav-count { margin-left: auto; background-color: rgba(255,255,255,0.15); color: #c4b5fd; font-size: 0.65rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 999px; }
+.pm-nav-count.notif { background-color: #ef4444; color: #ffffff; }
+.pm-projects-section { padding: 0 0.75rem; margin-bottom: 1rem; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1rem; }
+.pm-projects-header { display: flex; justify-content: space-between; align-items: center; padding: 0 0.5rem; margin-bottom: 0.5rem; }
+.pm-projects-header h3 { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #a5b4fc; }
+.pm-add-project { width: 20px; height: 20px; border-radius: 50%; background: none; border: none; color: #a5b4fc; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; }
+.pm-add-project:hover { background-color: rgba(255,255,255,0.1); color: #ffffff; }
+.pm-projects-list { list-style: none; }
+.pm-project-item { display: flex; align-items: center; gap: 0.6rem; padding: 0.45rem 0.5rem; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.15s ease; }
+.pm-project-item:hover { background-color: rgba(255,255,255,0.08); }
+.active-project { background-color: rgba(167,139,250,0.15) !important; }
+.pm-proj-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.pm-proj-name { flex: 1; font-size: 0.8rem; color: #c4b5fd; font-weight: 500; }
+.active-project .pm-proj-name { color: #ffffff; }
+.pm-proj-count { font-size: 0.7rem; color: #7c7caa; }
+.pm-team-section { padding: 0 1.25rem; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1rem; margin-top: auto; }
+.pm-team-section h3 { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #a5b4fc; margin-bottom: 0.75rem; }
+.pm-team-list { display: flex; flex-direction: column; gap: 0.4rem; }
+.pm-team-member { display: flex; align-items: center; gap: 0.6rem; padding: 0.3rem 0; }
+.pm-tm-avatar { width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.55rem; font-weight: 700; color: #ffffff; flex-shrink: 0; }
+.pm-tm-name { flex: 1; font-size: 0.8rem; color: #c4b5fd; }
+.pm-tm-status { width: 8px; height: 8px; border-radius: 50%; }
+.online-member .pm-tm-status { background-color: #10b981; }
+.away-member .pm-tm-status { background-color: #f59e0b; }
+.offline-member .pm-tm-status { background-color: #64748b; }
+.offline-member { opacity: 0.5; }
+
+/* ---------- MAIN ---------- */
+.pm-main { overflow-y: auto; display: flex; flex-direction: column; }
+.pm-topbar { background-color: #ffffff; padding: 0.75rem 1.5rem; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 50; gap: 1rem; flex-wrap: wrap; }
+.pm-breadcrumb { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; }
+.pm-breadcrumb a { color: #64748b; text-decoration: none; }
+.pm-breadcrumb a:hover { color: #4f46e5; }
+.pm-bc-sep { color: #cbd5e1; }
+.pm-bc-current { color: #1e293b; font-weight: 600; }
+.pm-topbar-actions { display: flex; align-items: center; gap: 0.5rem; }
+.pm-btn-filter, .pm-btn-sort { padding: 0.4rem 0.75rem; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.375rem; color: #64748b; font-size: 0.8rem; cursor: pointer; transition: all 0.15s ease; }
+.pm-btn-filter:hover, .pm-btn-sort:hover { background-color: #f1f5f9; border-color: #cbd5e1; }
+.pm-btn-view { padding: 0.4rem 0.75rem; background: none; border: 1px solid #e2e8f0; border-radius: 0.375rem; color: #64748b; font-size: 0.8rem; cursor: pointer; transition: all 0.15s ease; }
+.active-view-btn { background-color: #4f46e5 !important; color: #ffffff !important; border-color: #4f46e5 !important; }
+.pm-btn-add-task { padding: 0.4rem 1rem; background-color: #4f46e5; color: #ffffff; border: none; border-radius: 0.375rem; font-weight: 600; font-size: 0.8rem; cursor: pointer; transition: all 0.2s ease; }
+.pm-btn-add-task:hover { background-color: #4338ca; }
+.pm-content { padding: 1.5rem; display: flex; flex-direction: column; gap: 1.5rem; }
+
+/* ---------- OVERVIEW CARDS ---------- */
+.pm-project-overview { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.pm-overview-card { background-color: #ffffff; border-radius: 0.75rem; padding: 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; text-align: center; }
+.pm-overview-card h3 { font-size: 0.8rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+.pm-progress-ring { position: relative; width: 80px; height: 80px; margin: 0 auto 0.5rem; }
+.pm-progress-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.ring-bg { fill: none; stroke: #e2e8f0; stroke-width: 3; }
+.ring-fill { fill: none; stroke: #4f46e5; stroke-width: 3; stroke-linecap: round; }
+.ring-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 1rem; font-weight: 800; color: #4f46e5; }
+.pm-countdown { margin-bottom: 0.5rem; }
+.countdown-num { font-size: 2.5rem; font-weight: 800; color: #f59e0b; line-height: 1; }
+.countdown-label { display: block; font-size: 0.8rem; color: #64748b; }
+.pm-velocity-value { margin-bottom: 0.5rem; }
+.velocity-num { font-size: 2.5rem; font-weight: 800; color: #10b981; line-height: 1; }
+.velocity-label { display: block; font-size: 0.8rem; color: #64748b; }
+.pm-bug-value { margin-bottom: 0.5rem; }
+.bug-num { font-size: 2.5rem; font-weight: 800; color: #ef4444; line-height: 1; }
+.bug-label { display: block; font-size: 0.8rem; color: #64748b; }
+.pm-overview-sub { font-size: 0.75rem; color: #94a3b8; }
+
+/* ---------- TASK BOARD ---------- */
+.pm-task-board { display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 1rem; align-items: flex-start; }
+.pm-column { min-width: 280px; max-width: 280px; background-color: #f8fafc; border-radius: 0.75rem; display: flex; flex-direction: column; max-height: calc(100vh - 320px); }
+.pm-col-header { padding: 0.75rem 1rem; display: flex; align-items: center; gap: 0.5rem; border-radius: 0.75rem 0.75rem 0 0; border-bottom: 2px solid #e2e8f0; }
+.pm-col-header h3 { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #475569; flex: 1; }
+.todo-col { border-bottom-color: #3b82f6; }
+.progress-col { border-bottom-color: #f59e0b; }
+.review-col { border-bottom-color: #8b5cf6; }
+.done-col { border-bottom-color: #10b981; }
+.pm-col-count { background-color: #e2e8f0; color: #475569; font-size: 0.7rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 999px; }
+.pm-column > .pm-task-card:first-of-type { margin-top: 0.75rem; }
+.pm-task-card { background-color: #ffffff; border-radius: 0.5rem; padding: 0.875rem; margin: 0 0.5rem 0.5rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; cursor: grab; transition: all 0.15s ease; }
+.pm-task-card:hover { box-shadow: 0 3px 8px rgba(0,0,0,0.1); border-color: #cbd5e1; }
+.pm-card-active { border-left: 3px solid #f59e0b; }
+.pm-card-done { opacity: 0.7; }
+.pm-card-done .pm-task-title { text-decoration: line-through; color: #94a3b8; }
+.pm-task-tags { display: flex; gap: 0.3rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+.pm-tag { padding: 0.1rem 0.4rem; border-radius: 0.25rem; font-size: 0.6rem; font-weight: 700; text-transform: uppercase; }
+.tag-feature { background-color: #dbeafe; color: #1d4ed8; }
+.tag-bug { background-color: #fee2e2; color: #b91c1c; }
+.tag-improvement { background-color: #dcfce7; color: #15803d; }
+.tag-design { background-color: #ede9fe; color: #6b21a8; }
+.tag-high { background-color: #fef3c7; color: #92400e; }
+.pm-task-title { font-size: 0.85rem; font-weight: 500; color: #1e293b; line-height: 1.4; margin-bottom: 0.6rem; }
+.pm-task-progress { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem; }
+.pm-task-progress-bar { flex: 1; height: 4px; background-color: #e2e8f0; border-radius: 999px; overflow: hidden; }
+.pm-task-progress-fill { height: 100%; background-color: #f59e0b; border-radius: 999px; }
+.pm-task-progress-text { font-size: 0.7rem; font-weight: 700; color: #f59e0b; }
+.pm-task-footer { display: flex; align-items: center; gap: 0.5rem; }
+.pm-task-assignees { display: flex; }
+.pm-ta { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.5rem; font-weight: 700; color: #ffffff; border: 2px solid #ffffff; margin-left: -6px; }
+.pm-ta:first-child { margin-left: 0; }
+.pm-task-meta { font-size: 0.7rem; color: #94a3b8; margin-left: auto; }
+.pm-task-date { font-size: 0.7rem; color: #64748b; padding: 0.1rem 0.35rem; background-color: #f1f5f9; border-radius: 0.25rem; }
+.pm-overdue { background-color: #fee2e2 !important; color: #b91c1c !important; font-weight: 600; }
+.pm-task-done-badge { font-size: 0.7rem; color: #10b981; font-weight: 600; margin-left: auto; }
+
+/* ---------- SCROLLBAR ---------- */
+.pm-sidebar::-webkit-scrollbar, .pm-main::-webkit-scrollbar, .pm-task-board::-webkit-scrollbar { width: 6px; height: 6px; }
+.pm-sidebar::-webkit-scrollbar-track, .pm-main::-webkit-scrollbar-track, .pm-task-board::-webkit-scrollbar-track { background: transparent; }
+.pm-sidebar::-webkit-scrollbar-thumb, .pm-main::-webkit-scrollbar-thumb, .pm-task-board::-webkit-scrollbar-thumb { background-color: #475569; border-radius: 999px; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1200px) { .pm-project-overview { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) { .pm-app { grid-template-columns: 1fr; } .pm-sidebar { display: none; } .pm-project-overview { grid-template-columns: 1fr; } .pm-topbar { flex-direction: column; align-items: flex-start; } }
